@@ -24,11 +24,15 @@
 
 ---
 
-## 1. The problem
+##  1. The problem
 
 > **Problem statement:** To address the lack of early cardiac risk awareness, explainable predictions, personalized health guidance, and accessible emergency support.
 >
 > **Theme:** MedTech / BioTech / HealthTech · **Category:** Software
+
+<p align="center">
+  <img src="assets/images/problem.png" alt="Illustration: warning signs appear hours before a cardiac crisis but get missed" width="100%">
+</p>
 
 Cardiac deterioration usually shows up in the vital signs hours before a crisis, but those signals are hard to act on:
 
@@ -66,7 +70,7 @@ CardioTwin brings **history and live physiology together** in one place. It **lo
 <details>
 <summary><b>See each screen full size</b></summary>
 
-**🩺 Doctor dashboard:** live risk, model spread, data coverage, watch face and alerts
+** Doctor dashboard:** live risk, model spread, data coverage, watch face and alerts
 <img src="assets/screenshots/doctor_dashboard.png" alt="Doctor dashboard" width="100%">
 
 **📱 Patient view:** home, medicines and nearby help
@@ -76,12 +80,12 @@ CardioTwin brings **history and live physiology together** in one place. It **lo
   <img src="assets/screenshots/phone_nearby_help.png" alt="Patient nearby help" width="31%">
 </p>
 
-**⌚ Watch readings:** watch screens in the browser, driven by the virtual watch (not a physical watch)
+**Watch readings:** watch screens in the browser, driven by the virtual watch (not a physical watch)
 <img src="assets/screenshots/watch_browser_simulated.png" alt="Watch screens in the browser" width="85%">
 
 </details>
 
-## ✨ 4. Key features
+##  4. Key features
 
 | Feature | Status |
 |---|:---:|
@@ -136,7 +140,7 @@ The goal is a twin that stays current **between clinic visits**. A compatible sm
 
 **Before this is real:** build and test the Wear OS app on an emulator and then on real devices. Retrain and validate on consented wearable data, validate fall detection, and get clinical review of all rules. Add production security that complies with the DPDP Act.
 
-## 🏥 7. Healthcare use case
+##  7. Healthcare use case
 
 A clinician is following a cardiac patient at risk of acute deterioration. CardioTwin warns up to 24 hours ahead, explains why and helps decide what to check next.
 
@@ -148,7 +152,7 @@ A clinician is following a cardiac patient at risk of acute deterioration. Cardi
 5. The patient app and the watch screens update. Only a critical patient sees the 112 prompt.
 6. The what-if panel shows which changes would lower the risk most.
 
-## 🧠 8. Architecture and AI/ML
+##  8. Architecture and AI/ML
 
 ### 📐 System architecture
 
@@ -169,7 +173,7 @@ A clinician is following a cardiac patient at risk of acute deterioration. Cardi
 
 Raw and patient-level data are **not** included in this repository (PhysioNet licence). `src/build_structured_csv.py` rebuilds them.
 
-### 🔬 ML pipeline (notebooks 01–08)
+###  ML pipeline (notebooks 01–08)
 
 **Structure → Merge and clean → Feature engineering (211 features) → EDA → Train (grouped 5-fold CV, Optuna) → SHAP and SAR → Risk engine → What-if simulator**
 
@@ -199,7 +203,11 @@ With only 4 test events, these results show the method works end to end. They do
 
 </details>
 
-## 🛠️ 9. Technical stack
+##  9. Technical stack
+
+<p align="center">
+  <img src="assets/images/tech_stack.png" alt="CardioTwin tech stack logos" width="100%">
+</p>
 
 | Layer | Tools |
 |---|---|
@@ -211,10 +219,10 @@ With only 4 test events, these results show the method works end to end. They do
 
 ## 📦 10. Submission files
 
-### 📐 System Architecture (SA)
+### System Architecture (SA)
 ➡️ [`assets/architecture/cardiotwin_system_architecture.pdf`](assets/architecture/cardiotwin_system_architecture.pdf)
 
-### 📊 Presentation (PPT)
+### Presentation (PPT)
 ➡️ PDF: [`assets/presentation/CardioTwin_AyuRaksha_Presentation.pdf`](assets/presentation/CardioTwin_AyuRaksha_Presentation.pdf) · PowerPoint: [`.pptx`](assets/presentation/CardioTwin_AyuRaksha_Presentation.pptx)
 
 <sub>The deck was made at the idea stage, so it lists the backend and apps as "planned". They have since been built, except the Wear OS app.</sub>
@@ -226,16 +234,16 @@ With only 4 test events, these results show the method works end to end. They do
 
 <table>
   <tr>
-    <td align="center" width="25%">👑<br><b>Tanya Jain</b><br><sub>Team Lead · Full Backened development, data collection </sub></td>
-    <td align="center" width="25%">🧠<br><b>Praveen Yadav</b><br><sub>AI/ML & Explainability</sub></td>
-    <td align="center" width="25%">🖥️<br><b>Mohammad Danishuddin</b><br><sub>watch integration and connectivity of all 3 system</sub></td>
-    <td align="center" width="25%">🎨<br><b>Ankur Pandey</b><br><sub>UI/UX & Presentation</sub></td>
+    <td align="center" width="55%"><br><b>Tanya jain</b><br><sub>Team Lead · Data Collection ,Full backened development</sub></td>
+    <td align="center" width="55%"><br><b>Praveen Yadav</b><br><sub>AI/ML & Explainability</sub></td>
+    <td align="center" width="55%"><br><b>Mohammad Danishuddin</b><br><sub>connectivity of all three system</sub></td>
+    <td align="center" width="55%"><br><b>Ankur pandey</b><br><sub>UI/UX & Presentation</sub></td>
   </tr>
 </table>
 
 **🏫 College / Incubator:** `ADD_COLLEGE_OR_INCUBATOR_NAME`
 
-## ▶️ 11. Run it locally
+## 11. Run it locally
 
 <details>
 <summary><b>Show setup steps</b> (Windows PowerShell · Python 3.12/3.13 · Node.js LTS)</summary>
@@ -281,7 +289,7 @@ assets/             README images, screenshots, architecture PDF, presentation
 
 </details>
 
-## ⚖️ 12. Responsible AI and limitations
+## 12. Responsible AI and limitations
 
 - **Not a medical device.** This is a research prototype without clinical validation. Do not use it for diagnosis or treatment.
 - **Small ICU cohort.** It was trained on 59 patients and tested on 15, so results won't transfer directly to outpatients or wearables.
