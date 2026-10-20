@@ -24,7 +24,7 @@
 
 ---
 
-## 🩺 1. The problem
+## 1. The problem
 
 > **Problem statement:** To address the lack of early cardiac risk awareness, explainable predictions, personalized health guidance, and accessible emergency support.
 >
@@ -226,10 +226,10 @@ With only 4 test events, these results show the method works end to end. They do
 
 <table>
   <tr>
-    <td align="center" width="25%">👑<br><b>ADD_NAME</b><br><sub>Team Lead · ML & Data</sub></td>
-    <td align="center" width="25%">🧠<br><b>ADD_NAME</b><br><sub>AI/ML & Explainability</sub></td>
-    <td align="center" width="25%">🖥️<br><b>ADD_NAME</b><br><sub>Backend & Apps</sub></td>
-    <td align="center" width="25%">🎨<br><b>ADD_NAME</b><br><sub>UI/UX & Presentation</sub></td>
+    <td align="center" width="25%">👑<br><b>Tanya Jain</b><br><sub>Team Lead · Full Backened development, data collection </sub></td>
+    <td align="center" width="25%">🧠<br><b>Praveen Yadav</b><br><sub>AI/ML & Explainability</sub></td>
+    <td align="center" width="25%">🖥️<br><b>Mohammad Danishuddin</b><br><sub>watch integration and connectivity of all 3 system</sub></td>
+    <td align="center" width="25%">🎨<br><b>Ankur Pandey</b><br><sub>UI/UX & Presentation</sub></td>
   </tr>
 </table>
 
@@ -311,7 +311,7 @@ assets/             README images, screenshots, architecture PDF, presentation
 
 <sub>The prototype also meets the challenge brief: static + dynamic data fusion ✅ · adverse-event prediction ✅ · doctor dashboard for the virtual patient ✅ · open, anonymized data only ✅</sub>
 
-## 📜 14. License
+## 14. License
 
 The code is released under the **[MIT License](LICENSE)**. The datasets keep their own PhysioNet licences and must be downloaded from [PhysioNet](https://physionet.org/).
 
