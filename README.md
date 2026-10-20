@@ -234,14 +234,14 @@ With only 4 test events, these results show the method works end to end. They do
 
 <table>
   <tr>
-    <td align="center" width="55%"><br><b>Tanya jain</b><br><sub>Team Lead · Data Collection ,Full backened development</sub></td>
-    <td align="center" width="55%"><br><b>Praveen Yadav</b><br><sub>AI/ML & Explainability</sub></td>
-    <td align="center" width="55%"><br><b>Mohammad Danishuddin</b><br><sub>connectivity of all three system</sub></td>
-    <td align="center" width="55%"><br><b>Ankur pandey</b><br><sub>UI/UX & Presentation</sub></td>
+    <td align="center" width="25%"><br><b>Tanya jain</b><br><sub>Team Lead · Data Collection ,Full backened development</sub></td>
+    <td align="center" width="25%"><br><b>Praveen Yadav</b><br><sub>AI/ML & Explainability</sub></td>
+    <td align="center" width="25%"><br><b>Mohammad Danishuddin</b><br><sub>connectivity of all three system</sub></td>
+    <td align="center" width="25%"><br><b>Ankur pandey</b><br><sub>UI/UX & Presentation</sub></td>
   </tr>
 </table>
 
-**🏫 College / Incubator:** `ADD_COLLEGE_OR_INCUBATOR_NAME`
+** College / Incubator:** `Sri Shankaracharya Technical Campus`
 
 ## 11. Run it locally
 
