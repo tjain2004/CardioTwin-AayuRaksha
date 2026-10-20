@@ -1,0 +1,16 @@
+{
+ "full": {
+  "operating_points": {
+   "moderate": 0.0472,
+   "high": 0.0891
+  },
+  "rule": "HIGH = lowest cut-off with <= 1 alert per patient-day (CV); MODERATE = highest cut-off with >= 85% sensitivity (CV). For evaluation; not clinically approved."
+ },
+ "watch": {
+  "operating_points": {
+   "moderate": 0.0362,
+   "high": 0.0759
+  },
+  "rule": "HIGH = lowest cut-off with <= 1 alert per patient-day (CV); MODERATE = highest cut-off with >= 85% sensitivity (CV). For evaluation; not clinically approved."
+ }
+}

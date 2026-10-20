@@ -1,0 +1,71 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.ipynb_checkpoints/
+.pytest_cache/
+*.egg-info/
+
+# Backend runtime state (database, audit logs, alerts)
+apps/backend/var/
+apps/backend/.runtime/
+*.db
+*.db-shm
+*.db-wal
+*.duckdb
+*.duckdb.wal
+
+# Node / web apps
+node_modules/
+dist/
+
+# Android / Wear OS
+.gradle/
+.kotlin/
+build/
+local.properties
+.idea/
+*.iml
+captures/
+*.apk
+
+# Raw PhysioNet downloads live in data/raw on your laptop and are not pushed (see src/build_structured_csv.py)
+data/raw/
+mimic4wdb/
+waveform_data/
+icare_data/
+lake/
+*.zip
+*.msi
+*.tgz
+
+# Secrets and OS clutter
+.env
+*.key
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Old files kept on the laptop only
+_archive*/
+
+# Documents the notebooks generate (doctor reports, training report)
+reports/
+docs/
+
+# Generated clinical datasets and intermediate files
+data/cleaned/
+data/merged/
+data/features/
+data/*.csv
+
+# Generated analysis outputs and patient replay records
+results/
+charts/shap_charts/baseline_panels/
+charts/shap_charts/patient_cards/
+charts/shap_charts/timelines/
+charts/shap_charts/waterfalls/
+apps/backend/data/replay/
+backend/data/replay/
+

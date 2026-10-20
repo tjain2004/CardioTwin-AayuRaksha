@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CardioTwin Virtual Watch</title>
+<style>
+:root{--bg:#f6f7f9;--card:#fff;--text:#1b1f24;--muted:#5d6670;--line:#dde1e6;--accent:#1f5fbf;--sim:#7a3fb0;--low:#2e7d32;--mod:#b26a00;--high:#c62828;--em:#b00020}
+@media (prefers-color-scheme:dark){:root{--bg:#111418;--card:#1a1f25;--text:#e8ecf0;--muted:#9aa4ae;--line:#2c333b;--accent:#6ea8ff;--sim:#c49bf0;--low:#66bb6a;--mod:#ffb74d;--high:#ef5350}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font:15px/1.45 system-ui,-apple-system,Segoe UI,Roboto,sans-serif}
+.banner{background:var(--sim);color:#fff;text-align:center;font-weight:700;letter-spacing:.08em;padding:6px 16px}
+main{max-width:1100px;margin:0 auto;padding:16px;display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(320px,1fr))}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px}
+h1{font-size:20px;margin:16px 16px 0;max-width:1100px}h2{font-size:15px;margin:0 0 12px;color:var(--muted);text-transform:uppercase;letter-spacing:.05em}
+label{display:block;font-size:13px;color:var(--muted);margin:8px 0 4px}input,select{width:100%;padding:8px;border:1px solid var(--line);border-radius:8px;background:var(--bg);color:var(--text);font:inherit}
+.row{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}button{border:0;border-radius:8px;padding:10px 14px;font:inherit;font-weight:600;cursor:pointer;background:var(--accent);color:#fff;min-height:44px}
+button.alt{background:transparent;color:var(--text);border:1px solid var(--line)}button.af{background:var(--mod)}button.fall{background:var(--high)}button:disabled{opacity:.45;cursor:default}
+.watch{width:220px;height:220px;border-radius:50%;margin:8px auto;background:#000;color:#fff;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;border:6px solid #333;padding:20px}
+.watch .g{font-size:34px}.watch .t{font-weight:700;font-size:18px}.watch .s{font-size:13px;opacity:.8}.watch .sim{font-size:10px;color:#c49bf0;letter-spacing:.1em;margin-top:6px}
+.vitals{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}.v{border:1px solid var(--line);border-radius:8px;padding:8px}.v b{display:block;font-size:22px}.v span{font-size:12px;color:var(--muted)}
+.pill{display:inline-block;border-radius:999px;padding:2px 10px;font-size:12px;font-weight:700;border:1px solid currentColor}
+.LOW{color:var(--low)}.MODERATE{color:var(--mod)}.HIGH{color:var(--high)}.EMERGENCY,.critical{color:var(--em)}
+ul{list-style:none;padding:0;margin:0}li{border-top:1px solid var(--line);padding:8px 0;font-size:14px}li small{color:var(--muted)}
+#log{font:12px ui-monospace,monospace;max-height:220px;overflow:auto;color:var(--muted);white-space:pre-wrap}
+.modal{position:fixed;inset:0;background:#b00020;color:#fff;display:none;flex-direction:column;justify-content:center;align-items:center;padding:24px;text-align:center;z-index:9}
+.modal.on{display:flex}.modal h3{font-size:30px;margin:8px 0}.modal p{max-width:560px}.modal a{display:inline-block;background:#fff;color:#b00020;font-weight:800;padding:14px 28px;border-radius:10px;text-decoration:none;font-size:20px;margin:12px}
+.modal small{opacity:.9;max-width:560px}
+</style>
+</head>
+<body>
+<div class="banner">SIMULATED · virtual watch replaying MIMIC-IV demo test data · not a medical device</div>
+<h1>CardioTwin virtual watch</h1>
+<main>
+  <section class="card" aria-labelledby="h-ctl">
+    <h2 id="h-ctl">Controls</h2>
+    <div id="loginBox">
+      <label for="u">Username</label><input id="u" value="dr.demo" autocomplete="username">
+      <label for="pw">Password</label><input id="pw" type="password" value="demo1234" autocomplete="current-password">
+      <div class="row"><button id="loginBtn">Sign in</button></div>
+    </div>
+    <div id="simBox" hidden>
+      <label for="pt">Test patient</label><select id="pt"></select>
+      <label for="speed">Speed (simulated seconds per real second)</label>
+      <select id="speed"><option value="60">60 (1 h per minute)</option><option value="360" selected>360 (1 h per 10 s)</option><option value="1800">1800 (1 h per 2 s)</option></select>
+      <div class="row"><button id="startBtn">Start watch</button><button id="stopBtn" class="alt" disabled>Stop</button></div>
+      <div class="row"><button id="afBtn" class="af" disabled>Trigger AF</button><button id="afStopBtn" class="alt" disabled>Stop AF</button><button id="fallBtn" class="fall" disabled>Trigger fall</button></div>
+      <div class="row"><button id="okBtn" class="alt" disabled>Watch: I'm OK</button><button id="helpBtn" class="alt" disabled>Watch: I need help</button></div>
+      <p id="simInfo" style="color:var(--muted);font-size:13px"></p>
+    </div>
+  </section>
+  <section class="card" aria-labelledby="h-w">
+    <h2 id="h-w">Watch face</h2>
+    <div class="watch" role="status" aria-live="polite"><div class="g" id="wg">⌚</div><div class="t" id="wt">Not started</div><div class="s" id="ws"></div><div class="sim">SIMULATED</div></div>
+    <p>Phone: <span id="state" class="pill">–</span> <span id="msg" style="color:var(--muted);font-size:14px"></span></p>
+    <div class="vitals"><div class="v"><span>Heart rate</span><b id="vhr">–</b></div><div class="v"><span>SpO₂</span><b id="vsp">–</b></div><div class="v"><span>Breathing</span><b id="vrr">–</b></div>
+    <div class="v"><span>HRV (synthetic)</span><b id="vhrv">–</b></div><div class="v"><span>Rhythm</span><b id="vrh" style="font-size:16px">–</b></div><div class="v"><span>Sim time (UTC)</span><b id="vt" style="font-size:14px">–</b></div></div>
+  </section>
+  <section class="card" aria-labelledby="h-a">
+    <h2 id="h-a">Alerts</h2><ul id="alerts"><li><small>No alerts yet.</small></li></ul>
+    <h2 style="margin-top:16px">Log</h2><div id="log"></div>
+  </section>
+</main>
+<div class="modal" id="modal" role="alertdialog" aria-modal="true" aria-live="assertive" aria-labelledby="mt">
+  <div style="font-size:48px">⚠</div><h3 id="mt">Emergency warning</h3><p id="mr"></p><ul id="mg" style="max-width:560px;text-align:left"></ul>
+  <a id="mcall" href="tel:112">Call 112</a>
+  <small id="mn">This opens your phone's dialler. You press Call yourself. CardioTwin does not contact emergency services. SIMULATED.</small>
+  <div class="row"><button class="alt" style="color:#fff;border-color:#fff" id="mack">I have seen this</button></div>
+</div>
+<script>
+const $=id=>document.getElementById(id);let token=null,session=null,ws=null,pid=null,fallAlert=null,openAlerts={};
+const log=t=>{$("log").textContent=new Date().toLocaleTimeString()+"  "+t+"\n"+$("log").textContent.slice(0,6000)};
+async function api(path,opt={}){const r=await fetch(path,{...opt,headers:{"Content-Type":"application/json",...(token?{Authorization:"Bearer "+token}:{}),...(opt.headers||{})}});const j=await r.json().catch(()=>({}));if(!r.ok)throw new Error(j.detail||r.status);return j}
+$("loginBtn").onclick=async()=>{try{const j=await api("/api/auth/login",{method:"POST",body:JSON.stringify({username:$("u").value,password:$("pw").value})});token=j.access_token;
+ const ps=await api("/api/patients");$("pt").innerHTML=ps.map(p=>`<option value="${p.patient_id}">${p.patient_id}${p.replay_stay_id==37093652?" (event in test window)":""}</option>`).join("");
+ if(ps.find(p=>p.patient_id=="stay-37093652"))$("pt").value="stay-37093652";$("loginBox").hidden=true;$("simBox").hidden=false;log("signed in as "+j.display_name)}catch(e){log("login failed: "+e.message)}};
+function setRunning(on){$("startBtn").disabled=on;$("pt").disabled=on;["stopBtn","afBtn","afStopBtn","fallBtn"].forEach(b=>$(b).disabled=!on)}
+$("startBtn").onclick=async()=>{pid=$("pt").value;connect(pid);try{session=await api("/api/simulator/sessions",{method:"POST",body:JSON.stringify({patient_id:pid,speed:+$("speed").value})});setRunning(true);
+ $("simInfo").textContent=session.basis;log("virtual watch started: backfilled "+session.readings_sent+" readings")}catch(e){log("start failed: "+e.message)}};
+$("stopBtn").onclick=async()=>{if(!session)return;await api(`/api/simulator/sessions/${session.session_id}`,{method:"DELETE"});setRunning(false);log("stopped")};
+const trig=ev=>async()=>{try{const j=await api(`/api/simulator/sessions/${session.session_id}/trigger`,{method:"POST",body:JSON.stringify({event:ev})});log("SIMULATED "+ev+" at "+j.sim_time)}catch(e){log(e.message)}};
+$("afBtn").onclick=trig("af");$("afStopBtn").onclick=trig("af_stop");$("fallBtn").onclick=trig("fall");
+const answer=a=>async()=>{if(!fallAlert)return;try{const j=await api(`/api/alerts/${fallAlert}/fall-response`,{method:"POST",body:JSON.stringify({answer:a})});log("fall check: "+j.state)}catch(e){log(e.message)}};
+$("okBtn").onclick=answer("im_ok");$("helpBtn").onclick=answer("need_help");
+$("mack").onclick=async()=>{const id=$("modal").dataset.alert;$("modal").classList.remove("on");if(id)try{await api(`/api/alerts/${id}/acknowledge`,{method:"POST",body:"{}"})}catch(e){log(e.message)}};
+function face(w){if(!w)return;$("wg").textContent=w.icon_glyph||"⌚";$("wt").textContent=w.title||"";$("ws").textContent=w.text||(w.countdown_seconds?w.countdown_seconds+" s to answer":"")}
+function renderAlerts(){const a=Object.values(openAlerts).sort((x,y)=>y.created_at.localeCompare(x.created_at));$("alerts").innerHTML=a.length?a.map(x=>`<li><span class="pill ${x.severity=="critical"?"critical":x.severity=="high"?"HIGH":"MODERATE"}">${x.kind}</span> <b>${x.title||""}</b> <small>${x.state} · ${x.created_at.slice(11,19)}</small><br><small>${x.message||""}</small></li>`).join(""):"<li><small>No alerts yet.</small></li>"}
+function connect(p){if(ws)ws.close();ws=new WebSocket(`${location.protocol=="https:"?"wss":"ws"}://${location.host}/ws/live/${p}?token=${token}`);
+ ws.onmessage=e=>{const m=JSON.parse(e.data);
+  if(m.type=="hello"){(m.open_alerts||[]).forEach(a=>openAlerts[a.alert_id]=a);renderAlerts()}
+  if(m.type=="status"){const v=m.views||{},pp=v.phone_patient||{},f=(m.features||{}).signals||{};face(v.watch);$("state").textContent=m.display_state||m.status;$("state").className="pill "+(pp.screen||"");$("msg").textContent=pp.message||"";
+   const last=k=>f[k]&&f[k].last?f[k].last.value:null;$("vhr").textContent=last("hr")??"–";$("vsp").textContent=last("spo2")??"–";$("vrr").textContent=last("resp")??"–";$("vhrv").textContent=last("hrv_rmssd")??"–";
+   $("vrh").textContent=(f.rhythm&&f.rhythm.last)||"–";$("vt").textContent=(m.evaluated_at||"").replace("T"," ").slice(0,16)}
+  if(m.type=="alert"||m.type=="emergency"){const a=m.alert;if(a.state=="RESOLVED")delete openAlerts[a.alert_id];else openAlerts[a.alert_id]=a;renderAlerts();log(`${m.type.toUpperCase()} ${a.kind} ${a.state}: ${a.title}`);
+   if(a.kind=="FALL"){fallAlert=a.state=="AWAITING_RESPONSE"?a.alert_id:null;$("okBtn").disabled=$("helpBtn").disabled=!fallAlert;if(m.watch)face(m.watch)}
+   if(m.type=="emergency"&&m.modal){const md=m.modal;$("mt").textContent=md.title+(m.simulated?" (SIMULATED)":"");$("mr").textContent=md.reason||"";$("mg").innerHTML=(md.instructions||[]).map(i=>`<li>${i}</li>`).join("");
+    const c=(md.actions||[]).find(x=>x.id=="call_emergency");if(c&&c.uri){$("mcall").href=c.uri;$("mcall").textContent=c.label}$("modal").dataset.alert=a.alert_id;$("modal").classList.add("on");$("mcall").focus()}}
+  if(m.type=="simulator")log("simulator: "+(m.event||"")+(m.label?" ["+m.label+"]":""))};
+ ws.onclose=()=>log("live connection closed")}
+</script>
+</body>
+</html>

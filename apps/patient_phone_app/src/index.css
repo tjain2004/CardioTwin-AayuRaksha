@@ -1,0 +1,65 @@
+@import "tailwindcss";
+
+/* Red and white theme, clean and minimal: white cards with soft shadows on an off-white page, deep red for actions and
+   the one featured card. Light only, so the app looks the same on every phone and laptop.
+   Risk tiers keep their own colours (green, amber, orange, deep red) so a tier never reads as plain branding. */
+:root {
+  --bg: #F7F3F3; --surface: #FFFFFF; --sunk: #F7EFEF; --ink: #1F1214; --muted: #85716F; --line: #EFE3E3;
+  --accent: #B71C2B; --accent-strong: #7A0E18; --accent-soft: #FBECEC; --on-accent: #FFFFFF;
+  --low: #2E7D4F; --mod: #A86400; --high: #D9480F; --emg: #8E0B14; --on-emg: #FFFFFF;
+  --low-soft: #E8F4EC; --mod-soft: #FBF2E1; --high-soft: #FDEDE4; --emg-soft: #FAE3E5;
+  --sim: #A86400;
+  --shadow: 0 1px 2px rgba(90, 15, 20, .04), 0 8px 24px rgba(90, 15, 20, .06);
+  --radius: 22px;
+  color-scheme: light;
+}
+
+@theme {
+  --font-sans: "Public Sans", "Segoe UI", system-ui, sans-serif;
+  --font-display: "Schibsted Grotesk", "Segoe UI", system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, "Cascadia Mono", Consolas, monospace;
+  --color-bg: var(--bg);
+  --color-surface: var(--surface);
+  --color-sunk: var(--sunk);
+  --color-ink: var(--ink);
+  --color-muted: var(--muted);
+  --color-line: var(--line);
+  --color-accent: var(--accent);
+  --color-accent-strong: var(--accent-strong);
+  --color-accent-soft: var(--accent-soft);
+  --color-on-accent: var(--on-accent);
+  --color-low: var(--low);
+  --color-mod: var(--mod);
+  --color-high: var(--high);
+  --color-emg: var(--emg);
+  --color-on-emg: var(--on-emg);
+  --color-low-soft: var(--low-soft);
+  --color-mod-soft: var(--mod-soft);
+  --color-high-soft: var(--high-soft);
+  --color-emg-soft: var(--emg-soft);
+  --color-sim: var(--sim);
+}
+
+html, body { background: var(--bg); color: var(--ink); }
+body { font-family: var(--font-sans); -webkit-font-smoothing: antialiased; }
+.card { background: var(--surface); border: 1px solid transparent; border-radius: var(--radius); box-shadow: var(--shadow); }
+.eyebrow { font-size: 12.5px; font-weight: 600; color: var(--muted); }
+.tag { font-family: var(--font-sans); font-size: 10.5px; font-weight: 700; letter-spacing: .05em; padding: 2px 8px; border-radius: 999px; text-transform: uppercase; white-space: nowrap; }
+.btn { display: inline-flex; align-items: center; justify-content: center; gap: 6px; min-height: 38px; padding: 0 16px; border-radius: 999px; border: 1px solid var(--line); background: var(--surface); color: var(--ink); font-weight: 600; font-size: 14px; cursor: pointer; transition: background .15s, color .15s, border-color .15s; }
+.btn:hover { border-color: var(--accent); color: var(--accent); }
+.btn:disabled { opacity: .5; cursor: not-allowed; }
+.btn-primary { background: var(--accent); border-color: var(--accent); color: var(--on-accent); font-weight: 600; }
+.btn-primary:hover { background: var(--accent-strong); border-color: var(--accent-strong); color: var(--on-accent); }
+.btn-ink { background: var(--ink); border-color: var(--ink); color: var(--surface); }
+.btn-emg { background: var(--emg); border-color: var(--emg); color: var(--on-emg); }
+.btn-emg:hover { color: var(--on-emg); }
+.input { min-height: 40px; padding: 0 12px; border-radius: 12px; border: 1px solid var(--line); background: var(--surface); color: var(--ink); font-size: 14px; }
+.input:focus { border-color: var(--accent); outline: none; }
+.num { font-family: var(--font-mono); font-variant-numeric: tabular-nums; }
+.brand-bar { background: linear-gradient(135deg, #C8283A 0%, var(--accent) 45%, var(--accent-strong) 100%); color: var(--on-accent); }
+/* filter chips, as in the reference: a scrolling row, the active one filled deep red */
+.chips { display: flex; gap: 8px; overflow-x: auto; scrollbar-width: none; padding: 2px; }
+.chips::-webkit-scrollbar { display: none; }
+.chip { flex: none; min-height: 38px; padding: 0 16px; border-radius: 999px; font-size: 13.5px; font-weight: 600; background: var(--surface); color: var(--muted); box-shadow: var(--shadow); }
+.chip[aria-selected="true"] { background: var(--accent-strong); color: var(--on-accent); }
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }

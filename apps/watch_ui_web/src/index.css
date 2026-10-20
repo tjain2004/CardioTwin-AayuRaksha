@@ -1,0 +1,103 @@
+/* Red and white page around the watch, clean and minimal like the phone app and doctor dashboard. The watch itself stays
+   a dark OLED screen (as on a real Wear OS watch) with the same red accent; its colours are set on .screen below. */
+:root {
+  --bg: #F7F3F3; --surface: #FFFFFF; --sunk: #F7EFEF; --line: #EFE3E3;
+  --ink: #1F1214; --ink2: #85716F; --ink3: #A8999A;
+  --accent: #B71C2B; --accent-strong: #7A0E18; --accent-soft: #FBECEC;
+  --low: #2E7D4F; --mod: #A86400; --high: #D9480F; --emg: #8E0B14; --on-emg: #FFFFFF;
+  --page: #F7F3F3;
+  --shadow: 0 1px 2px rgba(90, 15, 20, .04), 0 8px 24px rgba(90, 15, 20, .06);
+  --watch: min(86vw, 390px);
+  --mono: "JetBrains Mono", ui-monospace, "Cascadia Mono", Consolas, monospace;
+  --display: "Schibsted Grotesk", "Segoe UI", system-ui, sans-serif;
+  color-scheme: light;
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; background: var(--page); color: var(--ink); }
+body { font-family: "Public Sans", "Segoe UI", system-ui, sans-serif; -webkit-font-smoothing: antialiased; }
+button { font: inherit; color: inherit; }
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+/* ---------- page around the watch ---------- */
+.page { min-height: 100vh; display: flex; flex-direction: column; align-items: center; padding: 12px 16px 32px; gap: 14px; }
+.topbar { width: 100%; max-width: 980px; display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+.topbar img { width: 28px; height: 28px; }
+.brand { font-family: var(--display); font-weight: 800; font-size: 18px; }
+.muted { color: var(--ink2); }
+.small { font-size: 12.5px; }
+.simbar { width: 100%; max-width: 980px; display: flex; gap: 10px; align-items: center; border-radius: 999px; padding: 8px 16px;
+  background: var(--surface); box-shadow: var(--shadow); font-size: 13px; line-height: 1.4; color: var(--ink2); }
+.simbar .sim { font-size: 10.5px; padding: 2px 9px; border-radius: 999px; letter-spacing: .05em; color: #fff; flex: none; }
+.layout { width: 100%; max-width: 980px; display: grid; grid-template-columns: minmax(0, 1fr) 300px; gap: 20px; align-items: start; }
+@media (max-width: 820px) { .layout { grid-template-columns: minmax(0, 1fr); } }
+.stage { display: flex; flex-direction: column; align-items: center; gap: 12px; }
+.panel { background: var(--surface); border: 0; border-radius: 22px; padding: 20px; box-shadow: var(--shadow); display: flex; flex-direction: column; gap: 10px; }
+.panel h2 { font-family: var(--display); font-size: 18px; margin: 0; }
+.brand b { color: var(--accent); }
+.panel details summary { cursor: pointer; font-weight: 600; color: var(--ink); }
+.row { display: flex; gap: 8px; flex-wrap: wrap; align-items: center; }
+.btn { display: inline-flex; align-items: center; justify-content: center; gap: 6px; min-height: 34px; padding: 0 13px; border-radius: 999px;
+  border: 1px solid var(--line); background: var(--surface); color: var(--ink); font-weight: 600; font-size: 13.5px; cursor: pointer; }
+.btn:hover:not(:disabled) { border-color: var(--accent); }
+.btn:disabled { opacity: .45; cursor: not-allowed; }
+.btn-primary { background: var(--accent); border-color: var(--accent); color: #fff; font-weight: 600; }
+.btn-primary:hover:not(:disabled) { background: var(--accent-strong); border-color: var(--accent-strong); }
+.btn-emg { background: var(--emg); border-color: var(--emg); color: var(--on-emg); }
+.input { min-height: 38px; padding: 0 12px; border-radius: 12px; border: 1px solid var(--line); background: var(--surface); color: var(--ink); font-size: 13.5px; width: 100%; }
+.err { background: #FAE3E5; color: var(--emg); border-radius: 8px; padding: 6px 10px; font-size: 12.5px; }
+.kv { font-family: var(--mono); font-size: 12px; color: var(--ink2); }
+.navrow { display: flex; align-items: center; gap: 12px; }
+.arrow { width: 42px; height: 42px; border-radius: 50%; border: 0; background: var(--surface); box-shadow: var(--shadow); cursor: pointer; font-size: 18px; color: var(--accent); }
+.arrow:disabled { opacity: .4; cursor: default; }
+.dots { display: flex; gap: 7px; }
+.dot { width: 9px; height: 9px; border-radius: 50%; background: var(--line); border: 0; padding: 0; cursor: pointer; }
+.dot.on { background: var(--accent); }
+.pagename { font-size: 12.5px; font-weight: 600; color: var(--ink2); min-width: 9em; text-align: center; }
+
+/* ---------- the watch ---------- */
+.watch { position: relative; width: calc(var(--watch) + 36px); height: calc(var(--watch) + 36px); border-radius: 50%;
+  background: radial-gradient(circle at 30% 25%, #4a3a3c, #1d1517 60%, #0f0a0b); padding: 18px;
+  box-shadow: 0 24px 60px rgba(90,15,20,.28), inset 0 2px 3px rgba(255,255,255,.12); }
+.crown { position: absolute; right: -9px; top: 50%; width: 16px; height: 46px; margin-top: -23px; border-radius: 6px;
+  background: linear-gradient(90deg, #7A0E18, #C8283A); border: 0; cursor: pointer; box-shadow: 0 2px 6px rgba(0,0,0,.5); }
+.screen { position: relative; width: var(--watch); height: var(--watch); border-radius: 50%; overflow: hidden; background: var(--bg);
+  touch-action: pan-y; user-select: none; container-type: size; color: var(--ink);
+  /* dark watch screen, red accent */
+  --bg: #050505; --surface: #1B1617; --sunk: #241D1E; --line: #3A2E30;
+  --ink: #F3ECEC; --ink2: #BFAFB0; --ink3: #8E7E80;
+  --accent: #F0485A; --accent-soft: #3B1418;
+  --low: #5BC08A; --mod: #E2A746; --high: #F2864F; --emg: #E0283F; }
+/* All sizes inside the screen scale with the watch: 1cqw is 1% of the screen width (390 px wide: 3.9 px). */
+.face { position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center;
+  padding: 13cqw 12cqw; gap: 1.2cqw; }
+.face.scroll { justify-content: flex-start; overflow-y: auto; padding-top: 14cqw; padding-bottom: 16cqw; scrollbar-width: none; }
+.face.scroll::-webkit-scrollbar { display: none; }
+.ring { position: absolute; inset: 1.2cqw; border-radius: 50%; border: 3.6cqw solid var(--ink3); pointer-events: none; }
+.eyebrow { font-family: var(--mono); font-size: 2.8cqw; letter-spacing: .3cqw; text-transform: uppercase; color: var(--ink3); }
+.sim { display: inline-block; font-family: var(--mono); font-weight: 700; font-size: 2.6cqw; background: var(--mod); color: var(--bg);
+  border-radius: 1cqw; padding: .2cqw 1.4cqw; letter-spacing: .1cqw; }
+.t-title { font-family: var(--display); font-weight: 700; font-size: 5.4cqw; line-height: 1.15; }
+.t-body { font-size: 3.6cqw; color: var(--ink2); line-height: 1.3; }
+.t-tiny { font-size: 2.7cqw; color: var(--ink3); line-height: 1.3; }
+.big { font-family: var(--display); font-weight: 800; font-size: 13cqw; line-height: 1; }
+.metrics { display: flex; justify-content: space-around; width: 100%; margin-top: 1cqw; }
+.metric { display: flex; flex-direction: column; align-items: center; }
+.metric b { font-size: 5cqw; font-weight: 600; }
+.metric small { font-size: 2.5cqw; color: var(--ink3); }
+.chip { width: 100%; display: flex; align-items: center; gap: 2.5cqw; text-align: left; background: var(--surface); border: 0; border-radius: 8cqw;
+  padding: 2.2cqw 4cqw; cursor: pointer; }
+.chip .g { font-size: 5cqw; }
+.chip .l { font-weight: 600; font-size: 3.7cqw; }
+.chip .s { font-size: 3cqw; color: var(--ink2); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.chip.secondary { background: var(--sunk); justify-content: center; font-size: 3.4cqw; }
+.card { width: 100%; display: flex; gap: 2cqw; text-align: left; background: var(--surface); border: 0; border-radius: 4cqw; padding: 2.6cqw 3cqw; cursor: pointer; }
+.card .bar { width: 1cqw; border-radius: 1cqw; flex: none; }
+.card .ttl { font-weight: 600; font-size: 3.7cqw; }
+.card .msg { font-size: 3.1cqw; color: var(--ink2); display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
+.wbtn { border: 0; border-radius: 999px; font-weight: 700; cursor: pointer; font-size: 4cqw; min-height: 11cqw; padding: 0 5cqw; }
+.round { width: 16cqw; height: 16cqw; border-radius: 50%; border: 0; font-weight: 700; font-size: 3.4cqw; line-height: 1.1; cursor: pointer; }
+.countdown { position: absolute; inset: 0; width: 100%; height: 100%; transform: rotate(-90deg); pointer-events: none; }
+.emergency { background: var(--emg); color: var(--on-emg); }
+.emergency .t-body, .emergency .t-tiny { color: rgba(255,255,255,.88); }
+.toast { position: absolute; left: 20%; right: 20%; bottom: 17%; background: rgba(0,0,0,.75); color: #fff; border-radius: 4cqw; padding: 2cqw 3cqw;
+  font-size: 3cqw; text-align: center; pointer-events: none; }

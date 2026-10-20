@@ -1,0 +1,13 @@
+# tested with Python 3.13.16 (same model library versions as notebook 05; the saved models need them to load)
+scikit-learn==1.9.1
+lightgbm==4.7.0
+xgboost==3.4.1
+joblib>=1.6.0
+pandas>=2.2
+numpy>=1.26
+matplotlib>=3.8
+shap>=0.54.1
+pyyaml>=6.0
+pydantic>=2.5
+pytest>=8.0
+ipywidgets>=8.0      # optional: interactive panel (section 16)

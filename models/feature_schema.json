@@ -1,0 +1,614 @@
+{
+ "full": {
+  "features": [
+   {
+    "name": "hr_mean6h",
+    "position": 0,
+    "dtype": "float",
+    "source": "watch",
+    "train_missing_%": 0.0
+   },
+   {
+    "name": "gcs_total",
+    "position": 1,
+    "dtype": "float",
+    "source": "hospital_only",
+    "train_missing_%": 5.6
+   },
+   {
+    "name": "weight_kg",
+    "position": 2,
+    "dtype": "float",
+    "source": "home_device",
+    "train_missing_%": 4.8
+   },
+   {
+    "name": "hours_since_icu_admit",
+    "position": 3,
+    "dtype": "float",
+    "source": "hospital_only",
+    "train_missing_%": 0.0
+   },
+   {
+    "name": "ascvd_10y_risk",
+    "position": 4,
+    "dtype": "float",
+    "source": "phone_profile",
+    "train_missing_%": 0.0
+   },
+   {
+    "name": "age_at_admit",
+    "position": 5,
+    "dtype": "float",
+    "source": "phone_profile",
+    "train_missing_%": 0.0
+   },
+   {
+    "name": "hours_since_ecg",
+    "position": 6,
+    "dtype": "float",
+    "source": "hospital_only",
+    "train_missing_%": 13.0
+   },
+   {
+    "name": "ecg_hr_bpm",
+    "position": 7,
+    "dtype": "float",
+    "source": "hospital_only",
+    "train_missing_%": 13.0
+   },
+   {
+    "name": "lab_potassium",
+    "position": 8,
+    "dtype": "float",
+    "source": "hospital_only",
+    "train_missing_%": 9.1
+   },
+   {
+    "name": "lab_platelets",
+    "position": 9,
+    "dtype": "float",
+    "source": "hospital_only",
+    "train_missing_%": 13.0
+   },
+   {
+    "name": "bmi",
+    "position": 10,
+    "dtype": "float",
+    "source": "phone_profile",
+    "train_missing_%": 0.0
+   },
+   {
+    "name": "lab_calcium",
+    "position": 11,
+    "dtype": "float",
+    "source": "hospital_only",
+    "train_missing_%": 13.5
+   },
+   {
+    "name": "hr_lag1",
+    "position": 12,
+    "dtype": "float",
+    "source": "watch",
+    "train_missing_%": 2.3
+   },
+   {
+    "name": "news_score_min6h",
+    "position": 13,
+    "dtype": "float",
+    "source": "home_device",
+    "train_missing_%": 0.0
+   },
+   {
+    "name": "shock_index_lag1",
+    "position": 14,
+    "dtype": "float",
+    "source": "home_device",
+    "train_missing_%": 5.7
+   },
+   {
+    "name": "hr_sd_24h",
+    "position": 15,
+    "dtype": "float",
+    "source": "watch",
+    "train_missing_%": 2.3
+   },
+   {
+    "name": "sbp_delta6h",
+    "position": 16,
+    "dtype": "float",
+    "source": "home_device",
+    "train_missing_%": 16.5
+   },
+   {
+    "name": "smoker",
+    "position": 17,
+    "dtype": "float",
+    "source": "phone_profile",
+    "train_missing_%": 0.0
+   },
+   {
+    "name": "lab_log_bun",
+    "position": 18,
+    "dtype": "float",
+    "source": "hospital_only",
+    "train_missing_%": 9.3
+   },
+   {
+    "name": "map_min6h",
+    "position": 19,
+    "dtype": "float",
+    "source": "home_device",
+    "train_missing_%": 2.9
+   },
+   {
+    "name": "r_amp_mv",
+    "position": 20,
+    "dtype": "float",
+    "source": "hospital_only",
+    "train_missing_%": 13.0
+   },
+   {
+    "name": "map_max6h",
+    "position": 21,
+    "dtype": "float",
+    "source": "home_device",
+    "train_missing_%": 2.9
+   },
+   {
+    "name": "qrs_ms",
+    "position": 22,
+    "dtype": "float",
+    "source": "hospital_only",
+    "train_missing_%": 19.0
+   },
+   {
+    "name": "temp_c",
+    "position": 23,
+    "dtype": "float",
+    "source": "home_device",
+    "train_missing_%": 3.5
+   },
+   {
+    "name": "rr_min6h",
+    "position": 24,
+    "dtype": "float",
+    "source": "watch",
+    "train_missing_%": 0.0
+   },
+   {
+    "name": "map_vs_baseline",
+    "position": 25,
+    "dtype": "float",
+    "source": "home_device",
+    "train_missing_%": 3.5
+   },
+   {
+    "name": "shock_index_mean6h",
+    "position": 26,
+    "dtype": "float",
+    "source": "home_device",
+    "train_missing_%": 2.9
+   },
+   {
+    "name": "rr_lag1",
+    "position": 27,
+    "dtype": "float",
+    "source": "watch",
+    "train_missing_%": 2.3
+   },
+   {
+    "name": "lab_chg_glucose",
+    "position": 28,
+    "dtype": "float",
+    "source": "hospital_only",
+    "train_missing_%": 29.1
+   },
+   {
+    "name": "total_chol",
+    "position": 29,
+    "dtype": "float",
+    "source": "phone_profile",
+    "train_missing_%": 74.6
+   },
+   {
+    "name": "has_bled_partial",
+    "position": 30,
+    "dtype": "float",
+    "source": "phone_profile",
+    "train_missing_%": 0.0
+   },
+   {
+    "name": "shock_index",
+    "position": 31,
+    "dtype": "float",
+    "source": "home_device",
+    "train_missing_%": 3.5
+   },
+   {
+    "name": "sbp_max6h",
+    "position": 32,
+    "dtype": "float",
+    "source": "home_device",
+    "train_missing_%": 2.9
+   },
+   {
+    "name": "rr_mean6h",
+    "position": 33,
+    "dtype": "float",
+    "source": "watch",
+    "train_missing_%": 0.0
+   },
+   {
+    "name": "log_sdnn_ms",
+    "position": 34,
+    "dtype": "float",
+    "source": "hospital_only",
+    "train_missing_%": 13.0
+   },
+   {
+    "name": "height_in",
+    "position": 35,
+    "dtype": "float",
+    "source": "phone_profile",
+    "train_missing_%": 0.0
+   },
+   {
+    "name": "lab_chg_wbc",
+    "position": 36,
+    "dtype": "float",
+    "source": "hospital_only",
+    "train_missing_%": 30.7
+   },
+   {
+    "name": "weight_change_72h",
+    "position": 37,
+    "dtype": "float",
+    "source": "home_device",
+    "train_missing_%": 6.8
+   },
+   {
+    "name": "news_score_mean6h",
+    "position": 38,
+    "dtype": "float",
+    "source": "home_device",
+    "train_missing_%": 0.0
+   },
+   {
+    "name": "hba1c",
+    "position": 39,
+    "dtype": "float",
+    "source": "phone_profile",
+    "train_missing_%": 76.7
+   }
+  ],
+  "missing_values": "left as NaN; tree models handle them natively"
+ },
+ "watch": {
+  "features": [
+   {
+    "name": "bmi",
+    "position": 0,
+    "dtype": "float",
+    "source": "phone_profile",
+    "train_missing_%": 0.0
+   },
+   {
+    "name": "hr_mean6h",
+    "position": 1,
+    "dtype": "float",
+    "source": "watch",
+    "train_missing_%": 0.0
+   },
+   {
+    "name": "age_at_admit",
+    "position": 2,
+    "dtype": "float",
+    "source": "phone_profile",
+    "train_missing_%": 0.0
+   },
+   {
+    "name": "hr_sd_24h",
+    "position": 3,
+    "dtype": "float",
+    "source": "watch",
+    "train_missing_%": 2.3
+   },
+   {
+    "name": "hr_lag1",
+    "position": 4,
+    "dtype": "float",
+    "source": "watch",
+    "train_missing_%": 2.3
+   },
+   {
+    "name": "smoker",
+    "position": 5,
+    "dtype": "float",
+    "source": "phone_profile",
+    "train_missing_%": 0.0
+   },
+   {
+    "name": "has_bled_partial",
+    "position": 6,
+    "dtype": "float",
+    "source": "phone_profile",
+    "train_missing_%": 0.0
+   },
+   {
+    "name": "ascvd_10y_risk",
+    "position": 7,
+    "dtype": "float",
+    "source": "phone_profile",
+    "train_missing_%": 0.0
+   },
+   {
+    "name": "spo2_min6h",
+    "position": 8,
+    "dtype": "float",
+    "source": "watch",
+    "train_missing_%": 0.1
+   },
+   {
+    "name": "n_active_drugs",
+    "position": 9,
+    "dtype": "float",
+    "source": "phone_profile",
+    "train_missing_%": 0.0
+   },
+   {
+    "name": "tachy_burden_24h",
+    "position": 10,
+    "dtype": "float",
+    "source": "watch",
+    "train_missing_%": 0.0
+   },
+   {
+    "name": "hr_delta6h",
+    "position": 11,
+    "dtype": "float",
+    "source": "watch",
+    "train_missing_%": 12.6
+   },
+   {
+    "name": "rr_lag1",
+    "position": 12,
+    "dtype": "float",
+    "source": "watch",
+    "train_missing_%": 2.3
+   },
+   {
+    "name": "non_hdl",
+    "position": 13,
+    "dtype": "float",
+    "source": "phone_profile",
+    "train_missing_%": 74.6
+   },
+   {
+    "name": "hba1c",
+    "position": 14,
+    "dtype": "float",
+    "source": "phone_profile",
+    "train_missing_%": 76.7
+   },
+   {
+    "name": "spo2_mean6h",
+    "position": 15,
+    "dtype": "float",
+    "source": "watch",
+    "train_missing_%": 0.1
+   },
+   {
+    "name": "dbp_outpatient",
+    "position": 16,
+    "dtype": "float",
+    "source": "phone_profile",
+    "train_missing_%": 0.0
+   },
+   {
+    "name": "rr_night_minus_day_24h",
+    "position": 17,
+    "dtype": "float",
+    "source": "watch",
+    "train_missing_%": 17.9
+   },
+   {
+    "name": "rr_mean6h",
+    "position": 18,
+    "dtype": "float",
+    "source": "watch",
+    "train_missing_%": 0.0
+   },
+   {
+    "name": "egfr",
+    "position": 19,
+    "dtype": "float",
+    "source": "phone_profile",
+    "train_missing_%": 0.0
+   },
+   {
+    "name": "rr_max6h",
+    "position": 20,
+    "dtype": "float",
+    "source": "watch",
+    "train_missing_%": 0.0
+   },
+   {
+    "name": "weight_lbs",
+    "position": 21,
+    "dtype": "float",
+    "source": "phone_profile",
+    "train_missing_%": 0.0
+   },
+   {
+    "name": "rr_delta6h",
+    "position": 22,
+    "dtype": "float",
+    "source": "watch",
+    "train_missing_%": 12.6
+   },
+   {
+    "name": "height_in",
+    "position": 23,
+    "dtype": "float",
+    "source": "phone_profile",
+    "train_missing_%": 0.0
+   },
+   {
+    "name": "days_since_last_discharge",
+    "position": 24,
+    "dtype": "float",
+    "source": "phone_profile",
+    "train_missing_%": 0.0
+   },
+   {
+    "name": "rhythm_unknown",
+    "position": 25,
+    "dtype": "float",
+    "source": "watch",
+    "train_missing_%": 0.0
+   },
+   {
+    "name": "rr_min6h",
+    "position": 26,
+    "dtype": "float",
+    "source": "watch",
+    "train_missing_%": 0.0
+   },
+   {
+    "name": "hr_max6h",
+    "position": 27,
+    "dtype": "float",
+    "source": "watch",
+    "train_missing_%": 0.0
+   },
+   {
+    "name": "total_chol",
+    "position": 28,
+    "dtype": "float",
+    "source": "phone_profile",
+    "train_missing_%": 74.6
+   },
+   {
+    "name": "log_prior_admissions",
+    "position": 29,
+    "dtype": "float",
+    "source": "phone_profile",
+    "train_missing_%": 0.0
+   },
+   {
+    "name": "sbp_outpatient",
+    "position": 30,
+    "dtype": "float",
+    "source": "phone_profile",
+    "train_missing_%": 0.0
+   },
+   {
+    "name": "hr",
+    "position": 31,
+    "dtype": "float",
+    "source": "watch",
+    "train_missing_%": 0.0
+   },
+   {
+    "name": "tc_hdl_ratio",
+    "position": 32,
+    "dtype": "float",
+    "source": "phone_profile",
+    "train_missing_%": 74.6
+   },
+   {
+    "name": "gender_male",
+    "position": 33,
+    "dtype": "float",
+    "source": "phone_profile",
+    "train_missing_%": 0.0
+   },
+   {
+    "name": "spo2_lag1",
+    "position": 34,
+    "dtype": "float",
+    "source": "watch",
+    "train_missing_%": 2.5
+   },
+   {
+    "name": "triglycerides",
+    "position": 35,
+    "dtype": "float",
+    "source": "phone_profile",
+    "train_missing_%": 68.7
+   },
+   {
+    "name": "spo2_max6h",
+    "position": 36,
+    "dtype": "float",
+    "source": "watch",
+    "train_missing_%": 0.1
+   },
+   {
+    "name": "hr_trend_24h",
+    "position": 37,
+    "dtype": "float",
+    "source": "watch",
+    "train_missing_%": 34.8
+   },
+   {
+    "name": "rr_vs_baseline",
+    "position": 38,
+    "dtype": "float",
+    "source": "watch",
+    "train_missing_%": 0.0
+   },
+   {
+    "name": "ix_bleeding",
+    "position": 39,
+    "dtype": "float",
+    "source": "phone_profile",
+    "train_missing_%": 0.0
+   },
+   {
+    "name": "spo2",
+    "position": 40,
+    "dtype": "float",
+    "source": "watch",
+    "train_missing_%": 0.2
+   },
+   {
+    "name": "hr_vs_baseline",
+    "position": 41,
+    "dtype": "float",
+    "source": "watch",
+    "train_missing_%": 0.0
+   },
+   {
+    "name": "bmi_missing",
+    "position": 42,
+    "dtype": "float",
+    "source": "phone_profile",
+    "train_missing_%": 0.0
+   },
+   {
+    "name": "rr",
+    "position": 43,
+    "dtype": "float",
+    "source": "watch",
+    "train_missing_%": 0.0
+   },
+   {
+    "name": "rhythm_sinus",
+    "position": 44,
+    "dtype": "float",
+    "source": "watch",
+    "train_missing_%": 0.0
+   },
+   {
+    "name": "ldl",
+    "position": 45,
+    "dtype": "float",
+    "source": "phone_profile",
+    "train_missing_%": 74.6
+   }
+  ],
+  "missing_values": "left as NaN; tree models handle them natively"
+ }
+}

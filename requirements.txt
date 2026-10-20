@@ -1,0 +1,32 @@
+# CardioTwin: everything the notebooks, risk engine, what-if simulator and backend need (tested with Python 3.13).
+# The model libraries must match notebook 05 exactly, or the saved models in models/ will not load.
+#   python -m pip install -r requirements.txt
+
+# data, models, explanations
+scikit-learn==1.9.1
+xgboost==3.4.1
+lightgbm==4.7.0
+optuna==5.0.0
+joblib==1.6.0
+pandas==3.0.6
+numpy==2.5.4
+scipy==1.18.1
+matplotlib==3.11.2
+shap==0.54.1
+PyYAML==6.0.3
+pydantic==2.14.1
+
+# notebooks
+jupyter
+ipywidgets
+
+# backend web server
+fastapi==0.146.0
+uvicorn[standard]==0.54.0
+websockets==17.2
+httpx==0.28.1
+qrcode==8.2
+anthropic==1.15.0
+
+# tests
+pytest==9.1.1

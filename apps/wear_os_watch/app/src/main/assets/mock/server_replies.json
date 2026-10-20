@@ -1,0 +1,1274 @@
+{
+ "statuses": [
+  {
+   "after_batch": 1,
+   "message": {
+    "type": "status",
+    "patient_id": "stay-37093652",
+    "simulated": true,
+    "label": "SIMULATED",
+    "evaluated_at": "2026-10-19T06:36:00",
+    "status": "OK",
+    "display_state": "HIGH_RISK",
+    "tier": "HIGH",
+    "emergency_state": "NOT_TRIGGERED",
+    "views": {
+     "watch": {
+      "type": "WATCH_FACE",
+      "title": "High risk",
+      "text": "See phone now",
+      "icon_glyph": "\u25b2",
+      "tier": "HIGH",
+      "haptic": "double",
+      "last_sync_minutes": 1.0,
+      "stale": false,
+      "hr_fresh": true,
+      "evaluated_at": "2026-10-19T06:36:00"
+     }
+    }
+   }
+  },
+  {
+   "after_batch": 71,
+   "message": {
+    "type": "status",
+    "patient_id": "stay-37093652",
+    "simulated": true,
+    "label": "SIMULATED",
+    "evaluated_at": "2026-10-19T12:26:00",
+    "status": "OK",
+    "display_state": "HIGH_RISK",
+    "tier": "HIGH",
+    "emergency_state": "REVIEW_REQUIRED",
+    "views": {
+     "watch": {
+      "type": "WATCH_FACE",
+      "title": "Re-measure",
+      "text": "Sit still 2 min",
+      "icon_glyph": "!",
+      "tier": "HIGH",
+      "haptic": "double",
+      "last_sync_minutes": 1.0,
+      "stale": false,
+      "hr_fresh": true,
+      "evaluated_at": "2026-10-19T12:26:00"
+     }
+    }
+   }
+  },
+  {
+   "after_batch": 84,
+   "message": {
+    "type": "status",
+    "patient_id": "stay-37093652",
+    "simulated": true,
+    "label": "SIMULATED",
+    "evaluated_at": "2026-10-19T13:31:00",
+    "status": "OK",
+    "display_state": "HIGH_RISK",
+    "tier": "HIGH",
+    "emergency_state": "NOT_TRIGGERED",
+    "views": {
+     "watch": {
+      "type": "WATCH_FACE",
+      "title": "High risk",
+      "text": "See phone now",
+      "icon_glyph": "\u25b2",
+      "tier": "HIGH",
+      "haptic": "double",
+      "last_sync_minutes": 1.0,
+      "stale": false,
+      "hr_fresh": true,
+      "evaluated_at": "2026-10-19T13:31:00"
+     }
+    }
+   }
+  },
+  {
+   "after_batch": 87,
+   "message": {
+    "type": "status",
+    "patient_id": "stay-37093652",
+    "simulated": true,
+    "label": "SIMULATED",
+    "evaluated_at": "2026-10-19T13:41:00",
+    "status": "OK",
+    "display_state": "HIGH_RISK",
+    "tier": "HIGH",
+    "emergency_state": "REVIEW_REQUIRED",
+    "views": {
+     "watch": {
+      "type": "WATCH_FACE",
+      "title": "Re-measure",
+      "text": "Sit still 2 min",
+      "icon_glyph": "!",
+      "tier": "HIGH",
+      "haptic": "double",
+      "last_sync_minutes": 1.0,
+      "stale": false,
+      "hr_fresh": true,
+      "evaluated_at": "2026-10-19T13:41:00"
+     }
+    }
+   }
+  },
+  {
+   "after_batch": 89,
+   "message": {
+    "type": "status",
+    "patient_id": "stay-37093652",
+    "simulated": true,
+    "label": "SIMULATED",
+    "evaluated_at": "2026-10-19T13:56:00",
+    "status": "OK",
+    "display_state": "HIGH_RISK",
+    "tier": "HIGH",
+    "emergency_state": "NOT_TRIGGERED",
+    "views": {
+     "watch": {
+      "type": "WATCH_FACE",
+      "title": "High risk",
+      "text": "See phone now",
+      "icon_glyph": "\u25b2",
+      "tier": "HIGH",
+      "haptic": "double",
+      "last_sync_minutes": 1.0,
+      "stale": false,
+      "hr_fresh": true,
+      "evaluated_at": "2026-10-19T13:56:00"
+     }
+    }
+   }
+  },
+  {
+   "after_batch": 97,
+   "message": {
+    "type": "status",
+    "patient_id": "stay-37093652",
+    "simulated": true,
+    "label": "SIMULATED",
+    "evaluated_at": "2026-10-19T14:36:00",
+    "status": "OK",
+    "display_state": "HIGH_RISK",
+    "tier": "HIGH",
+    "emergency_state": "REVIEW_REQUIRED",
+    "views": {
+     "watch": {
+      "type": "WATCH_FACE",
+      "title": "Re-measure",
+      "text": "Sit still 2 min",
+      "icon_glyph": "!",
+      "tier": "HIGH",
+      "haptic": "double",
+      "last_sync_minutes": 1.0,
+      "stale": false,
+      "hr_fresh": true,
+      "evaluated_at": "2026-10-19T14:36:00"
+     }
+    }
+   }
+  },
+  {
+   "after_batch": 103,
+   "message": {
+    "type": "status",
+    "patient_id": "stay-37093652",
+    "simulated": true,
+    "label": "SIMULATED",
+    "evaluated_at": "2026-10-19T15:01:00",
+    "status": "OK",
+    "display_state": "HIGH_RISK",
+    "tier": "HIGH",
+    "emergency_state": "NOT_TRIGGERED",
+    "views": {
+     "watch": {
+      "type": "WATCH_FACE",
+      "title": "High risk",
+      "text": "See phone now",
+      "icon_glyph": "\u25b2",
+      "tier": "HIGH",
+      "haptic": "double",
+      "last_sync_minutes": 1.0,
+      "stale": false,
+      "hr_fresh": true,
+      "evaluated_at": "2026-10-19T15:01:00"
+     }
+    }
+   }
+  },
+  {
+   "after_batch": 142,
+   "message": {
+    "type": "status",
+    "patient_id": "stay-37093652",
+    "simulated": true,
+    "label": "SIMULATED",
+    "evaluated_at": "2026-10-19T18:21:00",
+    "status": "OK",
+    "display_state": "HIGH_RISK",
+    "tier": "HIGH",
+    "emergency_state": "REVIEW_REQUIRED",
+    "views": {
+     "watch": {
+      "type": "WATCH_FACE",
+      "title": "Re-measure",
+      "text": "Sit still 2 min",
+      "icon_glyph": "!",
+      "tier": "HIGH",
+      "haptic": "double",
+      "last_sync_minutes": 1.0,
+      "stale": false,
+      "hr_fresh": true,
+      "evaluated_at": "2026-10-19T18:21:00"
+     }
+    }
+   }
+  },
+  {
+   "after_batch": 156,
+   "message": {
+    "type": "status",
+    "patient_id": "stay-37093652",
+    "simulated": true,
+    "label": "SIMULATED",
+    "evaluated_at": "2026-10-19T19:26:00",
+    "status": "OK",
+    "display_state": "HIGH_RISK",
+    "tier": "HIGH",
+    "emergency_state": "NOT_TRIGGERED",
+    "views": {
+     "watch": {
+      "type": "WATCH_FACE",
+      "title": "High risk",
+      "text": "See phone now",
+      "icon_glyph": "\u25b2",
+      "tier": "HIGH",
+      "haptic": "double",
+      "last_sync_minutes": 1.0,
+      "stale": false,
+      "hr_fresh": true,
+      "evaluated_at": "2026-10-19T19:26:00"
+     }
+    }
+   }
+  },
+  {
+   "after_batch": 161,
+   "message": {
+    "type": "status",
+    "patient_id": "stay-37093652",
+    "simulated": true,
+    "label": "SIMULATED",
+    "evaluated_at": "2026-10-19T19:56:00",
+    "status": "OK",
+    "display_state": "HIGH_RISK",
+    "tier": "HIGH",
+    "emergency_state": "REVIEW_REQUIRED",
+    "views": {
+     "watch": {
+      "type": "WATCH_FACE",
+      "title": "Re-measure",
+      "text": "Sit still 2 min",
+      "icon_glyph": "!",
+      "tier": "HIGH",
+      "haptic": "double",
+      "last_sync_minutes": 1.0,
+      "stale": false,
+      "hr_fresh": true,
+      "evaluated_at": "2026-10-19T19:56:00"
+     }
+    }
+   }
+  },
+  {
+   "after_batch": 166,
+   "message": {
+    "type": "status",
+    "patient_id": "stay-37093652",
+    "simulated": true,
+    "label": "SIMULATED",
+    "evaluated_at": "2026-10-19T20:21:00",
+    "status": "OK",
+    "display_state": "HIGH_RISK",
+    "tier": "HIGH",
+    "emergency_state": "NOT_TRIGGERED",
+    "views": {
+     "watch": {
+      "type": "WATCH_FACE",
+      "title": "High risk",
+      "text": "See phone now",
+      "icon_glyph": "\u25b2",
+      "tier": "HIGH",
+      "haptic": "double",
+      "last_sync_minutes": 1.0,
+      "stale": false,
+      "hr_fresh": true,
+      "evaluated_at": "2026-10-19T20:21:00"
+     }
+    }
+   }
+  },
+  {
+   "after_batch": 169,
+   "message": {
+    "type": "status",
+    "patient_id": "stay-37093652",
+    "simulated": true,
+    "label": "SIMULATED",
+    "evaluated_at": "2026-10-19T20:36:00",
+    "status": "OK",
+    "display_state": "HIGH_RISK",
+    "tier": "HIGH",
+    "emergency_state": "REVIEW_REQUIRED",
+    "views": {
+     "watch": {
+      "type": "WATCH_FACE",
+      "title": "Re-measure",
+      "text": "Sit still 2 min",
+      "icon_glyph": "!",
+      "tier": "HIGH",
+      "haptic": "double",
+      "last_sync_minutes": 1.0,
+      "stale": false,
+      "hr_fresh": true,
+      "evaluated_at": "2026-10-19T20:36:00"
+     }
+    }
+   }
+  },
+  {
+   "after_batch": 180,
+   "message": {
+    "type": "status",
+    "patient_id": "stay-37093652",
+    "simulated": true,
+    "label": "SIMULATED",
+    "evaluated_at": "2026-10-19T21:26:00",
+    "status": "OK",
+    "display_state": "EMERGENCY_ALERT",
+    "tier": "HIGH",
+    "emergency_state": "TRIGGERED",
+    "views": {
+     "watch": {
+      "type": "EMERGENCY_WATCH",
+      "title": "EMERGENCY",
+      "icon_glyph": "\u26a0",
+      "text": "Check your phone now",
+      "haptics": "long repeating",
+      "action": {
+       "label": "Call 112",
+       "type": "open_phone_dialer"
+      },
+      "evaluated_at": "2026-10-19T21:26:00"
+     }
+    }
+   }
+  },
+  {
+   "after_batch": 188,
+   "message": {
+    "type": "status",
+    "patient_id": "stay-37093652",
+    "simulated": true,
+    "label": "SIMULATED",
+    "evaluated_at": "2026-10-19T22:06:00",
+    "status": "OK",
+    "display_state": "HIGH_RISK",
+    "tier": "HIGH",
+    "emergency_state": "REVIEW_REQUIRED",
+    "views": {
+     "watch": {
+      "type": "WATCH_FACE",
+      "title": "Re-measure",
+      "text": "Sit still 2 min",
+      "icon_glyph": "!",
+      "tier": "HIGH",
+      "haptic": "double",
+      "last_sync_minutes": 1.0,
+      "stale": false,
+      "hr_fresh": true,
+      "evaluated_at": "2026-10-19T22:06:00"
+     }
+    }
+   }
+  }
+ ],
+ "alerts": [
+  {
+   "after_batch": 1,
+   "message": {
+    "patient_id": "stay-37093652",
+    "type": "alert",
+    "alert": {
+     "alert_id": "b00ee885-69fb-47c2-a6f7-f8979d095296",
+     "patient_id": "stay-37093652",
+     "origin": "safety",
+     "kind": "RHYTHM_AF",
+     "severity": "moderate",
+     "state": "NEW",
+     "rule_id": "SAF-AF-01",
+     "title": "Possible atrial fibrillation",
+     "message": "The watch rhythm check reported an irregular rhythm consistent with atrial fibrillation (3 readings in 30 min). AF is already on record for this patient; the care team can check rate and symptoms.",
+     "created_at": "2026-10-19T06:42:28.919Z",
+     "updated_at": "2026-10-19T06:42:28.919Z",
+     "deadline_at": null,
+     "simulated": true,
+     "payload": {
+      "rules_version": "BACKEND-SAFETY-1.0-draft",
+      "af_readings": 3,
+      "first_at": "2026-10-19T02:15:00.000Z",
+      "last_at": "2026-10-19T02:45:00.000Z",
+      "known_af": true,
+      "watch": {
+       "type": "WATCH_NOTICE",
+       "title": "Irregular rhythm",
+       "text": "Record ECG, see phone",
+       "haptic": "double"
+      },
+      "not_a_diagnosis": "A watch rhythm check is a screening signal, not a diagnosis of atrial fibrillation."
+     },
+     "history": [
+      {
+       "event": "NEW",
+       "at": "2026-10-19T06:42:28.919Z",
+       "actor": "system"
+      }
+     ]
+    },
+    "simulated": true
+   }
+  },
+  {
+   "after_batch": 1,
+   "message": {
+    "patient_id": "stay-37093652",
+    "type": "alert",
+    "alert": {
+     "alert_id": "a073574f-5a7d-5173-a505-fd8d2367e152",
+     "patient_id": "stay-37093652",
+     "origin": "engine",
+     "kind": "RISK",
+     "severity": "high",
+     "state": "NEW",
+     "rule_id": null,
+     "title": "High risk",
+     "message": null,
+     "created_at": "2026-10-19 06:36:00",
+     "updated_at": "2026-10-19T06:42:29.783Z",
+     "deadline_at": null,
+     "simulated": true,
+     "payload": {
+      "key": "RISK:HIGH",
+      "tier": "HIGH",
+      "audit_id": "7c9fa1af-0ab0-59d3-81c9-fcc2071cacdc",
+      "model_version": "1.0.0+2026-10-18",
+      "policy_version": "RE-POLICY-1.0-provisional",
+      "notifications": [
+       {
+        "at": "2026-10-19 06:36:00",
+        "channel": "push",
+        "success": true,
+        "error": null
+       }
+      ],
+      "user_actions": [],
+      "review": null,
+      "resolution": null,
+      "superseded_by": null,
+      "acknowledgements": null
+     },
+     "history": [
+      {
+       "event": "NEW",
+       "at": "2026-10-19 06:36:00",
+       "actor": null
+      }
+     ]
+    },
+    "simulated": true
+   }
+  },
+  {
+   "after_batch": 180,
+   "message": {
+    "patient_id": "stay-37093652",
+    "type": "emergency",
+    "alert": {
+     "alert_id": "001605e7-195b-5929-9174-f84985ffbf71",
+     "patient_id": "stay-37093652",
+     "origin": "engine",
+     "kind": "EMERGENCY",
+     "severity": "critical",
+     "state": "NEW",
+     "rule_id": "EMG-VIT-02",
+     "title": "Emergency warning",
+     "message": "Heart rate 136.8 bpm at 2026-10-19 21:25:00 (>= 131 (NEWS2 score 3)); Breathing rate 25.4 breaths/min at 2026-10-19 21:25:00 (>= 25 (NEWS2 score 3)) [EMG-VIT-02]",
+     "created_at": "2026-10-19 21:26:00",
+     "updated_at": "2026-10-19T06:45:01.212Z",
+     "deadline_at": null,
+     "simulated": true,
+     "payload": {
+      "key": "EMERGENCY:EMG-VIT-02",
+      "tier": null,
+      "audit_id": "8894b702-c563-5dde-86ce-bafb7e5faffe",
+      "model_version": "1.0.0+2026-10-18",
+      "policy_version": "RE-POLICY-1.0-provisional",
+      "notifications": [
+       {
+        "at": "2026-10-19 21:26:00",
+        "channel": "push",
+        "success": true,
+        "error": null
+       }
+      ],
+      "user_actions": [],
+      "review": null,
+      "resolution": null,
+      "superseded_by": null,
+      "acknowledgements": null,
+      "emergency": {
+       "type": "EMERGENCY_MODAL",
+       "severity": "critical",
+       "rule_id": "EMG-VIT-02",
+       "title": "Emergency warning",
+       "icon": "warning_triangle",
+       "icon_glyph": "\u26a0",
+       "headline": "Your readings or symptoms meet an emergency rule.",
+       "reason": "Heart rate 136.8 bpm at 2026-10-19 21:25:00 (>= 131 (NEWS2 score 3)); Breathing rate 25.4 breaths/min at 2026-10-19 21:25:00 (>= 25 (NEWS2 score 3)) [EMG-VIT-02]",
+       "triggered_at": "2026-10-19 21:26:00",
+       "observations": [
+        {
+         "signal": "hr",
+         "value": 133.0,
+         "unit": "bpm",
+         "timestamp": "2026-10-19 20:25:00",
+         "source": "simulator",
+         "band": ">= 131 (NEWS2 score 3)"
+        },
+        {
+         "signal": "hr",
+         "value": 133.3,
+         "unit": "bpm",
+         "timestamp": "2026-10-19 20:35:00",
+         "source": "simulator",
+         "band": ">= 131 (NEWS2 score 3)"
+        },
+        {
+         "signal": "hr",
+         "value": 134.1,
+         "unit": "bpm",
+         "timestamp": "2026-10-19 20:40:00",
+         "source": "simulator",
+         "band": ">= 131 (NEWS2 score 3)"
+        },
+        {
+         "signal": "hr",
+         "value": 134.3,
+         "unit": "bpm",
+         "timestamp": "2026-10-19 20:45:00",
+         "source": "simulator",
+         "band": ">= 131 (NEWS2 score 3)"
+        },
+        {
+         "signal": "hr",
+         "value": 133.6,
+         "unit": "bpm",
+         "timestamp": "2026-10-19 20:50:00",
+         "source": "simulator",
+         "band": ">= 131 (NEWS2 score 3)"
+        },
+        {
+         "signal": "hr",
+         "value": 134.5,
+         "unit": "bpm",
+         "timestamp": "2026-10-19 20:55:00",
+         "source": "simulator",
+         "band": ">= 131 (NEWS2 score 3)"
+        },
+        {
+         "signal": "hr",
+         "value": 137.0,
+         "unit": "bpm",
+         "timestamp": "2026-10-19 21:00:00",
+         "source": "simulator",
+         "band": ">= 131 (NEWS2 score 3)"
+        },
+        {
+         "signal": "hr",
+         "value": 137.5,
+         "unit": "bpm",
+         "timestamp": "2026-10-19 21:05:00",
+         "source": "simulator",
+         "band": ">= 131 (NEWS2 score 3)"
+        },
+        {
+         "signal": "hr",
+         "value": 136.8,
+         "unit": "bpm",
+         "timestamp": "2026-10-19 21:10:00",
+         "source": "simulator",
+         "band": ">= 131 (NEWS2 score 3)"
+        },
+        {
+         "signal": "hr",
+         "value": 136.6,
+         "unit": "bpm",
+         "timestamp": "2026-10-19 21:15:00",
+         "source": "simulator",
+         "band": ">= 131 (NEWS2 score 3)"
+        },
+        {
+         "signal": "hr",
+         "value": 133.9,
+         "unit": "bpm",
+         "timestamp": "2026-10-19 21:20:00",
+         "source": "simulator",
+         "band": ">= 131 (NEWS2 score 3)"
+        },
+        {
+         "signal": "hr",
+         "value": 136.8,
+         "unit": "bpm",
+         "timestamp": "2026-10-19 21:25:00",
+         "source": "simulator",
+         "band": ">= 131 (NEWS2 score 3)"
+        },
+        {
+         "signal": "rr",
+         "value": 25.0,
+         "unit": "breaths/min",
+         "timestamp": "2026-10-19 21:20:00",
+         "source": "simulator",
+         "band": ">= 25 (NEWS2 score 3)"
+        },
+        {
+         "signal": "rr",
+         "value": 25.4,
+         "unit": "breaths/min",
+         "timestamp": "2026-10-19 21:25:00",
+         "source": "simulator",
+         "band": ">= 25 (NEWS2 score 3)"
+        }
+       ],
+       "instructions": [
+        "Stop what you are doing and sit or lie down.",
+        "If you have chest pain, trouble breathing, or feel faint, call 112 now or ask someone nearby to call.",
+        "Do not drive yourself to hospital.",
+        "Keep your phone with you and unlock the door if you can."
+       ],
+       "colors": {
+        "background": "#B00020",
+        "text": "#FFFFFF"
+       },
+       "not_colour_only": "Title text, the warning icon and the rule reason are always shown, so the alert does not rely on red.",
+       "actions": [
+        {
+         "id": "call_emergency",
+         "type": "open_dialer",
+         "number": "112",
+         "uri": "tel:112",
+         "country": "IN",
+         "label": "Call 112",
+         "requires_user_confirmation": true,
+         "auto_dial": false,
+         "confirm_text": "This opens your phone's dialler with 112 filled in. You press Call yourself. CardioTwin does not contact emergency services and cannot send an ambulance.",
+         "dispatch_status": "NOT_DISPATCHED",
+         "dispatch_note": "Opening the dialler is not an ambulance dispatch. Automatic dispatch would need explicit consent, an authorised emergency-service integration and a clinical, legal and operational safety review.",
+         "primary": true
+        },
+        {
+         "id": "acknowledge",
+         "label": "I have seen this",
+         "type": "acknowledge",
+         "note": "Acknowledging records that the alert was seen. It does not mean the condition has improved."
+        },
+        {
+         "id": "contact_care_team",
+         "label": "Message my care team",
+         "type": "notify"
+        }
+       ],
+       "accessibility": {
+        "role": "alertdialog",
+        "aria_live": "assertive",
+        "aria_modal": true,
+        "aria_label": "Emergency warning. Heart rate 136.8 bpm at 2026-10-19 21:25:00 (>= 131 (NEWS2 score 3)); Breathing rate 25.4 breaths/min at 2026-10-19 21:25:00 (>= 25 (NEWS2 score 3)) [EMG-VIT-02]",
+        "initial_focus": "call_emergency",
+        "keyboard": {
+         "Enter": "call_emergency",
+         "Tab": "next action"
+        },
+        "min_touch_target_dp": 48,
+        "haptics": "long repeating",
+        "sound": "alarm, respects Do Not Disturb override setting",
+        "text_scale": "follows system font size"
+       },
+       "dismissible": false,
+       "persistent_until": "acknowledged on the phone; the emergency state stays open until a clinician resolves it",
+       "dispatch_status": "NOT_DISPATCHED",
+       "watch": {
+        "type": "EMERGENCY_WATCH",
+        "title": "EMERGENCY",
+        "icon_glyph": "\u26a0",
+        "text": "Check your phone now",
+        "haptics": "long repeating",
+        "action": {
+         "label": "Call 112",
+         "type": "open_phone_dialer"
+        }
+       }
+      }
+     },
+     "history": [
+      {
+       "event": "NEW",
+       "at": "2026-10-19 21:26:00",
+       "actor": null
+      }
+     ]
+    },
+    "simulated": true,
+    "modal": {
+     "type": "EMERGENCY_MODAL",
+     "severity": "critical",
+     "rule_id": "EMG-VIT-02",
+     "title": "Emergency warning",
+     "icon": "warning_triangle",
+     "icon_glyph": "\u26a0",
+     "headline": "Your readings or symptoms meet an emergency rule.",
+     "reason": "Heart rate 136.8 bpm at 2026-10-19 21:25:00 (>= 131 (NEWS2 score 3)); Breathing rate 25.4 breaths/min at 2026-10-19 21:25:00 (>= 25 (NEWS2 score 3)) [EMG-VIT-02]",
+     "triggered_at": "2026-10-19 21:26:00",
+     "observations": [
+      {
+       "signal": "hr",
+       "value": 133.0,
+       "unit": "bpm",
+       "timestamp": "2026-10-19 20:25:00",
+       "source": "simulator",
+       "band": ">= 131 (NEWS2 score 3)"
+      },
+      {
+       "signal": "hr",
+       "value": 133.3,
+       "unit": "bpm",
+       "timestamp": "2026-10-19 20:35:00",
+       "source": "simulator",
+       "band": ">= 131 (NEWS2 score 3)"
+      },
+      {
+       "signal": "hr",
+       "value": 134.1,
+       "unit": "bpm",
+       "timestamp": "2026-10-19 20:40:00",
+       "source": "simulator",
+       "band": ">= 131 (NEWS2 score 3)"
+      },
+      {
+       "signal": "hr",
+       "value": 134.3,
+       "unit": "bpm",
+       "timestamp": "2026-10-19 20:45:00",
+       "source": "simulator",
+       "band": ">= 131 (NEWS2 score 3)"
+      },
+      {
+       "signal": "hr",
+       "value": 133.6,
+       "unit": "bpm",
+       "timestamp": "2026-10-19 20:50:00",
+       "source": "simulator",
+       "band": ">= 131 (NEWS2 score 3)"
+      },
+      {
+       "signal": "hr",
+       "value": 134.5,
+       "unit": "bpm",
+       "timestamp": "2026-10-19 20:55:00",
+       "source": "simulator",
+       "band": ">= 131 (NEWS2 score 3)"
+      },
+      {
+       "signal": "hr",
+       "value": 137.0,
+       "unit": "bpm",
+       "timestamp": "2026-10-19 21:00:00",
+       "source": "simulator",
+       "band": ">= 131 (NEWS2 score 3)"
+      },
+      {
+       "signal": "hr",
+       "value": 137.5,
+       "unit": "bpm",
+       "timestamp": "2026-10-19 21:05:00",
+       "source": "simulator",
+       "band": ">= 131 (NEWS2 score 3)"
+      },
+      {
+       "signal": "hr",
+       "value": 136.8,
+       "unit": "bpm",
+       "timestamp": "2026-10-19 21:10:00",
+       "source": "simulator",
+       "band": ">= 131 (NEWS2 score 3)"
+      },
+      {
+       "signal": "hr",
+       "value": 136.6,
+       "unit": "bpm",
+       "timestamp": "2026-10-19 21:15:00",
+       "source": "simulator",
+       "band": ">= 131 (NEWS2 score 3)"
+      },
+      {
+       "signal": "hr",
+       "value": 133.9,
+       "unit": "bpm",
+       "timestamp": "2026-10-19 21:20:00",
+       "source": "simulator",
+       "band": ">= 131 (NEWS2 score 3)"
+      },
+      {
+       "signal": "hr",
+       "value": 136.8,
+       "unit": "bpm",
+       "timestamp": "2026-10-19 21:25:00",
+       "source": "simulator",
+       "band": ">= 131 (NEWS2 score 3)"
+      },
+      {
+       "signal": "rr",
+       "value": 25.0,
+       "unit": "breaths/min",
+       "timestamp": "2026-10-19 21:20:00",
+       "source": "simulator",
+       "band": ">= 25 (NEWS2 score 3)"
+      },
+      {
+       "signal": "rr",
+       "value": 25.4,
+       "unit": "breaths/min",
+       "timestamp": "2026-10-19 21:25:00",
+       "source": "simulator",
+       "band": ">= 25 (NEWS2 score 3)"
+      }
+     ],
+     "instructions": [
+      "Stop what you are doing and sit or lie down.",
+      "If you have chest pain, trouble breathing, or feel faint, call 112 now or ask someone nearby to call.",
+      "Do not drive yourself to hospital.",
+      "Keep your phone with you and unlock the door if you can."
+     ],
+     "colors": {
+      "background": "#B00020",
+      "text": "#FFFFFF"
+     },
+     "not_colour_only": "Title text, the warning icon and the rule reason are always shown, so the alert does not rely on red.",
+     "actions": [
+      {
+       "id": "call_emergency",
+       "type": "open_dialer",
+       "number": "112",
+       "uri": "tel:112",
+       "country": "IN",
+       "label": "Call 112",
+       "requires_user_confirmation": true,
+       "auto_dial": false,
+       "confirm_text": "This opens your phone's dialler with 112 filled in. You press Call yourself. CardioTwin does not contact emergency services and cannot send an ambulance.",
+       "dispatch_status": "NOT_DISPATCHED",
+       "dispatch_note": "Opening the dialler is not an ambulance dispatch. Automatic dispatch would need explicit consent, an authorised emergency-service integration and a clinical, legal and operational safety review.",
+       "primary": true
+      },
+      {
+       "id": "acknowledge",
+       "label": "I have seen this",
+       "type": "acknowledge",
+       "note": "Acknowledging records that the alert was seen. It does not mean the condition has improved."
+      },
+      {
+       "id": "contact_care_team",
+       "label": "Message my care team",
+       "type": "notify"
+      }
+     ],
+     "accessibility": {
+      "role": "alertdialog",
+      "aria_live": "assertive",
+      "aria_modal": true,
+      "aria_label": "Emergency warning. Heart rate 136.8 bpm at 2026-10-19 21:25:00 (>= 131 (NEWS2 score 3)); Breathing rate 25.4 breaths/min at 2026-10-19 21:25:00 (>= 25 (NEWS2 score 3)) [EMG-VIT-02]",
+      "initial_focus": "call_emergency",
+      "keyboard": {
+       "Enter": "call_emergency",
+       "Tab": "next action"
+      },
+      "min_touch_target_dp": 48,
+      "haptics": "long repeating",
+      "sound": "alarm, respects Do Not Disturb override setting",
+      "text_scale": "follows system font size"
+     },
+     "dismissible": false,
+     "persistent_until": "acknowledged on the phone; the emergency state stays open until a clinician resolves it",
+     "dispatch_status": "NOT_DISPATCHED",
+     "watch": {
+      "type": "EMERGENCY_WATCH",
+      "title": "EMERGENCY",
+      "icon_glyph": "\u26a0",
+      "text": "Check your phone now",
+      "haptics": "long repeating",
+      "action": {
+       "label": "Call 112",
+       "type": "open_phone_dialer"
+      }
+     }
+    }
+   }
+  }
+ ],
+ "af_alert": {
+  "patient_id": "stay-37093652",
+  "type": "alert",
+  "alert": {
+   "alert_id": "b00ee885-69fb-47c2-a6f7-f8979d095296",
+   "patient_id": "stay-37093652",
+   "origin": "safety",
+   "kind": "RHYTHM_AF",
+   "severity": "moderate",
+   "state": "NEW",
+   "rule_id": "SAF-AF-01",
+   "title": "Possible atrial fibrillation",
+   "message": "The watch rhythm check reported an irregular rhythm consistent with atrial fibrillation (3 readings in 30 min). AF is already on record for this patient; the care team can check rate and symptoms.",
+   "created_at": "2026-10-19T06:42:28.919Z",
+   "updated_at": "2026-10-19T06:42:28.919Z",
+   "deadline_at": null,
+   "simulated": true,
+   "payload": {
+    "rules_version": "BACKEND-SAFETY-1.0-draft",
+    "af_readings": 3,
+    "first_at": "2026-10-19T02:15:00.000Z",
+    "last_at": "2026-10-19T02:45:00.000Z",
+    "known_af": true,
+    "watch": {
+     "type": "WATCH_NOTICE",
+     "title": "Irregular rhythm",
+     "text": "Record ECG, see phone",
+     "haptic": "double"
+    },
+    "not_a_diagnosis": "A watch rhythm check is a screening signal, not a diagnosis of atrial fibrillation."
+   },
+   "history": [
+    {
+     "event": "NEW",
+     "at": "2026-10-19T06:42:28.919Z",
+     "actor": "system"
+    }
+   ]
+  },
+  "simulated": true
+ },
+ "fall_alert": {
+  "patient_id": "stay-37093652",
+  "type": "alert",
+  "alert": {
+   "alert_id": "61d71c15-0137-41c0-9110-8aafe07c7e76",
+   "patient_id": "stay-37093652",
+   "origin": "safety",
+   "kind": "FALL",
+   "severity": "high",
+   "state": "AWAITING_RESPONSE",
+   "rule_id": "SAF-FALL-01",
+   "title": "Fall detected",
+   "message": "Fall detected by the watch. Waiting for the wearer to answer.",
+   "created_at": "2026-10-19T06:46:06.714Z",
+   "updated_at": "2026-10-19T06:46:06.714Z",
+   "deadline_at": "2026-10-19T06:46:36.713Z",
+   "simulated": true,
+   "payload": {
+    "rules_version": "BACKEND-SAFETY-1.0-draft",
+    "reading_at": "2026-10-20T03:40:00.000Z",
+    "impact": 3.3,
+    "response_window_seconds": 30,
+    "watch": {
+     "type": "FALL_CHECK",
+     "title": "Fall detected",
+     "text": "Are you OK?",
+     "haptic": "long repeating",
+     "countdown_seconds": 30,
+     "actions": [
+      {
+       "id": "im_ok",
+       "label": "I'm OK"
+      },
+      {
+       "id": "need_help",
+       "label": "I need help"
+      }
+     ]
+    },
+    "phone": {
+     "type": "FALL_CHECK",
+     "text": "A fall was detected. If there is no answer on the watch within 30 seconds, an emergency alert is shown to you and your care team."
+    },
+    "dispatch_status": "NOT_DISPATCHED"
+   },
+   "history": [
+    {
+     "event": "AWAITING_RESPONSE",
+     "at": "2026-10-19T06:46:06.714Z",
+     "actor": "system"
+    }
+   ]
+  },
+  "simulated": true,
+  "watch": {
+   "type": "FALL_CHECK",
+   "title": "Fall detected",
+   "text": "Are you OK?",
+   "haptic": "long repeating",
+   "countdown_seconds": 30,
+   "actions": [
+    {
+     "id": "im_ok",
+     "label": "I'm OK"
+    },
+    {
+     "id": "need_help",
+     "label": "I need help"
+    }
+   ]
+  }
+ },
+ "fall_emergency": {
+  "patient_id": "stay-37093652",
+  "type": "emergency",
+  "alert": {
+   "alert_id": "61d71c15-0137-41c0-9110-8aafe07c7e76",
+   "patient_id": "stay-37093652",
+   "origin": "safety",
+   "kind": "FALL",
+   "severity": "critical",
+   "state": "ESCALATED",
+   "rule_id": "SAF-FALL-02",
+   "title": "Emergency warning: fall",
+   "message": "No answer on the watch after a detected fall.",
+   "created_at": "2026-10-19T06:46:06.714Z",
+   "updated_at": "2026-10-19T06:46:37.459Z",
+   "deadline_at": "2026-10-19T06:46:36.713Z",
+   "simulated": true,
+   "payload": {
+    "rules_version": "BACKEND-SAFETY-1.0-draft",
+    "reading_at": "2026-10-20T03:40:00.000Z",
+    "impact": 3.3,
+    "response_window_seconds": 30,
+    "watch": {
+     "type": "FALL_CHECK",
+     "title": "Fall detected",
+     "text": "Are you OK?",
+     "haptic": "long repeating",
+     "countdown_seconds": 30,
+     "actions": [
+      {
+       "id": "im_ok",
+       "label": "I'm OK"
+      },
+      {
+       "id": "need_help",
+       "label": "I need help"
+      }
+     ]
+    },
+    "phone": {
+     "type": "FALL_CHECK",
+     "text": "A fall was detected. If there is no answer on the watch within 30 seconds, an emergency alert is shown to you and your care team."
+    },
+    "dispatch_status": "NOT_DISPATCHED",
+    "emergency": {
+     "type": "EMERGENCY_MODAL",
+     "severity": "critical",
+     "rule_id": "SAF-FALL-02",
+     "title": "Emergency warning",
+     "icon": "warning_triangle",
+     "icon_glyph": "\u26a0",
+     "headline": "Your readings or symptoms meet an emergency rule.",
+     "reason": "No answer on the watch after a detected fall.",
+     "triggered_at": "2026-10-19 06:46:37.457028",
+     "observations": [
+      {
+       "type": "reading",
+       "signal": "fall",
+       "at": "2026-10-20T03:40:00.000Z"
+      }
+     ],
+     "instructions": [
+      "Stop what you are doing and sit or lie down.",
+      "If you have chest pain, trouble breathing, or feel faint, call 112 now or ask someone nearby to call.",
+      "Do not drive yourself to hospital.",
+      "Keep your phone with you and unlock the door if you can."
+     ],
+     "colors": {
+      "background": "#B00020",
+      "text": "#FFFFFF"
+     },
+     "not_colour_only": "Title text, the warning icon and the rule reason are always shown, so the alert does not rely on red.",
+     "actions": [
+      {
+       "id": "call_emergency",
+       "type": "open_dialer",
+       "number": "112",
+       "uri": "tel:112",
+       "country": "IN",
+       "label": "Call 112",
+       "requires_user_confirmation": true,
+       "auto_dial": false,
+       "confirm_text": "This opens your phone's dialler with 112 filled in. You press Call yourself. CardioTwin does not contact emergency services and cannot send an ambulance.",
+       "dispatch_status": "NOT_DISPATCHED",
+       "dispatch_note": "Opening the dialler is not an ambulance dispatch. Automatic dispatch would need explicit consent, an authorised emergency-service integration and a clinical, legal and operational safety review.",
+       "primary": true
+      },
+      {
+       "id": "acknowledge",
+       "label": "I have seen this",
+       "type": "acknowledge",
+       "note": "Acknowledging records that the alert was seen. It does not mean the condition has improved."
+      },
+      {
+       "id": "contact_care_team",
+       "label": "Message my care team",
+       "type": "notify"
+      }
+     ],
+     "accessibility": {
+      "role": "alertdialog",
+      "aria_live": "assertive",
+      "aria_modal": true,
+      "aria_label": "Emergency warning. No answer on the watch after a detected fall.",
+      "initial_focus": "call_emergency",
+      "keyboard": {
+       "Enter": "call_emergency",
+       "Tab": "next action"
+      },
+      "min_touch_target_dp": 48,
+      "haptics": "long repeating",
+      "sound": "alarm, respects Do Not Disturb override setting",
+      "text_scale": "follows system font size"
+     },
+     "dismissible": false,
+     "persistent_until": "acknowledged on the phone; the emergency state stays open until a clinician resolves it",
+     "dispatch_status": "NOT_DISPATCHED",
+     "watch": {
+      "type": "EMERGENCY_WATCH",
+      "title": "EMERGENCY",
+      "icon_glyph": "\u26a0",
+      "text": "Check your phone now",
+      "haptics": "long repeating",
+      "action": {
+       "label": "Call 112",
+       "type": "open_phone_dialer"
+      }
+     }
+    }
+   },
+   "history": [
+    {
+     "event": "AWAITING_RESPONSE",
+     "at": "2026-10-19T06:46:06.714Z",
+     "actor": "system"
+    },
+    {
+     "event": "EMERGENCY_SHOWN",
+     "at": "2026-10-19T06:46:37.459Z",
+     "actor": "system",
+     "reason": "No answer on the watch after a detected fall.",
+     "dispatch_status": "NOT_DISPATCHED"
+    }
+   ]
+  },
+  "simulated": true,
+  "modal": {
+   "type": "EMERGENCY_MODAL",
+   "severity": "critical",
+   "rule_id": "SAF-FALL-02",
+   "title": "Emergency warning",
+   "icon": "warning_triangle",
+   "icon_glyph": "\u26a0",
+   "headline": "Your readings or symptoms meet an emergency rule.",
+   "reason": "No answer on the watch after a detected fall.",
+   "triggered_at": "2026-10-19 06:46:37.457028",
+   "observations": [
+    {
+     "type": "reading",
+     "signal": "fall",
+     "at": "2026-10-20T03:40:00.000Z"
+    }
+   ],
+   "instructions": [
+    "Stop what you are doing and sit or lie down.",
+    "If you have chest pain, trouble breathing, or feel faint, call 112 now or ask someone nearby to call.",
+    "Do not drive yourself to hospital.",
+    "Keep your phone with you and unlock the door if you can."
+   ],
+   "colors": {
+    "background": "#B00020",
+    "text": "#FFFFFF"
+   },
+   "not_colour_only": "Title text, the warning icon and the rule reason are always shown, so the alert does not rely on red.",
+   "actions": [
+    {
+     "id": "call_emergency",
+     "type": "open_dialer",
+     "number": "112",
+     "uri": "tel:112",
+     "country": "IN",
+     "label": "Call 112",
+     "requires_user_confirmation": true,
+     "auto_dial": false,
+     "confirm_text": "This opens your phone's dialler with 112 filled in. You press Call yourself. CardioTwin does not contact emergency services and cannot send an ambulance.",
+     "dispatch_status": "NOT_DISPATCHED",
+     "dispatch_note": "Opening the dialler is not an ambulance dispatch. Automatic dispatch would need explicit consent, an authorised emergency-service integration and a clinical, legal and operational safety review.",
+     "primary": true
+    },
+    {
+     "id": "acknowledge",
+     "label": "I have seen this",
+     "type": "acknowledge",
+     "note": "Acknowledging records that the alert was seen. It does not mean the condition has improved."
+    },
+    {
+     "id": "contact_care_team",
+     "label": "Message my care team",
+     "type": "notify"
+    }
+   ],
+   "accessibility": {
+    "role": "alertdialog",
+    "aria_live": "assertive",
+    "aria_modal": true,
+    "aria_label": "Emergency warning. No answer on the watch after a detected fall.",
+    "initial_focus": "call_emergency",
+    "keyboard": {
+     "Enter": "call_emergency",
+     "Tab": "next action"
+    },
+    "min_touch_target_dp": 48,
+    "haptics": "long repeating",
+    "sound": "alarm, respects Do Not Disturb override setting",
+    "text_scale": "follows system font size"
+   },
+   "dismissible": false,
+   "persistent_until": "acknowledged on the phone; the emergency state stays open until a clinician resolves it",
+   "dispatch_status": "NOT_DISPATCHED",
+   "watch": {
+    "type": "EMERGENCY_WATCH",
+    "title": "EMERGENCY",
+    "icon_glyph": "\u26a0",
+    "text": "Check your phone now",
+    "haptics": "long repeating",
+    "action": {
+     "label": "Call 112",
+     "type": "open_phone_dialer"
+    }
+   }
+  }
+ },
+ "label": "SIMULATED",
+ "recorded_from": "CardioTwin backend, simulator device, stay 37093652",
+ "recorded_at": "2026-10-19T06:46:37Z"
+}

@@ -1,0 +1,209 @@
+{
+ "full": {
+  "name": "cardiotwin-full-24h",
+  "version": "1.0.0+2026-10-18",
+  "feature_set": "full",
+  "horizon_h": 24,
+  "model_type": "LightGBM (Optuna)",
+  "params": {
+   "n_estimators": 400,
+   "learning_rate": 0.06798962421591129,
+   "colsample_bytree": 0.5274034664069657,
+   "subsample": 0.6727299868828402,
+   "reg_alpha": 0.03549878832196503,
+   "reg_lambda": 3.2877474139911183,
+   "spw_mode": "none",
+   "num_leaves": 10,
+   "min_child_samples": 41,
+   "max_depth": -1
+  },
+  "operating_points": {
+   "moderate": 0.0472,
+   "high": 0.0891
+  },
+  "base_rate": 0.0428,
+  "label_definition": "first vasopressor start, lactate >= 4 or in-hospital death in (t, t+24h], t = end of the hour bin",
+  "train_patients": 59,
+  "train_hours": 3391,
+  "train_event_hours": 145,
+  "cv_metrics": {
+   "AUPRC": 0.17855598618427826,
+   "AUROC": 0.871188306031827
+  },
+  "test_metrics": {
+   "model": "LightGBM (Optuna)",
+   "features": 40,
+   "calibration": "sigmoid",
+   "operating_points": {
+    "moderate": 0.0472,
+    "high": 0.0891
+   },
+   "test_patients": 15,
+   "test_hours": 1077,
+   "test_event_hours": 81,
+   "test_event_stays": 4,
+   "prevalence": 0.0752,
+   "calibration_slope": 0.922,
+   "calibration_intercept": 0.708,
+   "mean_predicted": 0.0408,
+   "AUPRC": 0.1876,
+   "AUROC": 0.8004,
+   "Brier": 0.068,
+   "sens_high": 0.321,
+   "ppv_high": 0.1985,
+   "alerts_per_day_high": 1.0474,
+   "event_sens_high": 0.75,
+   "events_caught_high": "3/4",
+   "median_lead_h_high": 23.0,
+   "sens_moderate": 0.6296,
+   "ppv_moderate": 0.1868,
+   "alerts_per_day_moderate": 2.0279,
+   "event_sens_moderate": 1.0,
+   "AUPRC_ci": [
+    0.07,
+    0.336
+   ],
+   "AUROC_ci": [
+    0.701,
+    0.923
+   ],
+   "Brier_ci": [
+    0.022,
+    0.12
+   ],
+   "sens_high_ci": [
+    0.0,
+    0.821
+   ],
+   "ppv_high_ci": [
+    0.0,
+    0.306
+   ],
+   "alerts_per_day_high_ci": [
+    0.399,
+    1.804
+   ],
+   "event_sens_high_ci": [
+    0.0,
+    1.0
+   ],
+   "bootstrap_resamples_used": 995
+  },
+  "libraries": {
+   "python": "3.13.16",
+   "pandas": "2.2.3",
+   "numpy": "2.5.3",
+   "scikit-learn": "1.9.1",
+   "xgboost": "3.4.1",
+   "lightgbm": "4.7.0",
+   "optuna": "5.0.0",
+   "joblib": "1.6.0",
+   "matplotlib": "3.11.2"
+  },
+  "seed": 42,
+  "trained_at": "2026-10-18T11:50:23.630322+00:00",
+  "calibration": "sigmoid",
+  "n_features": 40,
+  "file": "models/cardiotwin_full_24h.pkl"
+ },
+ "watch": {
+  "name": "cardiotwin-watch-24h",
+  "version": "1.0.0+2026-10-18",
+  "feature_set": "watch",
+  "horizon_h": 24,
+  "model_type": "Logistic regression (baseline)",
+  "params": {
+   "C": 0.001,
+   "class_weight": null
+  },
+  "operating_points": {
+   "moderate": 0.0362,
+   "high": 0.0759
+  },
+  "base_rate": 0.0428,
+  "label_definition": "first vasopressor start, lactate >= 4 or in-hospital death in (t, t+24h], t = end of the hour bin",
+  "train_patients": 59,
+  "train_hours": 3391,
+  "train_event_hours": 145,
+  "cv_metrics": {
+   "AUPRC": 0.1374494643139193,
+   "AUROC": 0.7784354218454543
+  },
+  "test_metrics": {
+   "model": "Logistic regression (baseline)",
+   "features": 46,
+   "calibration": "none",
+   "operating_points": {
+    "moderate": 0.0362,
+    "high": 0.0759
+   },
+   "test_patients": 15,
+   "test_hours": 1077,
+   "test_event_hours": 81,
+   "test_event_stays": 4,
+   "prevalence": 0.0752,
+   "calibration_slope": 1.714,
+   "calibration_intercept": 0.427,
+   "mean_predicted": 0.0508,
+   "AUPRC": 0.1928,
+   "AUROC": 0.7321,
+   "Brier": 0.0677,
+   "sens_high": 0.3333,
+   "ppv_high": 0.2547,
+   "alerts_per_day_high": 0.9582,
+   "event_sens_high": 0.75,
+   "events_caught_high": "3/4",
+   "median_lead_h_high": 23.0,
+   "sens_moderate": 0.9136,
+   "ppv_moderate": 0.0975,
+   "alerts_per_day_moderate": 4.7688,
+   "event_sens_moderate": 1.0,
+   "AUPRC_ci": [
+    0.043,
+    0.42
+   ],
+   "AUROC_ci": [
+    0.52,
+    0.935
+   ],
+   "Brier_ci": [
+    0.023,
+    0.117
+   ],
+   "sens_high_ci": [
+    0.0,
+    0.78
+   ],
+   "ppv_high_ci": [
+    0.0,
+    0.472
+   ],
+   "alerts_per_day_high_ci": [
+    0.542,
+    1.732
+   ],
+   "event_sens_high_ci": [
+    0.0,
+    1.0
+   ],
+   "bootstrap_resamples_used": 995
+  },
+  "libraries": {
+   "python": "3.13.16",
+   "pandas": "2.2.3",
+   "numpy": "2.5.3",
+   "scikit-learn": "1.9.1",
+   "xgboost": "3.4.1",
+   "lightgbm": "4.7.0",
+   "optuna": "5.0.0",
+   "joblib": "1.6.0",
+   "matplotlib": "3.11.2"
+  },
+  "seed": 42,
+  "trained_at": "2026-10-18T11:50:23.638051+00:00",
+  "calibration": "none",
+  "n_features": 46,
+  "file": "models/cardiotwin_watch_24h.pkl"
+ },
+ "model_for_phone_and_watch": "cardiotwin_watch_24h"
+}

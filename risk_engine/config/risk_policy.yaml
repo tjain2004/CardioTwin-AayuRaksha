@@ -1,0 +1,115 @@
+# CardioTwin risk engine policy. Every threshold here is a HACKATHON DEFAULT unless marked otherwise.
+# Nothing in this file has been reviewed by a clinician; all of it needs clinical review before real-world use.
+policy_version: "RE-POLICY-1.0-provisional"
+
+model:
+  bundle: models/cardiotwin_watch_24h.pkl         # phone + watch model saved by notebook 05
+  feature_schema: models/feature_schema.json
+  feature_set: watch
+  integrity_manifest: risk_engine/artifacts/manifest.json   # sha256 of the model file, checked at startup
+  target: "first vasopressor start, lactate >= 4 mmol/L or in-hospital death"
+  horizon_hours: 24
+  population: "adult ICU stays, MIMIC-IV demo (100 patients); not validated outside the ICU"
+
+risk_tiers:
+  source: models/operating_points.json            # chosen on cross-validation in notebook 05
+  provisional: true                               # not clinically approved: hackathon demonstration only
+  rule: "HIGH = lowest cut-off with <= 1 alert per patient-day (CV); MODERATE = highest cut-off with >= 85% sensitivity (CV)"
+  hysteresis_margin: 0.10                         # an open alert only drops a tier when risk falls 10% below that tier's cut-off
+  allow_tier_on_uncalibrated: true                # notebook 05 kept the identity calibrator (Platt scaling did not lower CV Brier)
+                                                  # and chose these cut-offs on that same uncalibrated output
+  allow_tier_when_calibrator_missing: false       # if the calibrator file is missing, show the score but no tier
+
+freshness:                                        # maximum age of the latest valid reading, per signal
+  hr:     {max_age_minutes: 180, mandatory: true}
+  spo2:   {max_age_minutes: 180, mandatory: true}
+  rr:     {max_age_minutes: 180, mandatory: true}
+  rhythm: {max_age_minutes: 240, mandatory: false}
+  wearable_sync_warning_minutes: 60               # warn when the watch has not synced for this long
+  clinical_max_age_days: 365                      # labs / clinic BP older than this are flagged as old
+  note: "Replayed ICU readings are stamped at the start of each hourly bin, so 180 min from the end of the bin equals the 2-hour rule used in notebook 06."
+
+sufficiency:
+  mandatory_profile: [age_at_admit, gender_male]
+  min_history_hours: 1                            # the model was trained from the first ICU hour onward
+  short_history_warning_hours: 6
+  coverage_window_hours: 24
+  min_signal_quality: 0.5                         # readings with quality below this are excluded and flagged
+  future_skew_minutes: 5                          # timestamps more than this in the future are invalid
+  assume_timezone_for_naive: UTC
+
+plausibility:                                     # possible but unusual: kept, flagged for re-measurement
+  hr:   {low: 35, high: 180}
+  spo2: {low: 85, high: 100}
+  rr:   {low: 6,  high: 40}
+  # physiologically impossible values use the training limits in twin_preprocess.RANGES and are excluded, as in training
+
+baseline:
+  lookback_days: 7
+  exclude_recent_hours: 6                         # the baseline never includes the window being compared
+  min_samples_available: 12
+  min_samples_unreliable: 6
+  high_confidence_samples: 48
+
+trends:
+  recent_hours: 6
+  sustained_min_hours: 4                          # >= 4 of the last 6 valid hours beyond the threshold = sustained
+  thresholds: {hr: 10, rr: 3, spo2: 2}            # bpm, breaths/min, percentage points
+  adverse_direction: {hr: 1, rr: 1, spo2: -1}
+  corroboration_min_signals: 2
+
+emergency:
+  review_status: "DRAFT - not clinically reviewed"
+  rules_source: "Single-parameter 3-point bands of NEWS2 (Royal College of Physicians 2017) and the project's symptom rule (twin_rules.symptom_check). The way they are combined is a hackathon default."
+  vitals_bands:                                   # NEWS2 single-parameter score 3
+    hr:   {low: 40, high: 131}                    # <= 40 or >= 131 bpm
+    rr:   {low: 8,  high: 25}                     # <= 8 or >= 25 /min
+    spo2: {low: 91}                               # <= 91 % (SpO2 scale 1)
+  confirm_min_readings: 2                         # a band must be met by >= 2 valid readings ...
+  confirm_window_minutes: 60                      # ... within this window, to count as sustained
+  max_reading_age_minutes: 90                     # vitals older than this cannot trigger or clear an emergency
+  call_action:
+    country: IN
+    number: "112"                                 # India's national Emergency Response Support System number
+    jurisdiction_verified: true                   # set by the deployer after confirming the deployment region
+    method: open_dialer                           # opens the phone dialler with the number; the user presses call
+    auto_dial: false                              # never place a call automatically
+  guidance:                                       # DRAFT wording; needs clinical approval
+    - "Stop what you are doing and sit or lie down."
+    - "If you have chest pain, trouble breathing, or feel faint, call 112 now or ask someone nearby to call."
+    - "Do not drive yourself to hospital."
+    - "Keep your phone with you and unlock the door if you can."
+
+alerts:
+  cooldown_minutes: 60                            # repeated non-emergency popups for the same patient are held back
+  emergency_bypasses_cooldown: true               # fixed: a newly detected emergency is never suppressed
+  resolve_requires_role: clinician
+
+privacy:
+  pseudonym_key_env: RISK_ENGINE_PSEUDONYM_KEY    # HMAC key for patient references; the demo key below is NOT secret
+  demo_pseudonym_key: "demo-key-replace-before-any-real-use"
+  store_input_snapshots: true                     # needed for audit replay; snapshots hold readings, so keep retention short
+  snapshot_retention_days: 30
+  audit_retention_days: 365
+  roles:
+    patient:   [view_own, acknowledge_display, record_user_action]
+    caregiver: [view_own, acknowledge_display, record_user_action]
+    clinician: [view_own, view_technical, acknowledge_display, clinician_review, escalate, resolve, what_if, record_user_action]
+    admin:     [view_technical, audit_replay, purge]
+
+whatif:
+  allowed:                                        # input -> (min, max) for hypothetical changes
+    hr: [20, 250]
+    spo2: [50, 100]
+    rr: [4, 60]
+    smoker: [0, 1]
+    bmi: [12, 70]
+    hba1c: [3, 20]
+    ldl: [10, 400]
+    total_chol: [50, 500]
+    triglycerides: [10, 2000]
+  default_hours: 6
+
+drift:
+  psi_warning: 0.10
+  psi_alert: 0.25

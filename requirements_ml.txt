@@ -1,0 +1,10 @@
+# tested with Python 3.13.16
+scikit-learn==1.9.1
+xgboost==3.4.1
+lightgbm==4.7.0
+optuna>=5.0.0
+joblib>=1.6.0
+pandas>=2.2
+numpy>=1.26
+matplotlib>=3.8
+shap>=0.54.1
