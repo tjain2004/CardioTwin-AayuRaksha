@@ -1,0 +1,154 @@
+[
+ {
+  "stay_id": 30876334,
+  "n_hours": 19,
+  "first_test_offset_h": 0,
+  "event_within_24h_in_test": 0,
+  "age": 59.0,
+  "male": 0
+ },
+ {
+  "stay_id": 31248398,
+  "n_hours": 21,
+  "first_test_offset_h": 0,
+  "event_within_24h_in_test": 0,
+  "age": 67.0,
+  "male": 1
+ },
+ {
+  "stay_id": 31316840,
+  "n_hours": 379,
+  "first_test_offset_h": 0,
+  "event_within_24h_in_test": 1,
+  "age": 69.0,
+  "male": 1
+ },
+ {
+  "stay_id": 32145159,
+  "n_hours": 24,
+  "first_test_offset_h": 0,
+  "event_within_24h_in_test": 0,
+  "age": 56.0,
+  "male": 1
+ },
+ {
+  "stay_id": 32166508,
+  "n_hours": 126,
+  "first_test_offset_h": 0,
+  "event_within_24h_in_test": 0,
+  "age": 34.0,
+  "male": 1
+ },
+ {
+  "stay_id": 32374504,
+  "n_hours": 64,
+  "first_test_offset_h": 0,
+  "event_within_24h_in_test": 0,
+  "age": 67.0,
+  "male": 1
+ },
+ {
+  "stay_id": 32506122,
+  "n_hours": 45,
+  "first_test_offset_h": 0,
+  "event_within_24h_in_test": 0,
+  "age": 48.0,
+  "male": 1
+ },
+ {
+  "stay_id": 33083787,
+  "n_hours": 33,
+  "first_test_offset_h": 0,
+  "event_within_24h_in_test": 0,
+  "age": 65.0,
+  "male": 1
+ },
+ {
+  "stay_id": 35026312,
+  "n_hours": 179,
+  "first_test_offset_h": 0,
+  "event_within_24h_in_test": 1,
+  "age": 56.0,
+  "male": 1
+ },
+ {
+  "stay_id": 36496303,
+  "n_hours": 84,
+  "first_test_offset_h": 0,
+  "event_within_24h_in_test": 0,
+  "age": 40.0,
+  "male": 0
+ },
+ {
+  "stay_id": 36893762,
+  "n_hours": 27,
+  "first_test_offset_h": 0,
+  "event_within_24h_in_test": 0,
+  "age": 67.0,
+  "male": 0
+ },
+ {
+  "stay_id": 37093652,
+  "n_hours": 108,
+  "first_test_offset_h": 0,
+  "event_within_24h_in_test": 1,
+  "age": 88.0,
+  "male": 1
+ },
+ {
+  "stay_id": 37267577,
+  "n_hours": 48,
+  "first_test_offset_h": 0,
+  "event_within_24h_in_test": 0,
+  "age": 78.0,
+  "male": 0
+ },
+ {
+  "stay_id": 38229329,
+  "n_hours": 23,
+  "first_test_offset_h": 0,
+  "event_within_24h_in_test": 0,
+  "age": 67.0,
+  "male": 1
+ },
+ {
+  "stay_id": 38333427,
+  "n_hours": 49,
+  "first_test_offset_h": 0,
+  "event_within_24h_in_test": 0,
+  "age": 80.0,
+  "male": 1
+ },
+ {
+  "stay_id": 39492446,
+  "n_hours": 33,
+  "first_test_offset_h": 0,
+  "event_within_24h_in_test": 0,
+  "age": 65.0,
+  "male": 1
+ },
+ {
+  "stay_id": 39544395,
+  "n_hours": 25,
+  "first_test_offset_h": 0,
+  "event_within_24h_in_test": 0,
+  "age": 87.0,
+  "male": 1
+ },
+ {
+  "stay_id": 39623478,
+  "n_hours": 17,
+  "first_test_offset_h": 0,
+  "event_within_24h_in_test": 0,
+  "age": 66.0,
+  "male": 1
+ },
+ {
+  "stay_id": 39635619,
+  "n_hours": 194,
+  "first_test_offset_h": 0,
+  "event_within_24h_in_test": 1,
+  "age": 51.0,
+  "male": 1
+ }
+]

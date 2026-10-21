@@ -1,0 +1,876 @@
+{
+"stay_id": 37093652,
+"subject_id": 10015931,
+"source": "replay: MIMIC-IV demo ICU charted vitals (not real watch data)",
+"note": "Hour offsets are relative to the first ICU hour; real dates are not kept.",
+"profile": {
+"age_at_admit": 88.0,
+"gender_male": 1,
+"height_in": 65.0,
+"weight_lbs": 120.0,
+"bmi": 20.0,
+"smoker": 0,
+"log_prior_admissions": 1.0986122886681096,
+"days_since_last_discharge": 83.175,
+"n_active_drugs": 14.0,
+"ix_bleeding": 0,
+"has_bled_partial": 4.0,
+"ascvd_10y_risk": 0.543,
+"hist_af": 1
+},
+"clinical": [
+{
+"name": "hba1c",
+"value": 6.7,
+"unit": "%"
+},
+{
+"name": "egfr",
+"value": 23.0,
+"unit": "mL/min/1.73m2"
+},
+{
+"name": "sbp_outpatient",
+"value": 122.0,
+"unit": "mmHg"
+},
+{
+"name": "dbp_outpatient",
+"value": 60.0,
+"unit": "mmHg"
+}
+],
+"hours": [
+{
+"offset_h": 0,
+"hr": 110.0,
+"spo2": null,
+"rr": 28.0,
+"rhythm": "af_flutter"
+},
+{
+"offset_h": 1,
+"hr": 107.5,
+"spo2": 85.0,
+"rr": 19.5,
+"rhythm": "af_flutter"
+},
+{
+"offset_h": 2,
+"hr": 105.0,
+"spo2": 99.7,
+"rr": 20.7,
+"rhythm": "af_flutter"
+},
+{
+"offset_h": 3,
+"hr": 102.5,
+"spo2": 100.0,
+"rr": 20.0,
+"rhythm": "af_flutter"
+},
+{
+"offset_h": 4,
+"hr": 96.5,
+"spo2": 99.0,
+"rr": 24.0,
+"rhythm": "af_flutter"
+},
+{
+"offset_h": 5,
+"hr": 105.5,
+"spo2": 99.5,
+"rr": 27.0,
+"rhythm": "af_flutter"
+},
+{
+"offset_h": 7,
+"hr": 109.0,
+"spo2": 96.0,
+"rr": 29.0,
+"rhythm": "af_flutter"
+},
+{
+"offset_h": 8,
+"hr": 110.0,
+"spo2": 97.8,
+"rr": 20.0,
+"rhythm": "af_flutter"
+},
+{
+"offset_h": 9,
+"hr": 104.0,
+"spo2": 96.0,
+"rr": 17.0,
+"rhythm": "af_flutter"
+},
+{
+"offset_h": 10,
+"hr": 129.0,
+"spo2": 96.0,
+"rr": 28.0,
+"rhythm": "af_flutter"
+},
+{
+"offset_h": 11,
+"hr": 100.8,
+"spo2": 96.7,
+"rr": 20.2,
+"rhythm": "af_flutter"
+},
+{
+"offset_h": 12,
+"hr": 117.7,
+"spo2": 96.3,
+"rr": 17.2,
+"rhythm": "af_flutter"
+},
+{
+"offset_h": 13,
+"hr": 97.7,
+"spo2": 100.0,
+"rr": 14.3,
+"rhythm": "af_flutter"
+},
+{
+"offset_h": 14,
+"hr": 120.5,
+"spo2": 99.7,
+"rr": 12.7,
+"rhythm": "af_flutter"
+},
+{
+"offset_h": 15,
+"hr": 125.0,
+"spo2": 99.5,
+"rr": 13.5,
+"rhythm": "af_flutter"
+},
+{
+"offset_h": 16,
+"hr": 125.0,
+"spo2": 95.0,
+"rr": 12.0,
+"rhythm": "af_flutter"
+},
+{
+"offset_h": 17,
+"hr": 128.0,
+"spo2": null,
+"rr": 14.0,
+"rhythm": "af_flutter"
+},
+{
+"offset_h": 18,
+"hr": 113.0,
+"spo2": 97.0,
+"rr": 29.0,
+"rhythm": "af_flutter"
+},
+{
+"offset_h": 19,
+"hr": 94.0,
+"spo2": 98.0,
+"rr": 25.0,
+"rhythm": "af_flutter"
+},
+{
+"offset_h": 20,
+"hr": 136.0,
+"spo2": null,
+"rr": 17.0,
+"rhythm": "af_flutter"
+},
+{
+"offset_h": 21,
+"hr": 113.0,
+"spo2": 99.0,
+"rr": 15.5,
+"rhythm": "af_flutter"
+},
+{
+"offset_h": 22,
+"hr": 120.0,
+"spo2": 99.0,
+"rr": 16.0,
+"rhythm": "af_flutter"
+},
+{
+"offset_h": 23,
+"hr": 125.0,
+"spo2": 98.0,
+"rr": 16.0,
+"rhythm": "af_flutter"
+},
+{
+"offset_h": 24,
+"hr": 138.0,
+"spo2": 96.0,
+"rr": 16.3,
+"rhythm": "af_flutter"
+},
+{
+"offset_h": 25,
+"hr": 127.5,
+"spo2": 96.0,
+"rr": 20.5,
+"rhythm": "af_flutter"
+},
+{
+"offset_h": 26,
+"hr": 132.0,
+"spo2": 96.0,
+"rr": 18.5,
+"rhythm": "af_flutter"
+},
+{
+"offset_h": 27,
+"hr": 138.0,
+"spo2": 100.0,
+"rr": 27.5,
+"rhythm": "af_flutter"
+},
+{
+"offset_h": 28,
+"hr": 135.0,
+"spo2": 100.0,
+"rr": 23.0,
+"rhythm": "af_flutter"
+},
+{
+"offset_h": 29,
+"hr": 148.0,
+"spo2": 95.0,
+"rr": 19.5,
+"rhythm": "af_flutter"
+},
+{
+"offset_h": 30,
+"hr": 136.5,
+"spo2": 95.0,
+"rr": 20.0,
+"rhythm": "af_flutter"
+},
+{
+"offset_h": 31,
+"hr": 132.5,
+"spo2": 94.0,
+"rr": 22.5,
+"rhythm": "af_flutter"
+},
+{
+"offset_h": 32,
+"hr": 140.0,
+"spo2": 95.0,
+"rr": 24.0,
+"rhythm": "af_flutter"
+},
+{
+"offset_h": 33,
+"hr": 142.0,
+"spo2": 96.0,
+"rr": 21.0,
+"rhythm": "af_flutter"
+},
+{
+"offset_h": 34,
+"hr": 142.0,
+"spo2": 100.0,
+"rr": 26.5,
+"rhythm": "af_flutter"
+},
+{
+"offset_h": 35,
+"hr": 143.0,
+"spo2": 87.0,
+"rr": 28.0,
+"rhythm": "af_flutter"
+},
+{
+"offset_h": 36,
+"hr": 141.0,
+"spo2": null,
+"rr": 18.0,
+"rhythm": "af_flutter"
+},
+{
+"offset_h": 39,
+"hr": 128.0,
+"spo2": 100.0,
+"rr": 17.5,
+"rhythm": "af_flutter"
+},
+{
+"offset_h": 40,
+"hr": 134.0,
+"spo2": 97.0,
+"rr": 23.0,
+"rhythm": "af_flutter"
+},
+{
+"offset_h": 41,
+"hr": 131.0,
+"spo2": 99.0,
+"rr": 21.0,
+"rhythm": "af_flutter"
+},
+{
+"offset_h": 42,
+"hr": 130.0,
+"spo2": 99.0,
+"rr": 23.0,
+"rhythm": "af_flutter"
+},
+{
+"offset_h": 43,
+"hr": 131.0,
+"spo2": 100.0,
+"rr": 23.0,
+"rhythm": "af_flutter"
+},
+{
+"offset_h": 44,
+"hr": 126.0,
+"spo2": null,
+"rr": 22.0,
+"rhythm": "af_flutter"
+},
+{
+"offset_h": 45,
+"hr": 130.0,
+"spo2": 100.0,
+"rr": 23.0,
+"rhythm": "af_flutter"
+},
+{
+"offset_h": 46,
+"hr": 124.0,
+"spo2": 100.0,
+"rr": 23.0,
+"rhythm": "af_flutter"
+},
+{
+"offset_h": 47,
+"hr": 128.0,
+"spo2": 100.0,
+"rr": 21.0,
+"rhythm": "af_flutter"
+},
+{
+"offset_h": 48,
+"hr": 129.0,
+"spo2": 97.0,
+"rr": 19.5,
+"rhythm": "af_flutter"
+},
+{
+"offset_h": 49,
+"hr": 127.0,
+"spo2": 100.0,
+"rr": 22.0,
+"rhythm": "af_flutter"
+},
+{
+"offset_h": 50,
+"hr": 125.0,
+"spo2": 97.0,
+"rr": 22.0,
+"rhythm": "af_flutter"
+},
+{
+"offset_h": 51,
+"hr": 127.3,
+"spo2": 95.0,
+"rr": 23.3,
+"rhythm": "af_flutter"
+},
+{
+"offset_h": 52,
+"hr": 127.5,
+"spo2": 100.0,
+"rr": 23.5,
+"rhythm": "af_flutter"
+},
+{
+"offset_h": 53,
+"hr": 123.5,
+"spo2": 100.0,
+"rr": 22.3,
+"rhythm": "af_flutter"
+},
+{
+"offset_h": 54,
+"hr": 123.0,
+"spo2": 99.0,
+"rr": 23.0,
+"rhythm": "af_flutter"
+},
+{
+"offset_h": 55,
+"hr": 130.8,
+"spo2": 99.5,
+"rr": 25.6,
+"rhythm": "af_flutter"
+},
+{
+"offset_h": 56,
+"hr": 129.0,
+"spo2": 99.0,
+"rr": 25.0,
+"rhythm": "af_flutter"
+},
+{
+"offset_h": 57,
+"hr": 134.0,
+"spo2": 98.0,
+"rr": 28.0,
+"rhythm": "af_flutter"
+},
+{
+"offset_h": 58,
+"hr": 119.0,
+"spo2": 100.0,
+"rr": 29.0,
+"rhythm": "af_flutter"
+},
+{
+"offset_h": 59,
+"hr": 126.0,
+"spo2": 100.0,
+"rr": 29.0,
+"rhythm": "af_flutter"
+},
+{
+"offset_h": 60,
+"hr": 130.0,
+"spo2": 99.5,
+"rr": 27.0,
+"rhythm": "af_flutter"
+},
+{
+"offset_h": 61,
+"hr": 132.0,
+"spo2": 100.0,
+"rr": 28.0,
+"rhythm": "af_flutter"
+},
+{
+"offset_h": 62,
+"hr": 126.3,
+"spo2": 100.0,
+"rr": 24.8,
+"rhythm": "af_flutter"
+},
+{
+"offset_h": 63,
+"hr": 126.0,
+"spo2": 100.0,
+"rr": 25.0,
+"rhythm": "af_flutter"
+},
+{
+"offset_h": 64,
+"hr": 121.0,
+"spo2": 100.0,
+"rr": 23.0,
+"rhythm": "af_flutter"
+},
+{
+"offset_h": 65,
+"hr": 117.5,
+"spo2": 100.0,
+"rr": 21.0,
+"rhythm": "af_flutter"
+},
+{
+"offset_h": 66,
+"hr": 116.0,
+"spo2": 100.0,
+"rr": 21.0,
+"rhythm": "af_flutter"
+},
+{
+"offset_h": 67,
+"hr": 115.0,
+"spo2": 100.0,
+"rr": 24.0,
+"rhythm": "af_flutter"
+},
+{
+"offset_h": 68,
+"hr": 116.0,
+"spo2": 100.0,
+"rr": 22.0,
+"rhythm": "af_flutter"
+},
+{
+"offset_h": 69,
+"hr": 109.0,
+"spo2": 100.0,
+"rr": 24.0,
+"rhythm": "af_flutter"
+},
+{
+"offset_h": 70,
+"hr": 112.0,
+"spo2": 100.0,
+"rr": 26.0,
+"rhythm": "af_flutter"
+},
+{
+"offset_h": 71,
+"hr": 112.0,
+"spo2": 98.0,
+"rr": 25.0,
+"rhythm": "af_flutter"
+},
+{
+"offset_h": 72,
+"hr": 111.0,
+"spo2": 98.0,
+"rr": 25.0,
+"rhythm": "af_flutter"
+},
+{
+"offset_h": 73,
+"hr": 109.0,
+"spo2": 100.0,
+"rr": 26.5,
+"rhythm": "af_flutter"
+},
+{
+"offset_h": 74,
+"hr": 108.0,
+"spo2": 100.0,
+"rr": 26.0,
+"rhythm": "af_flutter"
+},
+{
+"offset_h": 75,
+"hr": 114.0,
+"spo2": 99.0,
+"rr": 26.0,
+"rhythm": "af_flutter"
+},
+{
+"offset_h": 76,
+"hr": 112.0,
+"spo2": 100.0,
+"rr": 18.0,
+"rhythm": "af_flutter"
+},
+{
+"offset_h": 77,
+"hr": 106.0,
+"spo2": 100.0,
+"rr": 24.0,
+"rhythm": "af_flutter"
+},
+{
+"offset_h": 78,
+"hr": 109.0,
+"spo2": 99.0,
+"rr": 25.0,
+"rhythm": "af_flutter"
+},
+{
+"offset_h": 79,
+"hr": 105.0,
+"spo2": 100.0,
+"rr": 24.0,
+"rhythm": "af_flutter"
+},
+{
+"offset_h": 80,
+"hr": 109.0,
+"spo2": 100.0,
+"rr": 28.0,
+"rhythm": "af_flutter"
+},
+{
+"offset_h": 81,
+"hr": 102.0,
+"spo2": 100.0,
+"rr": 21.0,
+"rhythm": "af_flutter"
+},
+{
+"offset_h": 82,
+"hr": 103.0,
+"spo2": 100.0,
+"rr": 23.5,
+"rhythm": "af_flutter"
+},
+{
+"offset_h": 83,
+"hr": 103.0,
+"spo2": 100.0,
+"rr": 22.0,
+"rhythm": "af_flutter"
+},
+{
+"offset_h": 84,
+"hr": 108.0,
+"spo2": 100.0,
+"rr": 25.0,
+"rhythm": "af_flutter"
+},
+{
+"offset_h": 85,
+"hr": 98.0,
+"spo2": 100.0,
+"rr": 8.5,
+"rhythm": "af_flutter"
+},
+{
+"offset_h": 86,
+"hr": 105.0,
+"spo2": 100.0,
+"rr": 21.0,
+"rhythm": "af_flutter"
+},
+{
+"offset_h": 87,
+"hr": 103.0,
+"spo2": 99.0,
+"rr": 18.0,
+"rhythm": "af_flutter"
+},
+{
+"offset_h": 88,
+"hr": 101.0,
+"spo2": 100.0,
+"rr": 19.0,
+"rhythm": "af_flutter"
+},
+{
+"offset_h": 89,
+"hr": 101.0,
+"spo2": 100.0,
+"rr": 20.0,
+"rhythm": "af_flutter"
+},
+{
+"offset_h": 90,
+"hr": 106.0,
+"spo2": 100.0,
+"rr": 17.5,
+"rhythm": "af_flutter"
+},
+{
+"offset_h": 91,
+"hr": 105.0,
+"spo2": 100.0,
+"rr": 18.0,
+"rhythm": "af_flutter"
+},
+{
+"offset_h": 92,
+"hr": 100.0,
+"spo2": 100.0,
+"rr": 21.0,
+"rhythm": "af_flutter"
+},
+{
+"offset_h": 93,
+"hr": 109.0,
+"spo2": 99.0,
+"rr": 26.0,
+"rhythm": "af_flutter"
+},
+{
+"offset_h": 94,
+"hr": 109.0,
+"spo2": 97.8,
+"rr": 28.2,
+"rhythm": "af_flutter"
+},
+{
+"offset_h": 95,
+"hr": 102.0,
+"spo2": 99.8,
+"rr": 23.5,
+"rhythm": "af_flutter"
+},
+{
+"offset_h": 96,
+"hr": 103.5,
+"spo2": 100.0,
+"rr": 23.8,
+"rhythm": "af_flutter"
+},
+{
+"offset_h": 97,
+"hr": 106.0,
+"spo2": 100.0,
+"rr": 31.5,
+"rhythm": "af_flutter"
+},
+{
+"offset_h": 98,
+"hr": 103.5,
+"spo2": 100.0,
+"rr": 22.5,
+"rhythm": "af_flutter"
+},
+{
+"offset_h": 99,
+"hr": 102.0,
+"spo2": 100.0,
+"rr": 20.0,
+"rhythm": "af_flutter"
+},
+{
+"offset_h": 100,
+"hr": 101.0,
+"spo2": 100.0,
+"rr": 26.0,
+"rhythm": "af_flutter"
+},
+{
+"offset_h": 101,
+"hr": 98.0,
+"spo2": 100.0,
+"rr": 22.0,
+"rhythm": "af_flutter"
+},
+{
+"offset_h": 102,
+"hr": 103.0,
+"spo2": 100.0,
+"rr": 23.0,
+"rhythm": "af_flutter"
+},
+{
+"offset_h": 103,
+"hr": 101.5,
+"spo2": 100.0,
+"rr": 24.2,
+"rhythm": "af_flutter"
+},
+{
+"offset_h": 104,
+"hr": 101.0,
+"spo2": 100.0,
+"rr": 23.7,
+"rhythm": "af_flutter"
+},
+{
+"offset_h": 105,
+"hr": 100.0,
+"spo2": 94.0,
+"rr": 26.5,
+"rhythm": "af_flutter"
+},
+{
+"offset_h": 106,
+"hr": 103.0,
+"spo2": 98.0,
+"rr": 25.0,
+"rhythm": "af_flutter"
+},
+{
+"offset_h": 107,
+"hr": 102.0,
+"spo2": 100.0,
+"rr": 24.0,
+"rhythm": "af_flutter"
+},
+{
+"offset_h": 108,
+"hr": 104.0,
+"spo2": 99.0,
+"rr": 22.0,
+"rhythm": "af_flutter"
+},
+{
+"offset_h": 109,
+"hr": 107.0,
+"spo2": 98.0,
+"rr": 30.0,
+"rhythm": "af_flutter"
+},
+{
+"offset_h": 110,
+"hr": 98.0,
+"spo2": 100.0,
+"rr": 15.0,
+"rhythm": "af_flutter"
+}
+],
+"test_hours": [
+{
+"offset_h": 0,
+"y_24h": 1,
+"hours_to_event": 12.33,
+"risk_watch_nb05": 0.09663
+},
+{
+"offset_h": 1,
+"y_24h": 1,
+"hours_to_event": 11.33,
+"risk_watch_nb05": 0.29365
+},
+{
+"offset_h": 2,
+"y_24h": 1,
+"hours_to_event": 10.33,
+"risk_watch_nb05": 0.16709
+},
+{
+"offset_h": 3,
+"y_24h": 1,
+"hours_to_event": 9.33,
+"risk_watch_nb05": 0.12176
+},
+{
+"offset_h": 4,
+"y_24h": 1,
+"hours_to_event": 8.33,
+"risk_watch_nb05": 0.11156
+},
+{
+"offset_h": 5,
+"y_24h": 1,
+"hours_to_event": 7.33,
+"risk_watch_nb05": 0.11064
+},
+{
+"offset_h": 7,
+"y_24h": 1,
+"hours_to_event": 5.33,
+"risk_watch_nb05": 0.09009
+},
+{
+"offset_h": 8,
+"y_24h": 1,
+"hours_to_event": 4.33,
+"risk_watch_nb05": 0.09774
+},
+{
+"offset_h": 9,
+"y_24h": 1,
+"hours_to_event": 3.33,
+"risk_watch_nb05": 0.10454
+},
+{
+"offset_h": 10,
+"y_24h": 1,
+"hours_to_event": 2.33,
+"risk_watch_nb05": 0.10273
+},
+{
+"offset_h": 11,
+"y_24h": 1,
+"hours_to_event": 1.33,
+"risk_watch_nb05": 0.10463
+},
+{
+"offset_h": 12,
+"y_24h": 1,
+"hours_to_event": 0.33,
+"risk_watch_nb05": 0.12737
+}
+],
+"event_within_stay": 1
+}

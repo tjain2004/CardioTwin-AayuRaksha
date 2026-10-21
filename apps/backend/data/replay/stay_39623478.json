@@ -1,0 +1,264 @@
+{
+"stay_id": 39623478,
+"subject_id": 10022880,
+"source": "replay: MIMIC-IV demo ICU charted vitals (not real watch data)",
+"note": "Hour offsets are relative to the first ICU hour; real dates are not kept.",
+"profile": {
+"age_at_admit": 66.0,
+"gender_male": 1,
+"height_in": 71.0,
+"weight_lbs": 210.0,
+"bmi": 29.3,
+"smoker": 0,
+"log_prior_admissions": 0.0,
+"days_since_last_discharge": -1.0,
+"n_active_drugs": 23.0,
+"ix_bleeding": 1,
+"has_bled_partial": 1.0,
+"ascvd_10y_risk": 0.161,
+"hist_af": 0
+},
+"clinical": [
+{
+"name": "egfr",
+"value": 74.0,
+"unit": "mL/min/1.73m2"
+},
+{
+"name": "sbp_outpatient",
+"value": 142.0,
+"unit": "mmHg"
+},
+{
+"name": "dbp_outpatient",
+"value": 84.0,
+"unit": "mmHg"
+}
+],
+"hours": [
+{
+"offset_h": 0,
+"hr": 96.8,
+"spo2": 98.8,
+"rr": 13.2,
+"rhythm": "af_flutter"
+},
+{
+"offset_h": 1,
+"hr": 85.0,
+"spo2": 98.0,
+"rr": 13.0,
+"rhythm": "sinus"
+},
+{
+"offset_h": 2,
+"hr": 92.0,
+"spo2": 95.0,
+"rr": 18.0,
+"rhythm": "sinus"
+},
+{
+"offset_h": 3,
+"hr": 94.0,
+"spo2": 96.0,
+"rr": 16.0,
+"rhythm": "sinus"
+},
+{
+"offset_h": 4,
+"hr": 92.0,
+"spo2": null,
+"rr": 13.0,
+"rhythm": "sinus"
+},
+{
+"offset_h": 5,
+"hr": 95.0,
+"spo2": 94.0,
+"rr": 12.0,
+"rhythm": "sinus"
+},
+{
+"offset_h": 6,
+"hr": 91.0,
+"spo2": 93.0,
+"rr": 15.0,
+"rhythm": "sinus"
+},
+{
+"offset_h": 7,
+"hr": 91.0,
+"spo2": 98.0,
+"rr": 16.0,
+"rhythm": "sinus"
+},
+{
+"offset_h": 8,
+"hr": 95.0,
+"spo2": null,
+"rr": 15.0,
+"rhythm": "sinus"
+},
+{
+"offset_h": 9,
+"hr": 88.0,
+"spo2": 94.0,
+"rr": 16.0,
+"rhythm": "sinus"
+},
+{
+"offset_h": 10,
+"hr": 85.0,
+"spo2": 95.0,
+"rr": 14.0,
+"rhythm": "sinus"
+},
+{
+"offset_h": 11,
+"hr": 90.0,
+"spo2": 95.0,
+"rr": 16.0,
+"rhythm": "sinus"
+},
+{
+"offset_h": 12,
+"hr": 94.0,
+"spo2": 97.0,
+"rr": 20.0,
+"rhythm": "sinus"
+},
+{
+"offset_h": 13,
+"hr": 95.0,
+"spo2": 97.0,
+"rr": 18.0,
+"rhythm": "sinus"
+},
+{
+"offset_h": 14,
+"hr": 95.0,
+"spo2": 95.0,
+"rr": 17.0,
+"rhythm": "sinus"
+},
+{
+"offset_h": 15,
+"hr": 99.0,
+"spo2": 98.0,
+"rr": 13.0,
+"rhythm": "sinus"
+},
+{
+"offset_h": 16,
+"hr": 95.0,
+"spo2": 93.0,
+"rr": 15.0,
+"rhythm": "sinus"
+}
+],
+"test_hours": [
+{
+"offset_h": 0,
+"y_24h": 0,
+"hours_to_event": null,
+"risk_watch_nb05": 0.10112
+},
+{
+"offset_h": 1,
+"y_24h": 0,
+"hours_to_event": null,
+"risk_watch_nb05": 0.05204
+},
+{
+"offset_h": 2,
+"y_24h": 0,
+"hours_to_event": null,
+"risk_watch_nb05": 0.04774
+},
+{
+"offset_h": 3,
+"y_24h": 0,
+"hours_to_event": null,
+"risk_watch_nb05": 0.05234
+},
+{
+"offset_h": 4,
+"y_24h": 0,
+"hours_to_event": null,
+"risk_watch_nb05": 0.05376
+},
+{
+"offset_h": 5,
+"y_24h": 0,
+"hours_to_event": null,
+"risk_watch_nb05": 0.05849
+},
+{
+"offset_h": 6,
+"y_24h": 0,
+"hours_to_event": null,
+"risk_watch_nb05": 0.04583
+},
+{
+"offset_h": 7,
+"y_24h": 0,
+"hours_to_event": null,
+"risk_watch_nb05": 0.04187
+},
+{
+"offset_h": 8,
+"y_24h": 0,
+"hours_to_event": null,
+"risk_watch_nb05": 0.04101
+},
+{
+"offset_h": 9,
+"y_24h": 0,
+"hours_to_event": null,
+"risk_watch_nb05": 0.04134
+},
+{
+"offset_h": 10,
+"y_24h": 0,
+"hours_to_event": null,
+"risk_watch_nb05": 0.04145
+},
+{
+"offset_h": 11,
+"y_24h": 0,
+"hours_to_event": null,
+"risk_watch_nb05": 0.04033
+},
+{
+"offset_h": 12,
+"y_24h": 0,
+"hours_to_event": null,
+"risk_watch_nb05": 0.03814
+},
+{
+"offset_h": 13,
+"y_24h": 0,
+"hours_to_event": null,
+"risk_watch_nb05": 0.0383
+},
+{
+"offset_h": 14,
+"y_24h": 0,
+"hours_to_event": null,
+"risk_watch_nb05": 0.04188
+},
+{
+"offset_h": 15,
+"y_24h": 0,
+"hours_to_event": null,
+"risk_watch_nb05": 0.04478
+},
+{
+"offset_h": 16,
+"y_24h": 0,
+"hours_to_event": null,
+"risk_watch_nb05": 0.04529
+}
+],
+"event_within_stay": 0
+}

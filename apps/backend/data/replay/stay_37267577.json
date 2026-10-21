@@ -1,0 +1,667 @@
+{
+"stay_id": 37267577,
+"subject_id": 10015272,
+"source": "replay: MIMIC-IV demo ICU charted vitals (not real watch data)",
+"note": "Hour offsets are relative to the first ICU hour; real dates are not kept.",
+"profile": {
+"age_at_admit": 78.0,
+"gender_male": 0,
+"height_in": 65.0,
+"weight_lbs": 117.0,
+"bmi": 19.5,
+"smoker": 0,
+"log_prior_admissions": 0.0,
+"days_since_last_discharge": -1.0,
+"n_active_drugs": 13.0,
+"ix_bleeding": 1,
+"has_bled_partial": 1.0,
+"ascvd_10y_risk": 0.189,
+"hist_af": 0
+},
+"clinical": [
+{
+"name": "egfr",
+"value": 65.4,
+"unit": "mL/min/1.73m2"
+},
+{
+"name": "sbp_outpatient",
+"value": 120.0,
+"unit": "mmHg"
+},
+{
+"name": "dbp_outpatient",
+"value": 72.0,
+"unit": "mmHg"
+}
+],
+"hours": [
+{
+"offset_h": 0,
+"hr": 124.0,
+"spo2": 97.0,
+"rr": 32.0,
+"rhythm": "af_flutter"
+},
+{
+"offset_h": 1,
+"hr": 134.0,
+"spo2": 96.0,
+"rr": 25.0,
+"rhythm": "af_flutter"
+},
+{
+"offset_h": 2,
+"hr": 133.0,
+"spo2": 98.0,
+"rr": 23.0,
+"rhythm": "af_flutter"
+},
+{
+"offset_h": 3,
+"hr": 133.0,
+"spo2": 99.0,
+"rr": 40.0,
+"rhythm": "af_flutter"
+},
+{
+"offset_h": 4,
+"hr": 133.0,
+"spo2": 99.0,
+"rr": 15.0,
+"rhythm": "af_flutter"
+},
+{
+"offset_h": 5,
+"hr": 133.0,
+"spo2": 96.0,
+"rr": 20.0,
+"rhythm": "af_flutter"
+},
+{
+"offset_h": 6,
+"hr": 135.0,
+"spo2": 93.0,
+"rr": 33.0,
+"rhythm": "af_flutter"
+},
+{
+"offset_h": 7,
+"hr": 137.0,
+"spo2": 98.0,
+"rr": 36.0,
+"rhythm": "af_flutter"
+},
+{
+"offset_h": 8,
+"hr": 144.0,
+"spo2": 97.0,
+"rr": 17.0,
+"rhythm": "af_flutter"
+},
+{
+"offset_h": 9,
+"hr": 139.0,
+"spo2": 99.0,
+"rr": 26.0,
+"rhythm": "af_flutter"
+},
+{
+"offset_h": 10,
+"hr": 141.0,
+"spo2": 97.0,
+"rr": 19.0,
+"rhythm": "af_flutter"
+},
+{
+"offset_h": 11,
+"hr": 145.0,
+"spo2": 98.0,
+"rr": 21.0,
+"rhythm": "af_flutter"
+},
+{
+"offset_h": 12,
+"hr": 145.0,
+"spo2": 97.0,
+"rr": 33.0,
+"rhythm": "af_flutter"
+},
+{
+"offset_h": 13,
+"hr": 142.0,
+"spo2": 97.0,
+"rr": 20.0,
+"rhythm": "af_flutter"
+},
+{
+"offset_h": 14,
+"hr": 144.0,
+"spo2": 97.0,
+"rr": 24.0,
+"rhythm": "af_flutter"
+},
+{
+"offset_h": 15,
+"hr": 135.0,
+"spo2": 98.0,
+"rr": 20.0,
+"rhythm": "af_flutter"
+},
+{
+"offset_h": 16,
+"hr": 131.0,
+"spo2": 96.0,
+"rr": 20.0,
+"rhythm": "af_flutter"
+},
+{
+"offset_h": 17,
+"hr": 113.0,
+"spo2": 95.0,
+"rr": 16.0,
+"rhythm": "af_flutter"
+},
+{
+"offset_h": 18,
+"hr": 106.0,
+"spo2": 97.0,
+"rr": 23.0,
+"rhythm": "af_flutter"
+},
+{
+"offset_h": 19,
+"hr": 117.0,
+"spo2": 98.0,
+"rr": 22.0,
+"rhythm": "af_flutter"
+},
+{
+"offset_h": 20,
+"hr": 96.0,
+"spo2": 96.0,
+"rr": 20.0,
+"rhythm": "af_flutter"
+},
+{
+"offset_h": 21,
+"hr": 98.0,
+"spo2": 99.0,
+"rr": 20.0,
+"rhythm": "af_flutter"
+},
+{
+"offset_h": 22,
+"hr": 92.0,
+"spo2": 99.0,
+"rr": 25.0,
+"rhythm": "af_flutter"
+},
+{
+"offset_h": 23,
+"hr": 93.0,
+"spo2": 100.0,
+"rr": 21.0,
+"rhythm": "af_flutter"
+},
+{
+"offset_h": 24,
+"hr": 89.0,
+"spo2": 98.0,
+"rr": 14.0,
+"rhythm": "af_flutter"
+},
+{
+"offset_h": 25,
+"hr": 86.0,
+"spo2": 98.0,
+"rr": 24.0,
+"rhythm": "af_flutter"
+},
+{
+"offset_h": 26,
+"hr": 77.0,
+"spo2": 97.0,
+"rr": 13.0,
+"rhythm": "af_flutter"
+},
+{
+"offset_h": 27,
+"hr": 81.0,
+"spo2": 93.0,
+"rr": 22.0,
+"rhythm": "af_flutter"
+},
+{
+"offset_h": 28,
+"hr": 84.0,
+"spo2": 97.0,
+"rr": 19.0,
+"rhythm": "af_flutter"
+},
+{
+"offset_h": 29,
+"hr": 77.0,
+"spo2": 97.0,
+"rr": 18.0,
+"rhythm": "af_flutter"
+},
+{
+"offset_h": 30,
+"hr": 77.0,
+"spo2": 96.0,
+"rr": 19.0,
+"rhythm": "af_flutter"
+},
+{
+"offset_h": 31,
+"hr": 79.0,
+"spo2": 97.0,
+"rr": 21.0,
+"rhythm": "af_flutter"
+},
+{
+"offset_h": 32,
+"hr": 80.0,
+"spo2": 99.0,
+"rr": 24.0,
+"rhythm": "af_flutter"
+},
+{
+"offset_h": 33,
+"hr": 77.0,
+"spo2": 100.0,
+"rr": 29.0,
+"rhythm": "af_flutter"
+},
+{
+"offset_h": 34,
+"hr": 72.0,
+"spo2": 94.0,
+"rr": 29.0,
+"rhythm": "af_flutter"
+},
+{
+"offset_h": 35,
+"hr": 71.0,
+"spo2": 95.0,
+"rr": 24.0,
+"rhythm": "af_flutter"
+},
+{
+"offset_h": 36,
+"hr": 81.0,
+"spo2": 98.0,
+"rr": 18.0,
+"rhythm": "af_flutter"
+},
+{
+"offset_h": 37,
+"hr": 85.0,
+"spo2": 97.0,
+"rr": 16.0,
+"rhythm": "af_flutter"
+},
+{
+"offset_h": 38,
+"hr": 81.0,
+"spo2": 97.0,
+"rr": 16.0,
+"rhythm": "af_flutter"
+},
+{
+"offset_h": 39,
+"hr": 75.0,
+"spo2": 96.0,
+"rr": 18.0,
+"rhythm": "af_flutter"
+},
+{
+"offset_h": 40,
+"hr": 80.0,
+"spo2": 100.0,
+"rr": 15.0,
+"rhythm": "af_flutter"
+},
+{
+"offset_h": 41,
+"hr": 84.0,
+"spo2": 96.0,
+"rr": 21.0,
+"rhythm": "af_flutter"
+},
+{
+"offset_h": 42,
+"hr": 80.0,
+"spo2": 98.0,
+"rr": 15.0,
+"rhythm": "af_flutter"
+},
+{
+"offset_h": 43,
+"hr": 86.0,
+"spo2": 99.0,
+"rr": 29.0,
+"rhythm": "af_flutter"
+},
+{
+"offset_h": 44,
+"hr": 79.0,
+"spo2": 99.0,
+"rr": 26.0,
+"rhythm": "af_flutter"
+},
+{
+"offset_h": 45,
+"hr": 95.0,
+"spo2": 96.0,
+"rr": 19.0,
+"rhythm": "af_flutter"
+},
+{
+"offset_h": 46,
+"hr": 95.0,
+"spo2": 99.0,
+"rr": 15.0,
+"rhythm": "af_flutter"
+},
+{
+"offset_h": 47,
+"hr": 88.0,
+"spo2": 100.0,
+"rr": 19.0,
+"rhythm": "af_flutter"
+}
+],
+"test_hours": [
+{
+"offset_h": 0,
+"y_24h": 0,
+"hours_to_event": null,
+"risk_watch_nb05": 0.10768
+},
+{
+"offset_h": 1,
+"y_24h": 0,
+"hours_to_event": null,
+"risk_watch_nb05": 0.09186
+},
+{
+"offset_h": 2,
+"y_24h": 0,
+"hours_to_event": null,
+"risk_watch_nb05": 0.09757
+},
+{
+"offset_h": 3,
+"y_24h": 0,
+"hours_to_event": null,
+"risk_watch_nb05": 0.07692
+},
+{
+"offset_h": 4,
+"y_24h": 0,
+"hours_to_event": null,
+"risk_watch_nb05": 0.08825
+},
+{
+"offset_h": 5,
+"y_24h": 0,
+"hours_to_event": null,
+"risk_watch_nb05": 0.10214
+},
+{
+"offset_h": 6,
+"y_24h": 0,
+"hours_to_event": null,
+"risk_watch_nb05": 0.07807
+},
+{
+"offset_h": 7,
+"y_24h": 0,
+"hours_to_event": null,
+"risk_watch_nb05": 0.06797
+},
+{
+"offset_h": 8,
+"y_24h": 0,
+"hours_to_event": null,
+"risk_watch_nb05": 0.08479
+},
+{
+"offset_h": 9,
+"y_24h": 0,
+"hours_to_event": null,
+"risk_watch_nb05": 0.0918
+},
+{
+"offset_h": 10,
+"y_24h": 0,
+"hours_to_event": null,
+"risk_watch_nb05": 0.08558
+},
+{
+"offset_h": 11,
+"y_24h": 0,
+"hours_to_event": null,
+"risk_watch_nb05": 0.08341
+},
+{
+"offset_h": 12,
+"y_24h": 0,
+"hours_to_event": null,
+"risk_watch_nb05": 0.06888
+},
+{
+"offset_h": 13,
+"y_24h": 0,
+"hours_to_event": null,
+"risk_watch_nb05": 0.08222
+},
+{
+"offset_h": 14,
+"y_24h": 0,
+"hours_to_event": null,
+"risk_watch_nb05": 0.0766
+},
+{
+"offset_h": 15,
+"y_24h": 0,
+"hours_to_event": null,
+"risk_watch_nb05": 0.08059
+},
+{
+"offset_h": 16,
+"y_24h": 0,
+"hours_to_event": null,
+"risk_watch_nb05": 0.07589
+},
+{
+"offset_h": 17,
+"y_24h": 0,
+"hours_to_event": null,
+"risk_watch_nb05": 0.07168
+},
+{
+"offset_h": 18,
+"y_24h": 0,
+"hours_to_event": null,
+"risk_watch_nb05": 0.05387
+},
+{
+"offset_h": 19,
+"y_24h": 0,
+"hours_to_event": null,
+"risk_watch_nb05": 0.05228
+},
+{
+"offset_h": 20,
+"y_24h": 0,
+"hours_to_event": null,
+"risk_watch_nb05": 0.04137
+},
+{
+"offset_h": 21,
+"y_24h": 0,
+"hours_to_event": null,
+"risk_watch_nb05": 0.03482
+},
+{
+"offset_h": 22,
+"y_24h": 0,
+"hours_to_event": null,
+"risk_watch_nb05": 0.02632
+},
+{
+"offset_h": 23,
+"y_24h": 0,
+"hours_to_event": null,
+"risk_watch_nb05": 0.02367
+},
+{
+"offset_h": 24,
+"y_24h": 0,
+"hours_to_event": null,
+"risk_watch_nb05": 0.02678
+},
+{
+"offset_h": 25,
+"y_24h": 0,
+"hours_to_event": null,
+"risk_watch_nb05": 0.02138
+},
+{
+"offset_h": 26,
+"y_24h": 0,
+"hours_to_event": null,
+"risk_watch_nb05": 0.02126
+},
+{
+"offset_h": 27,
+"y_24h": 0,
+"hours_to_event": null,
+"risk_watch_nb05": 0.01999
+},
+{
+"offset_h": 28,
+"y_24h": 0,
+"hours_to_event": null,
+"risk_watch_nb05": 0.02159
+},
+{
+"offset_h": 29,
+"y_24h": 0,
+"hours_to_event": null,
+"risk_watch_nb05": 0.02007
+},
+{
+"offset_h": 30,
+"y_24h": 0,
+"hours_to_event": null,
+"risk_watch_nb05": 0.01791
+},
+{
+"offset_h": 31,
+"y_24h": 0,
+"hours_to_event": null,
+"risk_watch_nb05": 0.01845
+},
+{
+"offset_h": 32,
+"y_24h": 0,
+"hours_to_event": null,
+"risk_watch_nb05": 0.01524
+},
+{
+"offset_h": 33,
+"y_24h": 0,
+"hours_to_event": null,
+"risk_watch_nb05": 0.01241
+},
+{
+"offset_h": 34,
+"y_24h": 0,
+"hours_to_event": null,
+"risk_watch_nb05": 0.01187
+},
+{
+"offset_h": 35,
+"y_24h": 0,
+"hours_to_event": null,
+"risk_watch_nb05": 0.01373
+},
+{
+"offset_h": 36,
+"y_24h": 0,
+"hours_to_event": null,
+"risk_watch_nb05": 0.0163
+},
+{
+"offset_h": 37,
+"y_24h": 0,
+"hours_to_event": null,
+"risk_watch_nb05": 0.01945
+},
+{
+"offset_h": 38,
+"y_24h": 0,
+"hours_to_event": null,
+"risk_watch_nb05": 0.02147
+},
+{
+"offset_h": 39,
+"y_24h": 0,
+"hours_to_event": null,
+"risk_watch_nb05": 0.02303
+},
+{
+"offset_h": 40,
+"y_24h": 0,
+"hours_to_event": null,
+"risk_watch_nb05": 0.02377
+},
+{
+"offset_h": 41,
+"y_24h": 0,
+"hours_to_event": null,
+"risk_watch_nb05": 0.02381
+},
+{
+"offset_h": 42,
+"y_24h": 0,
+"hours_to_event": null,
+"risk_watch_nb05": 0.0255
+},
+{
+"offset_h": 43,
+"y_24h": 0,
+"hours_to_event": null,
+"risk_watch_nb05": 0.02054
+},
+{
+"offset_h": 44,
+"y_24h": 0,
+"hours_to_event": null,
+"risk_watch_nb05": 0.01862
+},
+{
+"offset_h": 45,
+"y_24h": 0,
+"hours_to_event": null,
+"risk_watch_nb05": 0.02562
+},
+{
+"offset_h": 46,
+"y_24h": 0,
+"hours_to_event": null,
+"risk_watch_nb05": 0.03169
+},
+{
+"offset_h": 47,
+"y_24h": 0,
+"hours_to_event": null,
+"risk_watch_nb05": 0.02703
+}
+],
+"event_within_stay": 0
+}

@@ -8,26 +8,28 @@
 </p>
 
 <p align="center">
-  <a href="assets/architecture/cardiotwin_system_architecture.pdf">📐 System Architecture (PDF)</a> &nbsp;·&nbsp;
-  <a href="assets/presentation/CardioTwin_AyuRaksha_Presentation.pdf">📊 Presentation (PDF)</a> &nbsp;·&nbsp;
-  <a href="#10-submission-files">🎬 Demo Video</a> &nbsp;·&nbsp;
-  <a href="#team-ayuraksha">👥 Team</a>
+  <img src="assets/icons/architecture.svg" width="18" height="18" alt=""> <a href="assets/architecture/cardiotwin_system_architecture.pdf"><b>System Architecture</b></a> &nbsp;&nbsp;|&nbsp;&nbsp;
+  <img src="assets/icons/presentation.svg" width="18" height="18" alt=""> <a href="assets/presentation/CardioTwin_AyuRaksha_Presentation.pdf"><b>Presentation</b></a> &nbsp;&nbsp;|&nbsp;&nbsp;
+  <img src="assets/icons/video.svg" width="18" height="18" alt=""> <a href="#c-demo-video"><b>Demo Video</b></a> &nbsp;&nbsp;|&nbsp;&nbsp;
+  <img src="assets/icons/team.svg" width="18" height="18" alt=""> <a href="#team-ayuraksha"><b>Team</b></a>
+</p>
+
+<p align="center">
+  <img src="assets/logos/python.svg" width="36" height="36" alt="Python" title="Python">&nbsp;&nbsp;<img src="assets/logos/pandas.svg" width="36" height="36" alt="pandas" title="pandas">&nbsp;&nbsp;<img src="assets/logos/numpy.svg" width="36" height="36" alt="NumPy" title="NumPy">&nbsp;&nbsp;<img src="assets/logos/scikitlearn.svg" width="36" height="36" alt="scikit-learn" title="scikit-learn">&nbsp;&nbsp;<img src="assets/logos/jupyter.svg" width="36" height="36" alt="Jupyter" title="Jupyter">&nbsp;&nbsp;<img src="assets/logos/fastapi.svg" width="36" height="36" alt="FastAPI" title="FastAPI">&nbsp;&nbsp;<img src="assets/logos/sqlite.svg" width="36" height="36" alt="SQLite" title="SQLite">&nbsp;&nbsp;<img src="assets/logos/react.svg" width="36" height="36" alt="React" title="React">&nbsp;&nbsp;<img src="assets/logos/vite.svg" width="36" height="36" alt="Vite" title="Vite">&nbsp;&nbsp;<img src="assets/logos/claude.svg" width="36" height="36" alt="Claude API" title="Claude API">&nbsp;&nbsp;<img src="assets/logos/googlemaps.svg" width="36" height="36" alt="Google Maps" title="Google Maps">&nbsp;&nbsp;<img src="assets/logos/kotlin.svg" width="36" height="36" alt="Kotlin" title="Kotlin">&nbsp;&nbsp;<img src="assets/logos/wearos.svg" width="36" height="36" alt="Wear OS" title="Wear OS">
 </p>
 
 ---
 
 ## Team AyuRaksha
 
-<p align="center"><b>🏫 Sri Shankaracharya Technical Campus</b></p>
+**College:** Sri Shankaracharya Technical Campus
 
-<table align="center">
-  <tr>
-    <td align="center" width="25%">👑<br><b>Tanya Jain</b><br><sub>Team Leader · Full backend<br>development &amp; data collection</sub></td>
-    <td align="center" width="25%">🧠<br><b>Praveen Yadav</b><br><sub>AI &amp; ML pipeline<br>&nbsp;</sub></td>
-    <td align="center" width="25%">🔗<br><b>Mohammad Danishuddin</b><br><sub>Connectivity of all<br>3 systems</sub></td>
-    <td align="center" width="25%">🎨<br><b>Ankur Pandey</b><br><sub>UI &amp; presentation<br>&nbsp;</sub></td>
-  </tr>
-</table>
+| Member | Role |
+|---|---|
+| **Tanya Jain** | Team Leader · Full backend development and data collection |
+| **Praveen Yadav** | AI and ML pipeline |
+| **Mohammad Danishuddin** | Connectivity of all three systems (doctor dashboard, patient app, watch) |
+| **Ankur Pandey** | UI and presentation |
 
 ---
 
@@ -44,11 +46,13 @@
 7. [Healthcare use case](#7-healthcare-use-case)
 8. [Architecture and AI/ML](#8-architecture-and-aiml)
 9. [Technical stack](#9-technical-stack)
-10. [Submission files: SA, PPT and video](#10-submission-files)
+10. **[Submission files](#10-submission-files)**
+    - a. [System Architecture](#a-system-architecture)
+    - b. [Presentation](#b-presentation)
+    - c. [Demo Video](#c-demo-video)
 11. [Run it locally](#11-run-it-locally)
 12. [Responsible AI and limitations](#12-responsible-ai-and-limitations)
-13. [Unstop checklist](#13-unstop-checklist)
-14. [License](#14-license)
+13. [License](#13-license)
 
 ---
 
@@ -59,7 +63,7 @@
 > **Theme:** MedTech / BioTech / HealthTech · **Category:** Software
 
 <p align="center">
-  <img src="assets/images/problem.png" alt="Illustration: warning signs appear hours before a cardiac crisis but get missed" width="100%">
+  <img src="assets/images/problem.png" alt="Hand-drawn story: warning signs build up at home, data stays in silos, the problem is noticed too late" width="100%">
 </p>
 
 Cardiac deterioration usually shows up in the vital signs hours before a crisis, but those signals are hard to act on:
@@ -78,12 +82,12 @@ CardioTwin brings **history and live physiology together** in one place. It **lo
 
 | | What it does in the prototype | |
 |---|---|---|
-| 🔗 **Fuse** | Joins the static EHR (demographics, diagnoses, labs, ECG, medicines) with dynamic vitals (heart rate, SpO₂, breathing rate, BP, rhythm) | 🟢 |
-| 🔮 **Predict** | Estimates the risk of vasopressor start, lactate ≥ 4 or in-hospital death within the next 24 hours, re-scored every hour | 🟢 |
-| 🧾 **Explain** | Gives the top SHAP reasons and a doctor-ready SAR report (Situation, Assessment, Recommendation) | 🟢 |
-| 🧪 **Simulate** | The what-if simulator shows how risk moves if a vital sign or risk factor changes | 🟢 |
-| 🛡️ **Protect** | Freshness gates, emergency rules that run before the model, and a 112 prompt only for critical patients (the user presses Call) | 🟢 |
-| 📲 **Deliver** | One backend serves the doctor dashboard, the patient app and the watch screens | 🟢 |
+| **Fuse** | Joins the static EHR (demographics, diagnoses, labs, ECG, medicines) with dynamic vitals (heart rate, SpO₂, breathing rate, BP, rhythm) | 🟢 |
+| **Predict** | Estimates the risk of vasopressor start, lactate ≥ 4 or in-hospital death within the next 24 hours, re-scored every hour | 🟢 |
+| **Explain** | Gives the top SHAP reasons and a doctor-ready SAR report (Situation, Assessment, Recommendation) | 🟢 |
+| **Simulate** | The what-if simulator shows how risk moves if a vital sign or risk factor changes | 🟢 |
+| **Protect** | Freshness gates, emergency rules that run before the model, and a 112 prompt only for critical patients (the user presses Call) | 🟢 |
+| **Deliver** | One backend serves the doctor dashboard, the patient app and the watch screens | 🟢 |
 
 **How data flows:** PhysioNet data → clean and merge → 211 engineered features → train and calibrate → saved model. Live readings (replayed by a *virtual watch*) → validate → safety rules → risk engine → SHAP and SAR → dashboards over WebSocket.
 
@@ -140,6 +144,19 @@ CardioTwin brings **history and live physiology together** in one place. It **lo
 - **Safety by design.** It returns `INSUFFICIENT_DATA` instead of a guess, emergency rules run before the model, and nothing is dispatched automatically.
 - **Honest labels.** Simulated data, demo ambulances and offline answers are all marked on screen.
 - **One backend, three views.** The doctor, the patient and the watch all read the same twin.
+
+<table>
+  <tr>
+    <td align="center" width="28%"><img src="assets/images/watch_face.png" alt="Watch screen" width="100%"></td>
+    <td align="center" width="36%"><img src="assets/images/whatif_tornado.png" alt="What-if simulator" width="100%"></td>
+    <td align="center" width="36%"><img src="assets/images/shap_waterfall.png" alt="SHAP explanation" width="100%"></td>
+  </tr>
+  <tr>
+    <td align="center"><b>Watch view</b><br>The twin's state as one glanceable watch screen (browser rendering, simulated data)</td>
+    <td align="center"><b>What-if simulator</b><br>Which change would move this patient's risk the most</td>
+    <td align="center"><b>SHAP explanation</b><br>Why the model gave this patient 8.1%, factor by factor</td>
+  </tr>
+</table>
 
 ## 6. Our unique vision: a watch-connected digital twin
 
@@ -199,7 +216,7 @@ A clinician is following a cardiac patient at risk of acute deterioration. Cardi
 | [MIMIC-IV Waveform DB 0.1.0](https://physionet.org/content/mimic4wdb/0.1.0/) | Monitor numerics as a stand-in for wearable streams |
 | [I-CARE 2.1](https://physionet.org/content/i-care/2.1/) | Cardiac-arrest cohort metadata (exploratory) |
 
-Raw and patient-level data are **not** included in this repository (PhysioNet licence). `src/build_structured_csv.py` rebuilds them.
+Raw PhysioNet files and the large derived tables are **not** included. `src/build_structured_csv.py` rebuilds them. The repository does include `apps/backend/data/replay/`: small extracts of the 19 held-out test stays from the open-access MIMIC-IV demo, so the demo runs straight after cloning.
 
 ### ML pipeline (notebooks 01–08)
 
@@ -233,10 +250,6 @@ With only 4 test events, these results show the method works end to end. They do
 
 ## 9. Technical stack
 
-<p align="center">
-  <img src="assets/logos/python.svg" width="36" height="36" alt="Python" title="Python">&nbsp;&nbsp;<img src="assets/logos/pandas.svg" width="36" height="36" alt="pandas" title="pandas">&nbsp;&nbsp;<img src="assets/logos/numpy.svg" width="36" height="36" alt="NumPy" title="NumPy">&nbsp;&nbsp;<img src="assets/logos/scikitlearn.svg" width="36" height="36" alt="scikit-learn" title="scikit-learn">&nbsp;&nbsp;<img src="assets/logos/jupyter.svg" width="36" height="36" alt="Jupyter" title="Jupyter">&nbsp;&nbsp;<img src="assets/logos/fastapi.svg" width="36" height="36" alt="FastAPI" title="FastAPI">&nbsp;&nbsp;<img src="assets/logos/sqlite.svg" width="36" height="36" alt="SQLite" title="SQLite">&nbsp;&nbsp;<img src="assets/logos/react.svg" width="36" height="36" alt="React" title="React">&nbsp;&nbsp;<img src="assets/logos/vite.svg" width="36" height="36" alt="Vite" title="Vite">&nbsp;&nbsp;<img src="assets/logos/claude.svg" width="36" height="36" alt="Claude API" title="Claude API">&nbsp;&nbsp;<img src="assets/logos/googlemaps.svg" width="36" height="36" alt="Google Maps" title="Google Maps">&nbsp;&nbsp;<img src="assets/logos/kotlin.svg" width="36" height="36" alt="Kotlin" title="Kotlin">&nbsp;&nbsp;<img src="assets/logos/wearos.svg" width="36" height="36" alt="Wear OS" title="Wear OS">
-</p>
-
 | Layer | Tools |
 |---|---|
 | **Data & ML** | Python 3.13 · pandas · NumPy · scikit-learn · LightGBM · XGBoost · Optuna · SHAP · Jupyter |
@@ -247,41 +260,110 @@ With only 4 test events, these results show the method works end to end. They do
 
 ## 10. Submission files
 
-| | File | Link |
-|:---:|---|---|
-| 📐 | **System Architecture (SA)** | [PDF](assets/architecture/cardiotwin_system_architecture.pdf) |
-| 📊 | **Presentation (PPT)** | [PDF](assets/presentation/CardioTwin_AyuRaksha_Presentation.pdf) · [PPTX](assets/presentation/CardioTwin_AyuRaksha_Presentation.pptx) |
-| 🎬 | **Demo Video** (unlisted YouTube, 15–20 min) | `ADD_YOUTUBE_LINK_HERE` |
+### a. System Architecture
+<img src="assets/icons/architecture.svg" width="18" height="18" alt=""> [Download the system architecture (PDF)](assets/architecture/cardiotwin_system_architecture.pdf)
 
-<sub>The presentation was made at the idea stage, so it lists the backend and apps as "planned". They have since been built, except the Wear OS app.</sub>
+### b. Presentation
+<img src="assets/icons/presentation.svg" width="18" height="18" alt=""> [Download the presentation (PDF)](assets/presentation/CardioTwin_AyuRaksha_Presentation.pdf) · [PowerPoint version (PPTX)](assets/presentation/CardioTwin_AyuRaksha_Presentation.pptx)
+
+The presentation was made at the idea stage, so it lists the backend and apps as "planned". They have since been built, except the Wear OS app.
+
+### c. Demo Video
+<img src="assets/icons/video.svg" width="18" height="18" alt=""> **YouTube (unlisted, 15–20 min):** `ADD_YOUTUBE_LINK_HERE`
 
 ## 11. Run it locally
 
-<details>
-<summary><b>Show setup steps</b> (Windows PowerShell · Python 3.12/3.13 · Node.js LTS)</summary>
+The demo has four parts: one **backend** and three **web apps** (doctor dashboard, patient app and watch screens). Each runs in its own terminal window. The steps below are for Windows PowerShell. On macOS or Linux, use `python3` instead of `py` and `source .venv/bin/activate` instead of `.\.venv\Scripts\Activate.ps1`.
+
+### Step 1 · Install the tools (once)
+
+| Tool | Version | Check it works |
+|---|---|---|
+| [Python](https://www.python.org/downloads/) | 3.12 or 3.13 | `py --version` |
+| [Node.js](https://nodejs.org/) | LTS (20 or newer) | `node --version` |
+| [Git](https://git-scm.com/downloads) | any | `git --version` |
+
+### Step 2 · Download the project
 
 ```powershell
-# 1. Backend  → http://127.0.0.1:8000
-cd apps\backend
-py -3.13 -m venv .venv; .\.venv\Scripts\Activate.ps1
-pip install -r requirements.txt
-python -m cardiotwin_backend --host 0.0.0.0
-
-# 2. Doctor dashboard  → http://localhost:5173  (dr.demo / demo1234)
-cd apps\doctor_dashboard; npm ci; npm run dev
-
-# 3. Patient app  → http://localhost:5174  (p37093652 / demo1234)
-cd apps\patient_phone_app; npm ci; npm run dev
-
-# 4. Watch screens  → http://localhost:5175/?patient=stay-37093652  (dr.demo / demo1234)
-cd apps\watch_ui_web; npm ci; npm run dev
+git clone https://github.com/tjain2004/CardioTwin-AayuRaksha.git
+cd CardioTwin-AayuRaksha
 ```
 
-In the doctor dashboard pick `stay-37093652`, press **Start virtual watch**, then **Trigger AF** or **Trigger fall**.
+### Step 3 · Start the backend (terminal 1)
 
-- **Replay data** is derived from MIMIC-IV and not pushed. After downloading the PhysioNet demo data, run `src/build_structured_csv.py`, notebooks 02–07 and `apps/backend/tools/build_replay_data.py`.
-- **Optional keys** (server-side): `ANTHROPIC_API_KEY`, `CARDIOTWIN_GOOGLE_MAPS_SERVER_KEY`, `CARDIOTWIN_GOOGLE_MAPS_BROWSER_KEY`.
-- **Tests:** `python -m pytest tests -q` inside `apps/backend`, `risk_engine` and `what_if_simulator`.
+```powershell
+cd apps\backend
+py -3.13 -m venv .venv          # or py -3.12
+.\.venv\Scripts\Activate.ps1
+pip install -r requirements.txt
+python -m cardiotwin_backend --host 0.0.0.0
+```
+
+- If PowerShell blocks `Activate.ps1`, run `Set-ExecutionPolicy -Scope Process Bypass` and try again.
+- The first install takes a few minutes because it includes the ML libraries.
+- **Keep this window open.** The backend runs at <http://127.0.0.1:8000>.
+
+### Step 4 · Start the doctor dashboard (terminal 2)
+
+Open a new terminal in the project folder:
+
+```powershell
+cd apps\doctor_dashboard
+npm ci
+npm run dev
+```
+
+Open <http://localhost:5173> and sign in as **`dr.demo`** with password **`demo1234`**.
+
+### Step 5 · Start the patient app (terminal 3)
+
+```powershell
+cd apps\patient_phone_app
+npm ci
+npm run dev
+```
+
+Open <http://localhost:5174> and sign in as **`p37093652`** with password **`demo1234`**. For a phone-sized view, press `F12` and turn on the device toolbar.
+
+### Step 6 · Start the watch screens (terminal 4)
+
+```powershell
+cd apps\watch_ui_web
+npm ci
+npm run dev
+```
+
+Open <http://localhost:5175/?patient=stay-37093652> and sign in as **`dr.demo`** with password **`demo1234`**.
+
+### Step 7 · Run the demo
+
+1. In the doctor dashboard, pick patient **`stay-37093652`**.
+2. Press **Start virtual watch**. It replays that ICU patient's recorded vitals as watch readings, labelled SIMULATED.
+3. Watch the risk, the SHAP reasons and the SAR report update. The patient app and the watch screens update at the same time.
+4. Press **Trigger AF** or **Trigger fall** to see the safety rules and the emergency screens.
+5. Stop each part with `Ctrl + C` in its terminal.
+
+### Optional extras
+
+- **AI chatbot and maps:** before Step 3, set these keys in terminal 1. Without them, the app uses the offline assistant and a Google Maps search link.
+  ```powershell
+  $env:ANTHROPIC_API_KEY = "your-key"
+  $env:CARDIOTWIN_GOOGLE_MAPS_SERVER_KEY = "your-key"
+  $env:CARDIOTWIN_GOOGLE_MAPS_BROWSER_KEY = "your-key"
+  ```
+- **Tests:** with the backend's virtual environment active, run `python -m pytest tests -q` inside `apps/backend`, `risk_engine` and `what_if_simulator`.
+- **Rebuild the data and models:** download the four PhysioNet datasets into `data/raw/`, run `python src/build_structured_csv.py`, then the notebooks in `notebooks/` from 02 to 08, then `python apps/backend/tools/build_replay_data.py --project .`.
+
+<details>
+<summary><b>Common problems</b></summary>
+
+| Problem | Fix |
+|---|---|
+| `Port 5173 (or 5174, 5175) is already in use` | Another copy is still running. Close that terminal or press `Ctrl + C` in it. |
+| The dashboard shows no patients or does not update | Check that terminal 1 (the backend) is still running and shows no errors. |
+| `py` is not recognised | Reinstall Python and tick **Add python.exe to PATH**, or use `python` instead of `py -3.13`. |
+| `npm ci` fails | Delete the `node_modules` folder in that app and run `npm ci` again. |
 
 </details>
 
@@ -296,7 +378,7 @@ risk_engine/        inference module used by the backend
 what_if_simulator/  what-if engine and tests
 models/             trained models, calibration, schema, metadata
 charts/             EDA, model, SHAP, risk-engine and what-if charts
-assets/             README images, screenshots, architecture PDF, presentation
+assets/             README images, logos, screenshots, architecture PDF, presentation
 ```
 
 </details>
@@ -312,26 +394,7 @@ assets/             README images, screenshots, architecture PDF, presentation
 - **The chatbot doesn't diagnose.** It explains existing results and never invents scores or changes medicines.
 - **Privacy.** Only open, de-identified data is used, keys stay on the server and decisions are audit-logged. Production use would need encryption, consent management and DPDP Act compliance.
 
-## 13. Unstop checklist
-
-| Mandatory README item | Where | |
-|---|---|:---:|
-| Team details | [Team](#team-ayuraksha) | ✅ |
-| College / Incubator information | [Team](#team-ayuraksha) | ✅ |
-| Project Title | CardioTwin | ✅ |
-| Problem Statement | [§1](#1-the-problem) | ✅ |
-| Healthcare Use Case | [§7](#7-healthcare-use-case) | ✅ |
-| Technical Stack | [§9](#9-technical-stack) | ✅ |
-| AI/ML Model or Framework Details | [§8](#8-architecture-and-aiml) | ✅ |
-| 15–20 min demo video (unlisted YouTube) | [§10](#10-submission-files) | ⬜ link |
-| Open-source License Details | [§14](#14-license) | ✅ |
-| Architecture Diagram in PDF/PPT | [SA PDF](assets/architecture/cardiotwin_system_architecture.pdf) | ✅ |
-| Presentation in PDF/PPT (details and outcomes) | [PPT PDF](assets/presentation/CardioTwin_AyuRaksha_Presentation.pdf) | ✅ |
-| All files and links publicly accessible | Public repo · unlisted video | ⬜ check |
-
-<sub>The prototype also meets the challenge brief: static + dynamic data fusion ✅ · adverse-event prediction ✅ · doctor dashboard for the virtual patient ✅ · open, anonymized data only ✅</sub>
-
-## 14. License
+## 13. License
 
 The code is released under the **[MIT License](LICENSE)**. The datasets keep their own PhysioNet licences and must be downloaded from [PhysioNet](https://physionet.org/).
 

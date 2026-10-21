@@ -1,0 +1,1569 @@
+{
+"stay_id": 39635619,
+"subject_id": 10004733,
+"source": "replay: MIMIC-IV demo ICU charted vitals (not real watch data)",
+"note": "Hour offsets are relative to the first ICU hour; real dates are not kept.",
+"profile": {
+"age_at_admit": 51.0,
+"gender_male": 1,
+"height_in": 73.0,
+"weight_lbs": 236.0,
+"bmi": 31.1,
+"smoker": 0,
+"log_prior_admissions": 0.0,
+"days_since_last_discharge": -1.0,
+"n_active_drugs": 24.0,
+"ix_bleeding": 1,
+"has_bled_partial": 1.0,
+"ascvd_10y_risk": 0.09,
+"hist_af": 0
+},
+"clinical": [
+{
+"name": "ldl",
+"value": 46.0,
+"unit": "mg/dL"
+},
+{
+"name": "total_chol",
+"value": 123.0,
+"unit": "mg/dL"
+},
+{
+"name": "non_hdl",
+"value": 108.0,
+"unit": "mg/dL"
+},
+{
+"name": "triglycerides",
+"value": 309.0,
+"unit": "mg/dL"
+},
+{
+"name": "hba1c",
+"value": 5.1,
+"unit": "%"
+},
+{
+"name": "egfr",
+"value": 21.0,
+"unit": "mL/min/1.73m2"
+},
+{
+"name": "sbp_outpatient",
+"value": 152.0,
+"unit": "mmHg"
+},
+{
+"name": "dbp_outpatient",
+"value": 94.0,
+"unit": "mmHg"
+},
+{
+"name": "tc_hdl_ratio",
+"value": 8.2,
+"unit": "ratio"
+}
+],
+"hours": [
+{
+"offset_h": 0,
+"hr": 90.0,
+"spo2": 100.0,
+"rr": 20.5,
+"rhythm": null
+},
+{
+"offset_h": 1,
+"hr": 93.0,
+"spo2": 100.0,
+"rr": 19.0,
+"rhythm": "sinus"
+},
+{
+"offset_h": 2,
+"hr": 96.0,
+"spo2": 98.0,
+"rr": 19.0,
+"rhythm": "tachy"
+},
+{
+"offset_h": 3,
+"hr": 97.0,
+"spo2": 96.0,
+"rr": 20.0,
+"rhythm": "tachy"
+},
+{
+"offset_h": 4,
+"hr": 95.0,
+"spo2": 95.0,
+"rr": 19.0,
+"rhythm": "tachy"
+},
+{
+"offset_h": 5,
+"hr": 98.0,
+"spo2": 99.0,
+"rr": 18.0,
+"rhythm": "tachy"
+},
+{
+"offset_h": 6,
+"hr": 101.0,
+"spo2": 100.0,
+"rr": 20.0,
+"rhythm": "tachy"
+},
+{
+"offset_h": 7,
+"hr": 107.0,
+"spo2": 100.0,
+"rr": 18.0,
+"rhythm": "tachy"
+},
+{
+"offset_h": 8,
+"hr": 95.0,
+"spo2": 99.0,
+"rr": 17.0,
+"rhythm": "sinus"
+},
+{
+"offset_h": 9,
+"hr": 97.0,
+"spo2": 94.0,
+"rr": 21.0,
+"rhythm": "sinus"
+},
+{
+"offset_h": 10,
+"hr": 92.0,
+"spo2": 94.0,
+"rr": 21.0,
+"rhythm": "sinus"
+},
+{
+"offset_h": 11,
+"hr": 93.0,
+"spo2": 94.0,
+"rr": 23.0,
+"rhythm": "sinus"
+},
+{
+"offset_h": 12,
+"hr": 97.0,
+"spo2": 94.0,
+"rr": 23.0,
+"rhythm": "sinus"
+},
+{
+"offset_h": 13,
+"hr": 100.0,
+"spo2": 94.0,
+"rr": 25.0,
+"rhythm": "sinus"
+},
+{
+"offset_h": 14,
+"hr": 107.0,
+"spo2": 90.0,
+"rr": 29.0,
+"rhythm": "tachy"
+},
+{
+"offset_h": 15,
+"hr": 102.0,
+"spo2": 93.0,
+"rr": 25.0,
+"rhythm": "tachy"
+},
+{
+"offset_h": 16,
+"hr": 104.0,
+"spo2": 95.0,
+"rr": 25.5,
+"rhythm": "tachy"
+},
+{
+"offset_h": 17,
+"hr": 105.0,
+"spo2": 95.0,
+"rr": 29.0,
+"rhythm": "tachy"
+},
+{
+"offset_h": 18,
+"hr": 102.0,
+"spo2": 95.0,
+"rr": 22.0,
+"rhythm": "tachy"
+},
+{
+"offset_h": 19,
+"hr": 93.0,
+"spo2": 97.0,
+"rr": 20.5,
+"rhythm": "tachy"
+},
+{
+"offset_h": 20,
+"hr": 89.8,
+"spo2": 95.0,
+"rr": 20.6,
+"rhythm": "sinus"
+},
+{
+"offset_h": 21,
+"hr": 95.3,
+"spo2": 94.3,
+"rr": 24.7,
+"rhythm": "sinus"
+},
+{
+"offset_h": 22,
+"hr": 91.3,
+"spo2": 94.0,
+"rr": 22.3,
+"rhythm": "sinus"
+},
+{
+"offset_h": 23,
+"hr": 88.0,
+"spo2": 95.5,
+"rr": 22.0,
+"rhythm": "sinus"
+},
+{
+"offset_h": 24,
+"hr": 82.0,
+"spo2": 95.6,
+"rr": 16.3,
+"rhythm": "sinus"
+},
+{
+"offset_h": 25,
+"hr": 91.7,
+"spo2": 95.0,
+"rr": 19.5,
+"rhythm": "sinus"
+},
+{
+"offset_h": 26,
+"hr": 103.5,
+"spo2": 95.5,
+"rr": 25.5,
+"rhythm": "tachy"
+},
+{
+"offset_h": 27,
+"hr": 115.0,
+"spo2": 94.0,
+"rr": 24.0,
+"rhythm": "tachy"
+},
+{
+"offset_h": 28,
+"hr": 101.5,
+"spo2": 95.5,
+"rr": 19.0,
+"rhythm": "tachy"
+},
+{
+"offset_h": 29,
+"hr": 94.5,
+"spo2": 96.0,
+"rr": 19.0,
+"rhythm": "sinus"
+},
+{
+"offset_h": 31,
+"hr": 84.0,
+"spo2": 96.0,
+"rr": 8.0,
+"rhythm": "sinus"
+},
+{
+"offset_h": 32,
+"hr": 95.0,
+"spo2": 98.0,
+"rr": 11.5,
+"rhythm": "sinus"
+},
+{
+"offset_h": 33,
+"hr": 88.0,
+"spo2": 98.0,
+"rr": 11.0,
+"rhythm": "sinus"
+},
+{
+"offset_h": 34,
+"hr": 84.0,
+"spo2": 98.0,
+"rr": 11.0,
+"rhythm": "sinus"
+},
+{
+"offset_h": 35,
+"hr": 86.0,
+"spo2": 98.0,
+"rr": 10.0,
+"rhythm": "sinus"
+},
+{
+"offset_h": 36,
+"hr": 90.0,
+"spo2": 97.0,
+"rr": 11.0,
+"rhythm": "sinus"
+},
+{
+"offset_h": 37,
+"hr": 93.0,
+"spo2": 96.0,
+"rr": 12.0,
+"rhythm": "sinus"
+},
+{
+"offset_h": 38,
+"hr": 96.0,
+"spo2": 97.0,
+"rr": 12.0,
+"rhythm": "sinus"
+},
+{
+"offset_h": 39,
+"hr": 101.0,
+"spo2": 97.0,
+"rr": 11.0,
+"rhythm": "tachy"
+},
+{
+"offset_h": 40,
+"hr": 99.0,
+"spo2": 97.0,
+"rr": 12.0,
+"rhythm": "sinus"
+},
+{
+"offset_h": 41,
+"hr": 107.0,
+"spo2": 96.0,
+"rr": 13.0,
+"rhythm": "tachy"
+},
+{
+"offset_h": 42,
+"hr": 100.0,
+"spo2": 97.0,
+"rr": 11.0,
+"rhythm": "tachy"
+},
+{
+"offset_h": 43,
+"hr": 96.0,
+"spo2": 98.0,
+"rr": 12.0,
+"rhythm": "tachy"
+},
+{
+"offset_h": 44,
+"hr": 85.0,
+"spo2": 100.0,
+"rr": 11.0,
+"rhythm": "sinus"
+},
+{
+"offset_h": 45,
+"hr": 90.0,
+"spo2": 98.0,
+"rr": 14.0,
+"rhythm": "sinus"
+},
+{
+"offset_h": 46,
+"hr": 91.0,
+"spo2": 97.0,
+"rr": 10.0,
+"rhythm": "sinus"
+},
+{
+"offset_h": 47,
+"hr": 111.0,
+"spo2": 95.0,
+"rr": 12.0,
+"rhythm": "tachy"
+},
+{
+"offset_h": 48,
+"hr": 100.0,
+"spo2": 93.0,
+"rr": 14.5,
+"rhythm": "tachy"
+},
+{
+"offset_h": 49,
+"hr": 91.0,
+"spo2": 94.0,
+"rr": 9.0,
+"rhythm": "sinus"
+},
+{
+"offset_h": 50,
+"hr": 105.0,
+"spo2": 98.0,
+"rr": 18.0,
+"rhythm": "tachy"
+},
+{
+"offset_h": 51,
+"hr": 101.0,
+"spo2": 94.0,
+"rr": 8.0,
+"rhythm": "tachy"
+},
+{
+"offset_h": 52,
+"hr": 94.0,
+"spo2": 96.0,
+"rr": 21.5,
+"rhythm": "tachy"
+},
+{
+"offset_h": 53,
+"hr": 78.0,
+"spo2": 96.0,
+"rr": 10.0,
+"rhythm": "sinus"
+},
+{
+"offset_h": 54,
+"hr": 74.0,
+"spo2": 97.0,
+"rr": 12.0,
+"rhythm": "sinus"
+},
+{
+"offset_h": 55,
+"hr": 72.0,
+"spo2": 97.0,
+"rr": 14.0,
+"rhythm": "sinus"
+},
+{
+"offset_h": 56,
+"hr": 87.0,
+"spo2": 94.0,
+"rr": 10.0,
+"rhythm": "sinus"
+},
+{
+"offset_h": 57,
+"hr": 71.0,
+"spo2": 96.0,
+"rr": 12.0,
+"rhythm": "sinus"
+},
+{
+"offset_h": 58,
+"hr": 78.0,
+"spo2": 94.0,
+"rr": 9.0,
+"rhythm": "sinus"
+},
+{
+"offset_h": 59,
+"hr": 70.0,
+"spo2": 96.0,
+"rr": 11.0,
+"rhythm": "sinus"
+},
+{
+"offset_h": 60,
+"hr": 69.0,
+"spo2": 97.0,
+"rr": 11.0,
+"rhythm": "sinus"
+},
+{
+"offset_h": 61,
+"hr": 69.0,
+"spo2": 95.0,
+"rr": 13.0,
+"rhythm": "sinus"
+},
+{
+"offset_h": 62,
+"hr": 66.0,
+"spo2": 96.0,
+"rr": 15.0,
+"rhythm": "sinus"
+},
+{
+"offset_h": 63,
+"hr": 66.0,
+"spo2": 97.0,
+"rr": 16.0,
+"rhythm": "sinus"
+},
+{
+"offset_h": 64,
+"hr": 65.0,
+"spo2": 98.0,
+"rr": 15.0,
+"rhythm": "sinus"
+},
+{
+"offset_h": 65,
+"hr": 66.0,
+"spo2": 98.0,
+"rr": 13.0,
+"rhythm": "sinus"
+},
+{
+"offset_h": 66,
+"hr": 69.0,
+"spo2": 98.0,
+"rr": 10.5,
+"rhythm": "sinus"
+},
+{
+"offset_h": 68,
+"hr": 69.0,
+"spo2": 97.0,
+"rr": 10.0,
+"rhythm": "sinus"
+},
+{
+"offset_h": 69,
+"hr": 91.0,
+"spo2": 96.0,
+"rr": 10.0,
+"rhythm": "sinus"
+},
+{
+"offset_h": 70,
+"hr": 75.0,
+"spo2": 98.0,
+"rr": 15.0,
+"rhythm": "sinus"
+},
+{
+"offset_h": 71,
+"hr": 71.0,
+"spo2": 98.0,
+"rr": 13.0,
+"rhythm": "sinus"
+},
+{
+"offset_h": 72,
+"hr": 69.0,
+"spo2": 98.7,
+"rr": 12.3,
+"rhythm": "sinus"
+},
+{
+"offset_h": 73,
+"hr": 66.8,
+"spo2": 98.5,
+"rr": 10.2,
+"rhythm": "sinus"
+},
+{
+"offset_h": 74,
+"hr": 67.0,
+"spo2": 98.0,
+"rr": 10.0,
+"rhythm": "sinus"
+},
+{
+"offset_h": 75,
+"hr": 67.0,
+"spo2": 100.0,
+"rr": 12.0,
+"rhythm": "sinus"
+},
+{
+"offset_h": 76,
+"hr": 79.8,
+"spo2": 95.5,
+"rr": 17.8,
+"rhythm": "sinus"
+},
+{
+"offset_h": 77,
+"hr": 82.0,
+"spo2": 98.0,
+"rr": 13.0,
+"rhythm": "sinus"
+},
+{
+"offset_h": 78,
+"hr": 74.0,
+"spo2": 99.0,
+"rr": 12.0,
+"rhythm": "sinus"
+},
+{
+"offset_h": 79,
+"hr": 87.0,
+"spo2": 98.0,
+"rr": 14.0,
+"rhythm": "sinus"
+},
+{
+"offset_h": 80,
+"hr": 75.0,
+"spo2": 98.0,
+"rr": 15.0,
+"rhythm": "sinus"
+},
+{
+"offset_h": 81,
+"hr": 88.0,
+"spo2": 98.0,
+"rr": 19.0,
+"rhythm": "sinus"
+},
+{
+"offset_h": 82,
+"hr": 78.0,
+"spo2": 98.0,
+"rr": 18.0,
+"rhythm": "sinus"
+},
+{
+"offset_h": 83,
+"hr": 71.0,
+"spo2": 100.0,
+"rr": 15.0,
+"rhythm": "sinus"
+},
+{
+"offset_h": 84,
+"hr": 71.0,
+"spo2": 99.0,
+"rr": 18.0,
+"rhythm": "sinus"
+},
+{
+"offset_h": 85,
+"hr": 72.0,
+"spo2": 99.0,
+"rr": 16.0,
+"rhythm": "sinus"
+},
+{
+"offset_h": 86,
+"hr": 73.0,
+"spo2": 99.0,
+"rr": 17.0,
+"rhythm": "sinus"
+},
+{
+"offset_h": 87,
+"hr": 83.0,
+"spo2": 98.0,
+"rr": 20.0,
+"rhythm": "sinus"
+},
+{
+"offset_h": 88,
+"hr": 76.0,
+"spo2": 97.0,
+"rr": 20.0,
+"rhythm": "sinus"
+},
+{
+"offset_h": 89,
+"hr": 73.0,
+"spo2": 96.0,
+"rr": 15.0,
+"rhythm": "sinus"
+},
+{
+"offset_h": 91,
+"hr": 88.0,
+"spo2": 98.0,
+"rr": 16.0,
+"rhythm": "sinus"
+},
+{
+"offset_h": 92,
+"hr": 93.5,
+"spo2": 96.5,
+"rr": 20.0,
+"rhythm": "tachy"
+},
+{
+"offset_h": 93,
+"hr": 86.0,
+"spo2": 97.0,
+"rr": 18.0,
+"rhythm": "sinus"
+},
+{
+"offset_h": 94,
+"hr": 87.7,
+"spo2": 96.5,
+"rr": 18.7,
+"rhythm": "tachy"
+},
+{
+"offset_h": 95,
+"hr": 84.0,
+"spo2": 96.3,
+"rr": 19.0,
+"rhythm": "sinus"
+},
+{
+"offset_h": 96,
+"hr": 81.2,
+"spo2": 96.2,
+"rr": 17.8,
+"rhythm": "sinus"
+},
+{
+"offset_h": 97,
+"hr": 80.0,
+"spo2": 96.5,
+"rr": 16.5,
+"rhythm": "sinus"
+},
+{
+"offset_h": 98,
+"hr": 85.0,
+"spo2": 99.0,
+"rr": 18.0,
+"rhythm": "sinus"
+},
+{
+"offset_h": 99,
+"hr": 112.0,
+"spo2": 95.2,
+"rr": 19.5,
+"rhythm": "sinus"
+},
+{
+"offset_h": 100,
+"hr": 115.2,
+"spo2": 95.8,
+"rr": 16.8,
+"rhythm": "tachy"
+},
+{
+"offset_h": 101,
+"hr": 107.0,
+"spo2": 95.8,
+"rr": 16.5,
+"rhythm": "tachy"
+},
+{
+"offset_h": 102,
+"hr": 102.0,
+"spo2": 96.0,
+"rr": 16.0,
+"rhythm": "tachy"
+},
+{
+"offset_h": 103,
+"hr": 103.0,
+"spo2": 96.0,
+"rr": 17.0,
+"rhythm": "tachy"
+},
+{
+"offset_h": 104,
+"hr": 117.0,
+"spo2": 96.0,
+"rr": 22.0,
+"rhythm": "tachy"
+},
+{
+"offset_h": 105,
+"hr": 122.0,
+"spo2": 92.0,
+"rr": 22.0,
+"rhythm": "tachy"
+},
+{
+"offset_h": 106,
+"hr": 102.0,
+"spo2": 93.0,
+"rr": 18.0,
+"rhythm": "tachy"
+},
+{
+"offset_h": 107,
+"hr": 100.0,
+"spo2": 97.0,
+"rr": 17.0,
+"rhythm": "tachy"
+},
+{
+"offset_h": 108,
+"hr": 115.0,
+"spo2": 97.0,
+"rr": 19.0,
+"rhythm": "tachy"
+},
+{
+"offset_h": 109,
+"hr": 112.0,
+"spo2": 97.0,
+"rr": 19.0,
+"rhythm": "tachy"
+},
+{
+"offset_h": 110,
+"hr": 85.0,
+"spo2": 97.0,
+"rr": 17.0,
+"rhythm": "sinus"
+},
+{
+"offset_h": 111,
+"hr": 83.0,
+"spo2": 99.0,
+"rr": 17.0,
+"rhythm": "sinus"
+},
+{
+"offset_h": 112,
+"hr": 80.0,
+"spo2": 96.0,
+"rr": 16.0,
+"rhythm": "sinus"
+},
+{
+"offset_h": 113,
+"hr": 75.0,
+"spo2": 97.0,
+"rr": 15.0,
+"rhythm": "sinus"
+},
+{
+"offset_h": 114,
+"hr": 81.0,
+"spo2": 98.0,
+"rr": 17.0,
+"rhythm": "sinus"
+},
+{
+"offset_h": 116,
+"hr": 82.8,
+"spo2": 97.0,
+"rr": 18.0,
+"rhythm": "sinus"
+},
+{
+"offset_h": 117,
+"hr": 75.0,
+"spo2": 96.0,
+"rr": 16.5,
+"rhythm": "sinus"
+},
+{
+"offset_h": 118,
+"hr": 69.2,
+"spo2": 95.0,
+"rr": 17.8,
+"rhythm": "sinus"
+},
+{
+"offset_h": 119,
+"hr": 82.2,
+"spo2": 96.8,
+"rr": 18.0,
+"rhythm": "sinus"
+},
+{
+"offset_h": 120,
+"hr": 87.0,
+"spo2": 95.5,
+"rr": 20.5,
+"rhythm": "sinus"
+},
+{
+"offset_h": 121,
+"hr": 104.2,
+"spo2": 94.2,
+"rr": 19.8,
+"rhythm": "sinus"
+},
+{
+"offset_h": 122,
+"hr": 80.5,
+"spo2": 94.2,
+"rr": 17.8,
+"rhythm": "sinus"
+},
+{
+"offset_h": 123,
+"hr": 81.0,
+"spo2": 93.0,
+"rr": 18.0,
+"rhythm": "sinus"
+},
+{
+"offset_h": 124,
+"hr": 93.2,
+"spo2": 97.2,
+"rr": 18.8,
+"rhythm": "sinus"
+},
+{
+"offset_h": 125,
+"hr": 96.3,
+"spo2": 96.3,
+"rr": 19.7,
+"rhythm": "tachy"
+},
+{
+"offset_h": 126,
+"hr": 104.0,
+"spo2": 96.0,
+"rr": 19.0,
+"rhythm": "tachy"
+},
+{
+"offset_h": 127,
+"hr": 86.0,
+"spo2": 95.0,
+"rr": 18.0,
+"rhythm": "sinus"
+},
+{
+"offset_h": 128,
+"hr": 84.0,
+"spo2": 97.0,
+"rr": 19.0,
+"rhythm": "sinus"
+},
+{
+"offset_h": 129,
+"hr": 97.0,
+"spo2": 96.0,
+"rr": 21.0,
+"rhythm": "sinus"
+},
+{
+"offset_h": 130,
+"hr": 86.0,
+"spo2": 94.0,
+"rr": 17.0,
+"rhythm": "sinus"
+},
+{
+"offset_h": 131,
+"hr": 85.0,
+"spo2": 94.0,
+"rr": 18.0,
+"rhythm": "sinus"
+},
+{
+"offset_h": 132,
+"hr": 96.0,
+"spo2": 95.0,
+"rr": 21.0,
+"rhythm": "sinus"
+},
+{
+"offset_h": 133,
+"hr": 89.0,
+"spo2": 94.0,
+"rr": 21.0,
+"rhythm": "sinus"
+},
+{
+"offset_h": 134,
+"hr": 115.0,
+"spo2": 95.0,
+"rr": 20.0,
+"rhythm": "tachy"
+},
+{
+"offset_h": 135,
+"hr": 106.0,
+"spo2": 95.0,
+"rr": 24.0,
+"rhythm": "tachy"
+},
+{
+"offset_h": 136,
+"hr": 107.0,
+"spo2": 94.0,
+"rr": 23.0,
+"rhythm": "tachy"
+},
+{
+"offset_h": 137,
+"hr": 114.0,
+"spo2": 96.0,
+"rr": 18.0,
+"rhythm": "tachy"
+},
+{
+"offset_h": 138,
+"hr": 108.0,
+"spo2": 96.0,
+"rr": 22.0,
+"rhythm": "tachy"
+},
+{
+"offset_h": 139,
+"hr": 100.0,
+"spo2": 95.0,
+"rr": 22.0,
+"rhythm": "tachy"
+},
+{
+"offset_h": 140,
+"hr": 94.0,
+"spo2": 96.0,
+"rr": 20.0,
+"rhythm": "tachy"
+},
+{
+"offset_h": 141,
+"hr": 86.0,
+"spo2": 96.0,
+"rr": 19.0,
+"rhythm": "tachy"
+},
+{
+"offset_h": 142,
+"hr": 89.0,
+"spo2": 96.0,
+"rr": 20.0,
+"rhythm": "sinus"
+},
+{
+"offset_h": 143,
+"hr": 87.0,
+"spo2": 92.0,
+"rr": 21.0,
+"rhythm": "sinus"
+},
+{
+"offset_h": 144,
+"hr": 89.0,
+"spo2": 93.0,
+"rr": 20.0,
+"rhythm": "sinus"
+},
+{
+"offset_h": 145,
+"hr": 99.0,
+"spo2": 94.0,
+"rr": 23.0,
+"rhythm": "sinus"
+},
+{
+"offset_h": 146,
+"hr": 102.0,
+"spo2": 98.0,
+"rr": 30.0,
+"rhythm": "tachy"
+},
+{
+"offset_h": 147,
+"hr": 97.0,
+"spo2": 96.0,
+"rr": 20.0,
+"rhythm": "tachy"
+},
+{
+"offset_h": 148,
+"hr": 102.0,
+"spo2": 96.0,
+"rr": 20.0,
+"rhythm": "tachy"
+},
+{
+"offset_h": 149,
+"hr": 83.0,
+"spo2": 93.0,
+"rr": 15.0,
+"rhythm": "sinus"
+},
+{
+"offset_h": 150,
+"hr": 77.0,
+"spo2": 91.0,
+"rr": 15.0,
+"rhythm": "sinus"
+},
+{
+"offset_h": 151,
+"hr": 75.0,
+"spo2": 91.0,
+"rr": 18.0,
+"rhythm": "sinus"
+},
+{
+"offset_h": 152,
+"hr": 70.0,
+"spo2": 93.0,
+"rr": 18.0,
+"rhythm": "sinus"
+},
+{
+"offset_h": 153,
+"hr": 70.0,
+"spo2": 94.0,
+"rr": 18.0,
+"rhythm": "sinus"
+},
+{
+"offset_h": 154,
+"hr": 74.0,
+"spo2": 96.0,
+"rr": 17.0,
+"rhythm": "sinus"
+},
+{
+"offset_h": 155,
+"hr": 76.0,
+"spo2": 98.0,
+"rr": 19.0,
+"rhythm": "sinus"
+},
+{
+"offset_h": 156,
+"hr": 74.0,
+"spo2": 97.0,
+"rr": 18.0,
+"rhythm": "sinus"
+},
+{
+"offset_h": 157,
+"hr": 75.0,
+"spo2": 92.0,
+"rr": 19.0,
+"rhythm": "sinus"
+},
+{
+"offset_h": 158,
+"hr": 81.0,
+"spo2": 98.0,
+"rr": 23.0,
+"rhythm": "sinus"
+},
+{
+"offset_h": 159,
+"hr": 93.0,
+"spo2": 98.0,
+"rr": 25.0,
+"rhythm": "sinus"
+},
+{
+"offset_h": 160,
+"hr": 80.0,
+"spo2": 97.0,
+"rr": 20.0,
+"rhythm": "sinus"
+},
+{
+"offset_h": 161,
+"hr": 75.0,
+"spo2": 94.0,
+"rr": 21.0,
+"rhythm": "sinus"
+},
+{
+"offset_h": 162,
+"hr": 73.0,
+"spo2": 94.0,
+"rr": 21.0,
+"rhythm": "sinus"
+},
+{
+"offset_h": 163,
+"hr": 71.0,
+"spo2": 94.0,
+"rr": 20.0,
+"rhythm": "sinus"
+},
+{
+"offset_h": 164,
+"hr": 68.0,
+"spo2": 94.0,
+"rr": 18.0,
+"rhythm": "sinus"
+},
+{
+"offset_h": 165,
+"hr": 67.0,
+"spo2": 94.0,
+"rr": 17.0,
+"rhythm": "sinus"
+},
+{
+"offset_h": 166,
+"hr": 70.0,
+"spo2": 97.0,
+"rr": 13.0,
+"rhythm": "sinus"
+},
+{
+"offset_h": 167,
+"hr": 70.0,
+"spo2": 95.0,
+"rr": 20.0,
+"rhythm": "sinus"
+},
+{
+"offset_h": 168,
+"hr": 74.0,
+"spo2": 95.0,
+"rr": 18.0,
+"rhythm": "sinus"
+},
+{
+"offset_h": 169,
+"hr": 75.0,
+"spo2": 94.0,
+"rr": 20.0,
+"rhythm": "sinus"
+},
+{
+"offset_h": 170,
+"hr": 79.0,
+"spo2": 95.0,
+"rr": 20.0,
+"rhythm": "sinus"
+},
+{
+"offset_h": 171,
+"hr": 84.0,
+"spo2": 95.0,
+"rr": 20.0,
+"rhythm": "sinus"
+},
+{
+"offset_h": 172,
+"hr": 81.0,
+"spo2": 94.0,
+"rr": 22.0,
+"rhythm": "sinus"
+},
+{
+"offset_h": 173,
+"hr": 80.0,
+"spo2": 94.0,
+"rr": 21.0,
+"rhythm": "sinus"
+},
+{
+"offset_h": 174,
+"hr": 85.0,
+"spo2": 95.0,
+"rr": 19.0,
+"rhythm": "sinus"
+},
+{
+"offset_h": 175,
+"hr": 81.0,
+"spo2": 95.0,
+"rr": 18.0,
+"rhythm": "sinus"
+},
+{
+"offset_h": 176,
+"hr": 81.0,
+"spo2": 96.0,
+"rr": 19.0,
+"rhythm": "sinus"
+},
+{
+"offset_h": 177,
+"hr": 85.0,
+"spo2": 95.0,
+"rr": 20.0,
+"rhythm": "sinus"
+},
+{
+"offset_h": 178,
+"hr": 89.0,
+"spo2": 94.0,
+"rr": 21.0,
+"rhythm": "sinus"
+},
+{
+"offset_h": 179,
+"hr": 92.0,
+"spo2": 94.0,
+"rr": 19.0,
+"rhythm": "sinus"
+},
+{
+"offset_h": 180,
+"hr": 91.0,
+"spo2": 94.0,
+"rr": 24.0,
+"rhythm": "sinus"
+},
+{
+"offset_h": 181,
+"hr": 104.0,
+"spo2": 95.0,
+"rr": 26.0,
+"rhythm": "tachy"
+},
+{
+"offset_h": 182,
+"hr": 112.0,
+"spo2": 94.0,
+"rr": 20.0,
+"rhythm": "tachy"
+},
+{
+"offset_h": 183,
+"hr": 118.0,
+"spo2": 95.0,
+"rr": 21.0,
+"rhythm": "tachy"
+},
+{
+"offset_h": 184,
+"hr": 111.0,
+"spo2": 94.0,
+"rr": 25.0,
+"rhythm": "tachy"
+},
+{
+"offset_h": 185,
+"hr": 105.0,
+"spo2": 94.0,
+"rr": 19.0,
+"rhythm": "tachy"
+},
+{
+"offset_h": 186,
+"hr": 104.0,
+"spo2": 95.0,
+"rr": 23.0,
+"rhythm": "tachy"
+},
+{
+"offset_h": 187,
+"hr": 100.0,
+"spo2": 95.0,
+"rr": 23.0,
+"rhythm": "tachy"
+},
+{
+"offset_h": 188,
+"hr": 96.0,
+"spo2": 94.0,
+"rr": 26.0,
+"rhythm": "sinus"
+},
+{
+"offset_h": 189,
+"hr": 97.0,
+"spo2": 95.0,
+"rr": 26.0,
+"rhythm": "sinus"
+},
+{
+"offset_h": 190,
+"hr": 100.0,
+"spo2": 95.0,
+"rr": 28.0,
+"rhythm": "tachy"
+},
+{
+"offset_h": 191,
+"hr": 103.0,
+"spo2": 95.0,
+"rr": 25.0,
+"rhythm": "tachy"
+},
+{
+"offset_h": 192,
+"hr": 92.0,
+"spo2": 97.0,
+"rr": 16.0,
+"rhythm": "sinus"
+},
+{
+"offset_h": 193,
+"hr": 88.0,
+"spo2": 94.0,
+"rr": 18.0,
+"rhythm": "sinus"
+},
+{
+"offset_h": 194,
+"hr": 89.0,
+"spo2": 95.0,
+"rr": 18.0,
+"rhythm": "sinus"
+},
+{
+"offset_h": 195,
+"hr": 95.0,
+"spo2": 95.0,
+"rr": 21.0,
+"rhythm": "sinus"
+},
+{
+"offset_h": 196,
+"hr": 90.0,
+"spo2": null,
+"rr": 25.0,
+"rhythm": "sinus"
+},
+{
+"offset_h": 197,
+"hr": 91.0,
+"spo2": null,
+"rr": 19.0,
+"rhythm": "sinus"
+}
+],
+"test_hours": [
+{
+"offset_h": 0,
+"y_24h": 1,
+"hours_to_event": 23.0,
+"risk_watch_nb05": 0.15777
+},
+{
+"offset_h": 1,
+"y_24h": 1,
+"hours_to_event": 22.0,
+"risk_watch_nb05": 0.06274
+},
+{
+"offset_h": 2,
+"y_24h": 1,
+"hours_to_event": 21.0,
+"risk_watch_nb05": 0.07755
+},
+{
+"offset_h": 3,
+"y_24h": 1,
+"hours_to_event": 20.0,
+"risk_watch_nb05": 0.08722
+},
+{
+"offset_h": 4,
+"y_24h": 1,
+"hours_to_event": 19.0,
+"risk_watch_nb05": 0.09361
+},
+{
+"offset_h": 5,
+"y_24h": 1,
+"hours_to_event": 18.0,
+"risk_watch_nb05": 0.09424
+},
+{
+"offset_h": 6,
+"y_24h": 1,
+"hours_to_event": 17.0,
+"risk_watch_nb05": 0.06916
+},
+{
+"offset_h": 7,
+"y_24h": 1,
+"hours_to_event": 16.0,
+"risk_watch_nb05": 0.07352
+},
+{
+"offset_h": 8,
+"y_24h": 1,
+"hours_to_event": 15.0,
+"risk_watch_nb05": 0.06359
+},
+{
+"offset_h": 9,
+"y_24h": 1,
+"hours_to_event": 14.0,
+"risk_watch_nb05": 0.06446
+},
+{
+"offset_h": 10,
+"y_24h": 1,
+"hours_to_event": 13.0,
+"risk_watch_nb05": 0.06657
+},
+{
+"offset_h": 11,
+"y_24h": 1,
+"hours_to_event": 12.0,
+"risk_watch_nb05": 0.06348
+},
+{
+"offset_h": 12,
+"y_24h": 1,
+"hours_to_event": 11.0,
+"risk_watch_nb05": 0.06435
+},
+{
+"offset_h": 13,
+"y_24h": 1,
+"hours_to_event": 10.0,
+"risk_watch_nb05": 0.0651
+},
+{
+"offset_h": 14,
+"y_24h": 1,
+"hours_to_event": 9.0,
+"risk_watch_nb05": 0.09302
+},
+{
+"offset_h": 15,
+"y_24h": 1,
+"hours_to_event": 8.0,
+"risk_watch_nb05": 0.09948
+},
+{
+"offset_h": 16,
+"y_24h": 1,
+"hours_to_event": 7.0,
+"risk_watch_nb05": 0.09043
+},
+{
+"offset_h": 17,
+"y_24h": 1,
+"hours_to_event": 6.0,
+"risk_watch_nb05": 0.08615
+},
+{
+"offset_h": 18,
+"y_24h": 1,
+"hours_to_event": 5.0,
+"risk_watch_nb05": 0.08133
+},
+{
+"offset_h": 19,
+"y_24h": 1,
+"hours_to_event": 4.0,
+"risk_watch_nb05": 0.07327
+},
+{
+"offset_h": 20,
+"y_24h": 1,
+"hours_to_event": 3.0,
+"risk_watch_nb05": 0.05368
+},
+{
+"offset_h": 21,
+"y_24h": 1,
+"hours_to_event": 2.0,
+"risk_watch_nb05": 0.05249
+},
+{
+"offset_h": 22,
+"y_24h": 1,
+"hours_to_event": 1.0,
+"risk_watch_nb05": 0.05478
+}
+],
+"event_within_stay": 1
+}

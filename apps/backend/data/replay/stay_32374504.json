@@ -1,0 +1,905 @@
+{
+"stay_id": 32374504,
+"subject_id": 10024043,
+"source": "replay: MIMIC-IV demo ICU charted vitals (not real watch data)",
+"note": "Hour offsets are relative to the first ICU hour; real dates are not kept.",
+"profile": {
+"age_at_admit": 67.0,
+"gender_male": 1,
+"height_in": 69.5,
+"weight_lbs": 180.0,
+"bmi": 26.2,
+"smoker": 1,
+"log_prior_admissions": 0.6931471805599453,
+"days_since_last_discharge": 66.37013888888889,
+"n_active_drugs": 19.0,
+"ix_bleeding": 1,
+"has_bled_partial": 2.0,
+"ascvd_10y_risk": 0.238,
+"hist_af": 0
+},
+"clinical": [
+{
+"name": "ldl",
+"value": 62.0,
+"unit": "mg/dL"
+},
+{
+"name": "total_chol",
+"value": 144.0,
+"unit": "mg/dL"
+},
+{
+"name": "non_hdl",
+"value": 96.0,
+"unit": "mg/dL"
+},
+{
+"name": "triglycerides",
+"value": 172.0,
+"unit": "mg/dL"
+},
+{
+"name": "hba1c",
+"value": 6.1,
+"unit": "%"
+},
+{
+"name": "egfr",
+"value": 73.6,
+"unit": "mL/min/1.73m2"
+},
+{
+"name": "sbp_outpatient",
+"value": 162.0,
+"unit": "mmHg"
+},
+{
+"name": "dbp_outpatient",
+"value": 80.0,
+"unit": "mmHg"
+},
+{
+"name": "tc_hdl_ratio",
+"value": 3.0,
+"unit": "ratio"
+}
+],
+"hours": [
+{
+"offset_h": 0,
+"hr": 66.0,
+"spo2": 99.0,
+"rr": 21.0,
+"rhythm": "sinus"
+},
+{
+"offset_h": 1,
+"hr": 60.0,
+"spo2": 97.0,
+"rr": 17.0,
+"rhythm": "sinus"
+},
+{
+"offset_h": 2,
+"hr": 62.0,
+"spo2": 96.0,
+"rr": 18.0,
+"rhythm": "sinus"
+},
+{
+"offset_h": 3,
+"hr": 56.0,
+"spo2": 98.0,
+"rr": 14.0,
+"rhythm": "brady"
+},
+{
+"offset_h": 4,
+"hr": 58.0,
+"spo2": 98.0,
+"rr": 13.0,
+"rhythm": "brady"
+},
+{
+"offset_h": 5,
+"hr": 58.0,
+"spo2": 98.0,
+"rr": 16.0,
+"rhythm": "brady"
+},
+{
+"offset_h": 6,
+"hr": 66.0,
+"spo2": 99.0,
+"rr": 23.0,
+"rhythm": "sinus"
+},
+{
+"offset_h": 7,
+"hr": 62.0,
+"spo2": 97.0,
+"rr": 15.0,
+"rhythm": "sinus"
+},
+{
+"offset_h": 8,
+"hr": 58.0,
+"spo2": 98.0,
+"rr": 15.0,
+"rhythm": "brady"
+},
+{
+"offset_h": 9,
+"hr": 73.0,
+"spo2": 98.0,
+"rr": 22.0,
+"rhythm": "sinus"
+},
+{
+"offset_h": 10,
+"hr": 64.0,
+"spo2": 98.0,
+"rr": 18.0,
+"rhythm": "sinus"
+},
+{
+"offset_h": 11,
+"hr": 66.0,
+"spo2": 99.0,
+"rr": 19.0,
+"rhythm": "sinus"
+},
+{
+"offset_h": 12,
+"hr": 68.0,
+"spo2": 98.0,
+"rr": 21.0,
+"rhythm": "sinus"
+},
+{
+"offset_h": 13,
+"hr": 64.0,
+"spo2": 98.0,
+"rr": 15.0,
+"rhythm": "sinus"
+},
+{
+"offset_h": 14,
+"hr": 65.0,
+"spo2": 96.0,
+"rr": 18.0,
+"rhythm": "sinus"
+},
+{
+"offset_h": 15,
+"hr": 54.0,
+"spo2": 97.0,
+"rr": 16.0,
+"rhythm": "brady"
+},
+{
+"offset_h": 16,
+"hr": 59.0,
+"spo2": 98.0,
+"rr": 21.0,
+"rhythm": "brady"
+},
+{
+"offset_h": 17,
+"hr": 57.0,
+"spo2": 98.0,
+"rr": 21.0,
+"rhythm": "brady"
+},
+{
+"offset_h": 18,
+"hr": 68.0,
+"spo2": 100.0,
+"rr": 23.0,
+"rhythm": "sinus"
+},
+{
+"offset_h": 19,
+"hr": 73.0,
+"spo2": 98.0,
+"rr": 24.0,
+"rhythm": "sinus"
+},
+{
+"offset_h": 20,
+"hr": 67.0,
+"spo2": 97.0,
+"rr": 20.0,
+"rhythm": "sinus"
+},
+{
+"offset_h": 21,
+"hr": 68.0,
+"spo2": 98.0,
+"rr": 20.0,
+"rhythm": "sinus"
+},
+{
+"offset_h": 22,
+"hr": 72.0,
+"spo2": 98.0,
+"rr": 20.0,
+"rhythm": "sinus"
+},
+{
+"offset_h": 23,
+"hr": 66.0,
+"spo2": 97.0,
+"rr": 17.0,
+"rhythm": "sinus"
+},
+{
+"offset_h": 24,
+"hr": 60.0,
+"spo2": 97.0,
+"rr": 23.0,
+"rhythm": "sinus"
+},
+{
+"offset_h": 25,
+"hr": 55.0,
+"spo2": 97.0,
+"rr": 17.0,
+"rhythm": "brady"
+},
+{
+"offset_h": 26,
+"hr": 60.0,
+"spo2": 96.0,
+"rr": 20.0,
+"rhythm": "sinus"
+},
+{
+"offset_h": 27,
+"hr": 62.0,
+"spo2": 95.0,
+"rr": 18.0,
+"rhythm": "sinus"
+},
+{
+"offset_h": 28,
+"hr": 69.0,
+"spo2": 95.0,
+"rr": 24.0,
+"rhythm": "sinus"
+},
+{
+"offset_h": 29,
+"hr": 61.0,
+"spo2": 97.0,
+"rr": 18.0,
+"rhythm": "sinus"
+},
+{
+"offset_h": 30,
+"hr": 59.0,
+"spo2": 94.0,
+"rr": 20.0,
+"rhythm": "brady"
+},
+{
+"offset_h": 31,
+"hr": 58.0,
+"spo2": 97.0,
+"rr": 13.0,
+"rhythm": "brady"
+},
+{
+"offset_h": 32,
+"hr": 70.0,
+"spo2": 96.0,
+"rr": 23.0,
+"rhythm": "sinus"
+},
+{
+"offset_h": 33,
+"hr": 110.0,
+"spo2": 98.0,
+"rr": 22.0,
+"rhythm": "tachy"
+},
+{
+"offset_h": 34,
+"hr": 66.0,
+"spo2": 96.0,
+"rr": 19.0,
+"rhythm": "sinus"
+},
+{
+"offset_h": 35,
+"hr": 57.0,
+"spo2": 95.0,
+"rr": 20.0,
+"rhythm": "brady"
+},
+{
+"offset_h": 36,
+"hr": 53.0,
+"spo2": 99.0,
+"rr": 16.0,
+"rhythm": "brady"
+},
+{
+"offset_h": 37,
+"hr": 71.0,
+"spo2": 98.0,
+"rr": 20.0,
+"rhythm": "sinus"
+},
+{
+"offset_h": 38,
+"hr": 83.0,
+"spo2": 95.0,
+"rr": 25.0,
+"rhythm": "sinus"
+},
+{
+"offset_h": 39,
+"hr": 90.0,
+"spo2": 98.0,
+"rr": 24.0,
+"rhythm": "sinus"
+},
+{
+"offset_h": 40,
+"hr": 88.0,
+"spo2": 96.0,
+"rr": 29.0,
+"rhythm": "sinus"
+},
+{
+"offset_h": 41,
+"hr": 96.0,
+"spo2": 96.0,
+"rr": 27.0,
+"rhythm": "sinus"
+},
+{
+"offset_h": 42,
+"hr": 94.0,
+"spo2": 96.0,
+"rr": 23.0,
+"rhythm": "sinus"
+},
+{
+"offset_h": 43,
+"hr": 81.0,
+"spo2": 96.0,
+"rr": 25.0,
+"rhythm": "sinus"
+},
+{
+"offset_h": 44,
+"hr": 84.0,
+"spo2": 96.0,
+"rr": 25.0,
+"rhythm": "sinus"
+},
+{
+"offset_h": 45,
+"hr": 79.0,
+"spo2": 96.0,
+"rr": 18.0,
+"rhythm": "sinus"
+},
+{
+"offset_h": 46,
+"hr": 75.0,
+"spo2": 98.0,
+"rr": 19.0,
+"rhythm": "sinus"
+},
+{
+"offset_h": 47,
+"hr": 66.0,
+"spo2": 97.0,
+"rr": 17.0,
+"rhythm": "sinus"
+},
+{
+"offset_h": 48,
+"hr": 57.0,
+"spo2": 98.0,
+"rr": 18.0,
+"rhythm": "brady"
+},
+{
+"offset_h": 49,
+"hr": 54.0,
+"spo2": 99.0,
+"rr": 13.0,
+"rhythm": "brady"
+},
+{
+"offset_h": 50,
+"hr": 55.0,
+"spo2": 99.0,
+"rr": 13.0,
+"rhythm": "brady"
+},
+{
+"offset_h": 51,
+"hr": 53.0,
+"spo2": 99.0,
+"rr": 11.0,
+"rhythm": "brady"
+},
+{
+"offset_h": 52,
+"hr": 53.0,
+"spo2": 100.0,
+"rr": null,
+"rhythm": "brady"
+},
+{
+"offset_h": 53,
+"hr": 55.0,
+"spo2": 100.0,
+"rr": 14.0,
+"rhythm": "brady"
+},
+{
+"offset_h": 54,
+"hr": 52.0,
+"spo2": 96.0,
+"rr": 17.0,
+"rhythm": "brady"
+},
+{
+"offset_h": 55,
+"hr": 55.0,
+"spo2": 96.0,
+"rr": 19.0,
+"rhythm": "brady"
+},
+{
+"offset_h": 56,
+"hr": 50.0,
+"spo2": 94.0,
+"rr": 16.0,
+"rhythm": "brady"
+},
+{
+"offset_h": 57,
+"hr": 57.0,
+"spo2": 95.0,
+"rr": 16.0,
+"rhythm": "brady"
+},
+{
+"offset_h": 58,
+"hr": 74.0,
+"spo2": 96.0,
+"rr": 23.0,
+"rhythm": "sinus"
+},
+{
+"offset_h": 59,
+"hr": 65.0,
+"spo2": 93.0,
+"rr": 20.0,
+"rhythm": "sinus"
+},
+{
+"offset_h": 60,
+"hr": 64.0,
+"spo2": 94.0,
+"rr": 21.0,
+"rhythm": "sinus"
+},
+{
+"offset_h": 61,
+"hr": 59.0,
+"spo2": 95.0,
+"rr": 16.0,
+"rhythm": "sinus"
+},
+{
+"offset_h": 62,
+"hr": 68.0,
+"spo2": 99.0,
+"rr": 18.0,
+"rhythm": "sinus"
+},
+{
+"offset_h": 63,
+"hr": 63.0,
+"spo2": 97.0,
+"rr": 18.0,
+"rhythm": "sinus"
+}
+],
+"test_hours": [
+{
+"offset_h": 0,
+"y_24h": 0,
+"hours_to_event": null,
+"risk_watch_nb05": 0.10839
+},
+{
+"offset_h": 1,
+"y_24h": 0,
+"hours_to_event": null,
+"risk_watch_nb05": 0.06266
+},
+{
+"offset_h": 2,
+"y_24h": 0,
+"hours_to_event": null,
+"risk_watch_nb05": 0.06758
+},
+{
+"offset_h": 3,
+"y_24h": 0,
+"hours_to_event": null,
+"risk_watch_nb05": 0.07521
+},
+{
+"offset_h": 4,
+"y_24h": 0,
+"hours_to_event": null,
+"risk_watch_nb05": 0.07464
+},
+{
+"offset_h": 5,
+"y_24h": 0,
+"hours_to_event": null,
+"risk_watch_nb05": 0.07381
+},
+{
+"offset_h": 6,
+"y_24h": 0,
+"hours_to_event": null,
+"risk_watch_nb05": 0.04613
+},
+{
+"offset_h": 7,
+"y_24h": 0,
+"hours_to_event": null,
+"risk_watch_nb05": 0.04964
+},
+{
+"offset_h": 8,
+"y_24h": 0,
+"hours_to_event": null,
+"risk_watch_nb05": 0.05709
+},
+{
+"offset_h": 9,
+"y_24h": 0,
+"hours_to_event": null,
+"risk_watch_nb05": 0.04178
+},
+{
+"offset_h": 10,
+"y_24h": 0,
+"hours_to_event": null,
+"risk_watch_nb05": 0.04317
+},
+{
+"offset_h": 11,
+"y_24h": 0,
+"hours_to_event": null,
+"risk_watch_nb05": 0.04299
+},
+{
+"offset_h": 12,
+"y_24h": 0,
+"hours_to_event": null,
+"risk_watch_nb05": 0.04395
+},
+{
+"offset_h": 13,
+"y_24h": 0,
+"hours_to_event": null,
+"risk_watch_nb05": 0.04593
+},
+{
+"offset_h": 14,
+"y_24h": 0,
+"hours_to_event": null,
+"risk_watch_nb05": 0.04737
+},
+{
+"offset_h": 15,
+"y_24h": 0,
+"hours_to_event": null,
+"risk_watch_nb05": 0.05136
+},
+{
+"offset_h": 16,
+"y_24h": 0,
+"hours_to_event": null,
+"risk_watch_nb05": 0.04582
+},
+{
+"offset_h": 17,
+"y_24h": 0,
+"hours_to_event": null,
+"risk_watch_nb05": 0.04499
+},
+{
+"offset_h": 18,
+"y_24h": 0,
+"hours_to_event": null,
+"risk_watch_nb05": 0.0327
+},
+{
+"offset_h": 19,
+"y_24h": 0,
+"hours_to_event": null,
+"risk_watch_nb05": 0.03364
+},
+{
+"offset_h": 20,
+"y_24h": 0,
+"hours_to_event": null,
+"risk_watch_nb05": 0.0364
+},
+{
+"offset_h": 21,
+"y_24h": 0,
+"hours_to_event": null,
+"risk_watch_nb05": 0.03644
+},
+{
+"offset_h": 22,
+"y_24h": 0,
+"hours_to_event": null,
+"risk_watch_nb05": 0.03815
+},
+{
+"offset_h": 23,
+"y_24h": 0,
+"hours_to_event": null,
+"risk_watch_nb05": 0.04003
+},
+{
+"offset_h": 24,
+"y_24h": 0,
+"hours_to_event": null,
+"risk_watch_nb05": 0.03837
+},
+{
+"offset_h": 25,
+"y_24h": 0,
+"hours_to_event": null,
+"risk_watch_nb05": 0.04256
+},
+{
+"offset_h": 26,
+"y_24h": 0,
+"hours_to_event": null,
+"risk_watch_nb05": 0.03815
+},
+{
+"offset_h": 27,
+"y_24h": 0,
+"hours_to_event": null,
+"risk_watch_nb05": 0.04239
+},
+{
+"offset_h": 28,
+"y_24h": 0,
+"hours_to_event": null,
+"risk_watch_nb05": 0.04456
+},
+{
+"offset_h": 29,
+"y_24h": 0,
+"hours_to_event": null,
+"risk_watch_nb05": 0.04362
+},
+{
+"offset_h": 30,
+"y_24h": 0,
+"hours_to_event": null,
+"risk_watch_nb05": 0.04971
+},
+{
+"offset_h": 31,
+"y_24h": 0,
+"hours_to_event": null,
+"risk_watch_nb05": 0.05297
+},
+{
+"offset_h": 32,
+"y_24h": 0,
+"hours_to_event": null,
+"risk_watch_nb05": 0.04555
+},
+{
+"offset_h": 33,
+"y_24h": 0,
+"hours_to_event": null,
+"risk_watch_nb05": 0.07402
+},
+{
+"offset_h": 34,
+"y_24h": 0,
+"hours_to_event": null,
+"risk_watch_nb05": 0.05949
+},
+{
+"offset_h": 35,
+"y_24h": 0,
+"hours_to_event": null,
+"risk_watch_nb05": 0.05404
+},
+{
+"offset_h": 36,
+"y_24h": 0,
+"hours_to_event": null,
+"risk_watch_nb05": 0.04907
+},
+{
+"offset_h": 37,
+"y_24h": 0,
+"hours_to_event": null,
+"risk_watch_nb05": 0.04281
+},
+{
+"offset_h": 38,
+"y_24h": 0,
+"hours_to_event": null,
+"risk_watch_nb05": 0.05026
+},
+{
+"offset_h": 39,
+"y_24h": 0,
+"hours_to_event": null,
+"risk_watch_nb05": 0.04826
+},
+{
+"offset_h": 40,
+"y_24h": 0,
+"hours_to_event": null,
+"risk_watch_nb05": 0.04437
+},
+{
+"offset_h": 41,
+"y_24h": 0,
+"hours_to_event": null,
+"risk_watch_nb05": 0.04991
+},
+{
+"offset_h": 42,
+"y_24h": 0,
+"hours_to_event": null,
+"risk_watch_nb05": 0.05572
+},
+{
+"offset_h": 43,
+"y_24h": 0,
+"hours_to_event": null,
+"risk_watch_nb05": 0.05001
+},
+{
+"offset_h": 44,
+"y_24h": 0,
+"hours_to_event": null,
+"risk_watch_nb05": 0.0478
+},
+{
+"offset_h": 45,
+"y_24h": 0,
+"hours_to_event": null,
+"risk_watch_nb05": 0.05516
+},
+{
+"offset_h": 46,
+"y_24h": 0,
+"hours_to_event": null,
+"risk_watch_nb05": 0.05078
+},
+{
+"offset_h": 47,
+"y_24h": 0,
+"hours_to_event": null,
+"risk_watch_nb05": 0.04513
+},
+{
+"offset_h": 48,
+"y_24h": 0,
+"hours_to_event": null,
+"risk_watch_nb05": 0.04239
+},
+{
+"offset_h": 49,
+"y_24h": 0,
+"hours_to_event": null,
+"risk_watch_nb05": 0.03975
+},
+{
+"offset_h": 50,
+"y_24h": 0,
+"hours_to_event": null,
+"risk_watch_nb05": 0.03878
+},
+{
+"offset_h": 51,
+"y_24h": 0,
+"hours_to_event": null,
+"risk_watch_nb05": 0.03629
+},
+{
+"offset_h": 52,
+"y_24h": 0,
+"hours_to_event": null,
+"risk_watch_nb05": 0.03233
+},
+{
+"offset_h": 53,
+"y_24h": 0,
+"hours_to_event": null,
+"risk_watch_nb05": 0.0291
+},
+{
+"offset_h": 54,
+"y_24h": 0,
+"hours_to_event": null,
+"risk_watch_nb05": 0.02895
+},
+{
+"offset_h": 55,
+"y_24h": 0,
+"hours_to_event": null,
+"risk_watch_nb05": 0.02918
+},
+{
+"offset_h": 56,
+"y_24h": 0,
+"hours_to_event": null,
+"risk_watch_nb05": 0.03028
+},
+{
+"offset_h": 57,
+"y_24h": 0,
+"hours_to_event": null,
+"risk_watch_nb05": 0.03387
+},
+{
+"offset_h": 58,
+"y_24h": 0,
+"hours_to_event": null,
+"risk_watch_nb05": 0.03206
+},
+{
+"offset_h": 59,
+"y_24h": 0,
+"hours_to_event": null,
+"risk_watch_nb05": 0.03832
+},
+{
+"offset_h": 60,
+"y_24h": 0,
+"hours_to_event": null,
+"risk_watch_nb05": 0.03896
+},
+{
+"offset_h": 61,
+"y_24h": 0,
+"hours_to_event": null,
+"risk_watch_nb05": 0.03913
+},
+{
+"offset_h": 62,
+"y_24h": 0,
+"hours_to_event": null,
+"risk_watch_nb05": 0.03491
+},
+{
+"offset_h": 63,
+"y_24h": 0,
+"hours_to_event": null,
+"risk_watch_nb05": 0.03328
+}
+],
+"event_within_stay": 0
+}

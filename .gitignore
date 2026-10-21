@@ -60,12 +60,11 @@ data/merged/
 data/features/
 data/*.csv
 
-# Generated analysis outputs and patient replay records
+# Generated analysis outputs (apps/backend/data/replay is kept: small open-access MIMIC-IV demo extracts the demo needs)
 results/
 charts/shap_charts/baseline_panels/
 charts/shap_charts/patient_cards/
 charts/shap_charts/timelines/
 charts/shap_charts/waterfalls/
-apps/backend/data/replay/
 backend/data/replay/
 
