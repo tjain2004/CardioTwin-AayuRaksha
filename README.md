@@ -10,21 +10,49 @@
 <p align="center">
   <a href="assets/architecture/cardiotwin_system_architecture.pdf">📐 System Architecture (PDF)</a> &nbsp;·&nbsp;
   <a href="assets/presentation/CardioTwin_AyuRaksha_Presentation.pdf">📊 Presentation (PDF)</a> &nbsp;·&nbsp;
-  <a href="#-demo-video">🎬 Demo Video</a> &nbsp;·&nbsp;
-  <a href="#-team-ayuraksha">👥 Team</a>
+  <a href="#10-submission-files">🎬 Demo Video</a> &nbsp;·&nbsp;
+  <a href="#team-ayuraksha">👥 Team</a>
 </p>
+
+---
+
+## Team AyuRaksha
+
+<p align="center"><b>🏫 Sri Shankaracharya Technical Campus</b></p>
+
+<table align="center">
+  <tr>
+    <td align="center" width="25%">👑<br><b>Tanya Jain</b><br><sub>Team Leader · Full backend<br>development &amp; data collection</sub></td>
+    <td align="center" width="25%">🧠<br><b>Praveen Yadav</b><br><sub>AI &amp; ML pipeline<br>&nbsp;</sub></td>
+    <td align="center" width="25%">🔗<br><b>Mohammad Danishuddin</b><br><sub>Connectivity of all<br>3 systems</sub></td>
+    <td align="center" width="25%">🎨<br><b>Ankur Pandey</b><br><sub>UI &amp; presentation<br>&nbsp;</sub></td>
+  </tr>
+</table>
 
 ---
 
 **Status labels used in this README:** 🟢 **Implemented** (in the code and shown in the prototype) · 🟡 **Proposed** (designed or coded, not yet verified) · 🔵 **Future Scope** (planned)
 
-## 📌 Contents
+## Contents
 
-1. [Problem](#-1-the-problem) · 2. [Solution](#-2-our-solution) · 3. [Three dashboards](#-3-three-dashboards-one-twin) · 4. [Features](#-4-key-features) · 5. [What makes it unique](#-5-what-makes-cardiotwin-unique) · 6. [Watch vision](#-6-our-unique-vision-a-watch-connected-digital-twin) · 7. [Use case](#-7-healthcare-use-case) · 8. [Architecture & AI/ML](#-8-architecture-and-aiml) · 9. [Tech stack](#-9-technical-stack) · 10. [Submission files](#-10-submission-files) · 11. [Run it](#-11-run-it-locally) · 12. [Limitations](#-12-responsible-ai-and-limitations) · 13. [Checklist](#-13-unstop-checklist) · 14. [License](#-14-license)
+1. [The problem](#1-the-problem)
+2. [Our solution](#2-our-solution)
+3. [Three dashboards, one twin](#3-three-dashboards-one-twin)
+4. [Key features](#4-key-features)
+5. [What makes CardioTwin unique](#5-what-makes-cardiotwin-unique)
+6. [Our unique vision: a watch-connected digital twin](#6-our-unique-vision-a-watch-connected-digital-twin)
+7. [Healthcare use case](#7-healthcare-use-case)
+8. [Architecture and AI/ML](#8-architecture-and-aiml)
+9. [Technical stack](#9-technical-stack)
+10. [Submission files: SA, PPT and video](#10-submission-files)
+11. [Run it locally](#11-run-it-locally)
+12. [Responsible AI and limitations](#12-responsible-ai-and-limitations)
+13. [Unstop checklist](#13-unstop-checklist)
+14. [License](#14-license)
 
 ---
 
-## 🩺 1. The problem
+## 1. The problem
 
 > **Problem statement:** To address the lack of early cardiac risk awareness, explainable predictions, personalized health guidance, and accessible emergency support.
 >
@@ -44,7 +72,7 @@ Cardiac deterioration usually shows up in the vital signs hours before a crisis,
 
 CardioTwin brings **history and live physiology together** in one place. It **looks ahead**, and it **explains** the result to doctors and to patients.
 
-## 💡 2. Our solution
+## 2. Our solution
 
 **CardioTwin is a cardiac digital twin.** It builds a per-patient virtual model from two data streams, forecasts acute deterioration 24 hours ahead and explains why. It shows the result to the doctor, the patient and a watch screen.
 
@@ -59,7 +87,7 @@ CardioTwin brings **history and live physiology together** in one place. It **lo
 
 **How data flows:** PhysioNet data → clean and merge → 211 engineered features → train and calibrate → saved model. Live readings (replayed by a *virtual watch*) → validate → safety rules → risk engine → SHAP and SAR → dashboards over WebSocket.
 
-## 🖥️ 3. Three dashboards, one twin
+## 3. Three dashboards, one twin
 
 <p align="center">
   <img src="assets/images/three_views.png" alt="Doctor dashboard, patient view and watch readings" width="100%">
@@ -70,22 +98,22 @@ CardioTwin brings **history and live physiology together** in one place. It **lo
 <details>
 <summary><b>See each screen full size</b></summary>
 
-**🩺 Doctor dashboard:** live risk, model spread, data coverage, watch face and alerts
+**Doctor dashboard:** live risk, model spread, data coverage, watch face and alerts
 <img src="assets/screenshots/doctor_dashboard.png" alt="Doctor dashboard" width="100%">
 
-**📱 Patient view:** home, medicines and nearby help
+**Patient view:** home, medicines and nearby help
 <p>
   <img src="assets/screenshots/phone_home.png" alt="Patient home" width="31%">
   <img src="assets/screenshots/phone_medicines.png" alt="Patient medicines" width="31%">
   <img src="assets/screenshots/phone_nearby_help.png" alt="Patient nearby help" width="31%">
 </p>
 
-**⌚ Watch readings:** watch screens in the browser, driven by the virtual watch (not a physical watch)
+**Watch readings:** watch screens in the browser, driven by the virtual watch (not a physical watch)
 <img src="assets/screenshots/watch_browser_simulated.png" alt="Watch screens in the browser" width="85%">
 
 </details>
 
-## ✨ 4. Key features
+## 4. Key features
 
 | Feature | Status |
 |---|:---:|
@@ -104,7 +132,7 @@ CardioTwin brings **history and live physiology together** in one place. It **lo
 | **Ambulance tracking:** a labelled demo only, so nobody is dispatched | 🟢 demo · 🔵 real dispatch |
 | **Wear OS watch app** (Kotlin, source code only, never built) | 🟡 |
 
-## 🏆 5. What makes CardioTwin unique
+## 5. What makes CardioTwin unique
 
 - **A living twin, not a one-off score.** Each patient's state updates as readings arrive, and you can ask it "what if".
 - **A watch-ready AI model.** A second model uses only watch-like signals. It flags the same 3 of 4 events as the full model.
@@ -113,7 +141,7 @@ CardioTwin brings **history and live physiology together** in one place. It **lo
 - **Honest labels.** Simulated data, demo ambulances and offline answers are all marked on screen.
 - **One backend, three views.** The doctor, the patient and the watch all read the same twin.
 
-## ⌚ 6. Our unique vision: a watch-connected digital twin
+## 6. Our unique vision: a watch-connected digital twin
 
 > 🔵 **Future Scope.** Today CardioTwin does **not** connect to a physical smartwatch, receive live wearable data, monitor continuously or send real medical alerts.
 
@@ -140,7 +168,7 @@ The goal is a twin that stays current **between clinic visits**. A compatible sm
 
 **Before this is real:** build and test the Wear OS app on an emulator and then on real devices. Retrain and validate on consented wearable data, validate fall detection, and get clinical review of all rules. Add production security that complies with the DPDP Act.
 
-## 🏥 7. Healthcare use case
+## 7. Healthcare use case
 
 A clinician is following a cardiac patient at risk of acute deterioration. CardioTwin warns up to 24 hours ahead, explains why and helps decide what to check next.
 
@@ -152,9 +180,9 @@ A clinician is following a cardiac patient at risk of acute deterioration. Cardi
 5. The patient app and the watch screens update. Only a critical patient sees the 112 prompt.
 6. The what-if panel shows which changes would lower the risk most.
 
-## 🧠 8. Architecture and AI/ML
+## 8. Architecture and AI/ML
 
-### 📐 System architecture
+### System architecture
 
 <p align="center">
   <img src="assets/architecture/cardiotwin_system_architecture.png" alt="CardioTwin system architecture" width="100%">
@@ -162,7 +190,7 @@ A clinician is following a cardiac patient at risk of acute deterioration. Cardi
 
 <p align="center"><sub><a href="assets/architecture/cardiotwin_system_architecture.pdf">Download PDF</a> · The Wear OS box is the designed watch app (🟡 code only). The demo uses the reading simulator. The "Planned next" items are 🔵.</sub></p>
 
-### 📂 Data (open and de-identified)
+### Data (open and de-identified)
 
 | Dataset | Used for |
 |---|---|
@@ -173,13 +201,13 @@ A clinician is following a cardiac patient at risk of acute deterioration. Cardi
 
 Raw and patient-level data are **not** included in this repository (PhysioNet licence). `src/build_structured_csv.py` rebuilds them.
 
-### 🔬 ML pipeline (notebooks 01–08)
+### ML pipeline (notebooks 01–08)
 
 **Structure → Merge and clean → Feature engineering (211 features) → EDA → Train (grouped 5-fold CV, Optuna) → SHAP and SAR → Risk engine → What-if simulator**
 
 Models compared: NEWS2, logistic regression, random forest, XGBoost and LightGBM. The selected models are calibrated, given operating points, and saved with a SHA-256 manifest.
 
-### 📈 Results on held-out patients
+### Results on held-out patients
 
 <sub>59 training patients, 15 held-out test patients (4 with an event). 95% bootstrap CIs. Source: `models/model_metadata.json`.</sub>
 
@@ -203,47 +231,31 @@ With only 4 test events, these results show the method works end to end. They do
 
 </details>
 
-## 🛠️ 9. Technical stack
+## 9. Technical stack
 
 <p align="center">
-  <img src="assets/images/tech_stack.png" alt="CardioTwin tech stack logos" width="100%">
+  <img src="assets/logos/python.svg" width="36" height="36" alt="Python" title="Python">&nbsp;&nbsp;<img src="assets/logos/pandas.svg" width="36" height="36" alt="pandas" title="pandas">&nbsp;&nbsp;<img src="assets/logos/numpy.svg" width="36" height="36" alt="NumPy" title="NumPy">&nbsp;&nbsp;<img src="assets/logos/scikitlearn.svg" width="36" height="36" alt="scikit-learn" title="scikit-learn">&nbsp;&nbsp;<img src="assets/logos/jupyter.svg" width="36" height="36" alt="Jupyter" title="Jupyter">&nbsp;&nbsp;<img src="assets/logos/fastapi.svg" width="36" height="36" alt="FastAPI" title="FastAPI">&nbsp;&nbsp;<img src="assets/logos/sqlite.svg" width="36" height="36" alt="SQLite" title="SQLite">&nbsp;&nbsp;<img src="assets/logos/react.svg" width="36" height="36" alt="React" title="React">&nbsp;&nbsp;<img src="assets/logos/vite.svg" width="36" height="36" alt="Vite" title="Vite">&nbsp;&nbsp;<img src="assets/logos/claude.svg" width="36" height="36" alt="Claude API" title="Claude API">&nbsp;&nbsp;<img src="assets/logos/googlemaps.svg" width="36" height="36" alt="Google Maps" title="Google Maps">&nbsp;&nbsp;<img src="assets/logos/kotlin.svg" width="36" height="36" alt="Kotlin" title="Kotlin">&nbsp;&nbsp;<img src="assets/logos/wearos.svg" width="36" height="36" alt="Wear OS" title="Wear OS">
 </p>
 
 | Layer | Tools |
 |---|---|
 | **Data & ML** | Python 3.13 · pandas · NumPy · scikit-learn · LightGBM · XGBoost · Optuna · SHAP · Jupyter |
-| **Backend** | FastAPI · WebSockets · SQLite · Pydantic · pytest |
-| **Front ends** | React · Vite · PWA (doctor dashboard, patient app, watch screens) |
-| **External APIs** (optional keys) | Claude API (chatbot) · Google Places and Routes (maps) |
-| **Watch app** 🟡 | Kotlin · Jetpack Compose for Wear OS · Health Services |
+| **Backend** | FastAPI · WebSockets · SQLite |
+| **Dashboards** | React · Vite (doctor dashboard, patient app, watch screens) |
+| **External APIs** (optional) | Claude API (chatbot) · Google Places and Routes (maps) |
+| **Watch app** 🟡 | Kotlin · Wear OS · Health Services (code only, not yet built) |
 
-## 📦 10. Submission files
+## 10. Submission files
 
-### 📐 System Architecture (SA)
-➡️ [`assets/architecture/cardiotwin_system_architecture.pdf`](assets/architecture/cardiotwin_system_architecture.pdf)
+| | File | Link |
+|:---:|---|---|
+| 📐 | **System Architecture (SA)** | [PDF](assets/architecture/cardiotwin_system_architecture.pdf) |
+| 📊 | **Presentation (PPT)** | [PDF](assets/presentation/CardioTwin_AyuRaksha_Presentation.pdf) · [PPTX](assets/presentation/CardioTwin_AyuRaksha_Presentation.pptx) |
+| 🎬 | **Demo Video** (unlisted YouTube, 15–20 min) | `ADD_YOUTUBE_LINK_HERE` |
 
-### 📊 Presentation (PPT)
-➡️ PDF: [`assets/presentation/CardioTwin_AyuRaksha_Presentation.pdf`](assets/presentation/CardioTwin_AyuRaksha_Presentation.pdf) · PowerPoint: [`.pptx`](assets/presentation/CardioTwin_AyuRaksha_Presentation.pptx)
+<sub>The presentation was made at the idea stage, so it lists the backend and apps as "planned". They have since been built, except the Wear OS app.</sub>
 
-<sub>The deck was made at the idea stage, so it lists the backend and apps as "planned". They have since been built, except the Wear OS app.</sub>
-
-### 🎬 Demo Video
-➡️ **YouTube (unlisted, 15–20 min):** `ADD_YOUTUBE_LINK_HERE`
-
-### 👥 Team AyuRaksha
-
-<table>
-  <tr>
-    <td align="center" width="25%">👑<br><b>ADD_NAME</b><br><sub>Team Lead · ML & Data</sub></td>
-    <td align="center" width="25%">🧠<br><b>ADD_NAME</b><br><sub>AI/ML & Explainability</sub></td>
-    <td align="center" width="25%">🖥️<br><b>ADD_NAME</b><br><sub>Backend & Apps</sub></td>
-    <td align="center" width="25%">🎨<br><b>ADD_NAME</b><br><sub>UI/UX & Presentation</sub></td>
-  </tr>
-</table>
-
-**🏫 College / Incubator:** `ADD_COLLEGE_OR_INCUBATOR_NAME`
-
-## ▶️ 11. Run it locally
+## 11. Run it locally
 
 <details>
 <summary><b>Show setup steps</b> (Windows PowerShell · Python 3.12/3.13 · Node.js LTS)</summary>
@@ -289,7 +301,7 @@ assets/             README images, screenshots, architecture PDF, presentation
 
 </details>
 
-## ⚖️ 12. Responsible AI and limitations
+## 12. Responsible AI and limitations
 
 - **Not a medical device.** This is a research prototype without clinical validation. Do not use it for diagnosis or treatment.
 - **Small ICU cohort.** It was trained on 59 patients and tested on 15, so results won't transfer directly to outpatients or wearables.
@@ -300,26 +312,26 @@ assets/             README images, screenshots, architecture PDF, presentation
 - **The chatbot doesn't diagnose.** It explains existing results and never invents scores or changes medicines.
 - **Privacy.** Only open, de-identified data is used, keys stay on the server and decisions are audit-logged. Production use would need encryption, consent management and DPDP Act compliance.
 
-## ✅ 13. Unstop checklist
+## 13. Unstop checklist
 
 | Mandatory README item | Where | |
 |---|---|:---:|
-| Team details | [Team](#-team-ayuraksha) | ⬜ names |
-| College / Incubator information | [Team](#-team-ayuraksha) | ⬜ |
+| Team details | [Team](#team-ayuraksha) | ✅ |
+| College / Incubator information | [Team](#team-ayuraksha) | ✅ |
 | Project Title | CardioTwin | ✅ |
-| Problem Statement | [§1](#-1-the-problem) | ✅ |
-| Healthcare Use Case | [§7](#-7-healthcare-use-case) | ✅ |
-| Technical Stack | [§9](#-9-technical-stack) | ✅ |
-| AI/ML Model or Framework Details | [§8](#-8-architecture-and-aiml) | ✅ |
-| 15–20 min demo video (unlisted YouTube) | [Demo Video](#-demo-video) | ⬜ link |
-| Open-source License Details | [§14](#-14-license) | ✅ |
+| Problem Statement | [§1](#1-the-problem) | ✅ |
+| Healthcare Use Case | [§7](#7-healthcare-use-case) | ✅ |
+| Technical Stack | [§9](#9-technical-stack) | ✅ |
+| AI/ML Model or Framework Details | [§8](#8-architecture-and-aiml) | ✅ |
+| 15–20 min demo video (unlisted YouTube) | [§10](#10-submission-files) | ⬜ link |
+| Open-source License Details | [§14](#14-license) | ✅ |
 | Architecture Diagram in PDF/PPT | [SA PDF](assets/architecture/cardiotwin_system_architecture.pdf) | ✅ |
 | Presentation in PDF/PPT (details and outcomes) | [PPT PDF](assets/presentation/CardioTwin_AyuRaksha_Presentation.pdf) | ✅ |
 | All files and links publicly accessible | Public repo · unlisted video | ⬜ check |
 
 <sub>The prototype also meets the challenge brief: static + dynamic data fusion ✅ · adverse-event prediction ✅ · doctor dashboard for the virtual patient ✅ · open, anonymized data only ✅</sub>
 
-## 📜 14. License
+## 14. License
 
 The code is released under the **[MIT License](LICENSE)**. The datasets keep their own PhysioNet licences and must be downloaded from [PhysioNet](https://physionet.org/).
 
