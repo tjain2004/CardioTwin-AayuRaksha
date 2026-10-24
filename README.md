@@ -269,7 +269,7 @@ With only 4 test events, these results show the method works end to end. They do
 The presentation was made at the idea stage, so it lists the backend and apps as "planned". They have since been built, except the Wear OS app.
 
 ### c. Demo Video
-<img src="assets/icons/video.svg" width="18" height="18" alt=""> **YouTube (unlisted, 15–20 min):** `ADD_YOUTUBE_LINK_HERE`
+<img src="assets/icons/video.svg" width="18" height="18" alt=""> **YouTube (unlisted, 15–20 min):** `https://canva.link/sdcq2i3jdnveqfi`
 
 ## 11. Run it locally
 
